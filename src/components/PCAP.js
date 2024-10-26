@@ -21,14 +21,14 @@ const PcapTutorial = () => {
         "Start: lpw start"
       ]
     },
-    {
+    /*{
       title: "Install Packet Buddy",
       steps: [
         "Clone: git clone https://github.com/automateyournetwork/packet_buddy",
         "Navigate: cd packet_buddy",
         "Start: docker-compose up"
       ]
-    }
+    }*/
   ];
 
   const useCases = [
