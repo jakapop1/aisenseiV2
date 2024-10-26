@@ -48,7 +48,7 @@ const LearningModulesPage = () => {
     { 
       title: "AI for PCAP Analysis",
       description: "Learn how to leverage AI and RAG models for packet analysis with tools like Packet Buddy and LPW.",
-      url: "/modules/pcap-analysis",
+      url: "/modules/pcap",
       overview: "Explore how AI-driven tools can simplify and enhance PCAP analysis, using local models and open-source frameworks for interactive packet investigation.",
       keyTopics: [
         "Setting up Packet Buddy and LPW",
@@ -67,7 +67,7 @@ const LearningModulesPage = () => {
     { 
       title: "Effortless Document Parsing with AI",
       description: "Discover how to streamline document parsing using OpenWebUI’s RAG pipeline for advanced querying.",
-      url: "/modules/document-parsing",
+      url: "/modules/doc-parsing",
       overview: "This module explores how OpenWebUI’s AI-driven platform enables easy and efficient document parsing. Users can upload multiple documents and leverage the RAG pipeline to get specific, context-rich answers.",
       keyTopics: [
         "Introduction to document parsing with AI",
