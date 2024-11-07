@@ -8,8 +8,8 @@ const PcapTutorial = () => {
     {
       title: "Install Prerequisites",
       steps: [
-        "Install Wireshark or tshark",
-        "Download and install Ollama from ollama.ai",
+        <p>Install <a href='https://www.wireshark.org/download.html' style={{color:'lightblue', textDecoration: 'underline'}}>Wireshark</a> or tshark</p>,
+        <p>Download and install Ollama from  <a href='https://www.ollama.ai' style={{color:'lightblue', textDecoration: 'underline'}}>ollama.ai</a></p>,
         "Ensure Python 3.7+ is installed"
       ]
     },
@@ -66,24 +66,24 @@ const PcapTutorial = () => {
 
   const tools = [
     {
-      name: "Local Packet Whisperer",
+      name: <p><a href='https://github.com/kspviswa/local-packet-whisperer?tab=readme-ov-file' style={{color:'lightblue'}}>Local Packet Whisperer</a></p>,
       description: "Privacy-focused PCAP analysis using local LLMs",
       benefits: [
         "100% local processing",
         "Multiple LLM support",
         "Interactive interface",
-        "Protocol-specific analysis"
-      ]
+        "Protocol-specific analysis",
+      ],
     },
     {
-      name: "Packet Buddy",
+      name: <p><a href='https://github.com/automateyournetwork/packet_buddy' style={{color:'lightblue'}}>Packet Buddy</a></p>,
       description: "Containerized solution for small PCAP analysis",
       benefits: [
         "Easy deployment",
         "Open source models",
         "Quick analysis",
         "Community support"
-      ]
+      ],
     }
   ];
 
