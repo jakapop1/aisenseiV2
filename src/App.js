@@ -7,6 +7,7 @@ import DocumentParsingTutorial from './components/DocumentParsingTutorial';
 import GenAITutorial from './components/GenAITutorial';
 import RAGTutorial from './components/RAGTutorial';
 import PromptEngineeringTutorial from './components/PromptEngineeringTutorial';
+import SplunkAI from './components/SplunkAI';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/modules/rag" element={<RAGTutorial />} />
         <Route path="/modules/gen-ai" element={<GenAITutorial />} />
         <Route path="/modules/prompt-engineering" element={<PromptEngineeringTutorial />} />
+        <Route path="/modules/splunk-ai" element={<SplunkAI />} />
       </Routes>
     </Router>
   );

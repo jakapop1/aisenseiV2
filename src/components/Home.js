@@ -6,7 +6,7 @@ const LearningModulesPage = () => {
   const [selectedModule, setSelectedModule] = useState(null);
   const [activeCategory, setActiveCategory] = useState('knowledge');
   const navigate = useNavigate();
-  
+
   const modules = {
     knowledge: [
       { 
@@ -182,59 +182,111 @@ const LearningModulesPage = () => {
           "Develop skills to query multiple documents with AI",
           "Identify best practices for efficient document management and analysis"
         ]
+      },
+      {
+        title: "AI for Splunk Analysis",
+        description: "Master the integration of AI with Splunk for enhanced data analysis, security monitoring, and operational insights.",
+        url: "/modules/splunk-ai",
+        overview: "Learn how to harness AI and machine learning within Splunk for advanced search, monitoring, and data-driven decision-making across logs and events.",
+        keyTopics: [
+          "Integrating AI models with Splunk",
+          "Using machine learning for anomaly detection in Splunk",
+          "Automating incident response with Splunk AI",
+          "Building AI-driven dashboards and visualizations",
+          "Privacy and security considerations in Splunk AI applications"
+        ],
+        learningObjectives: [
+          "Integrate AI and machine learning models into Splunk environments",
+          "Develop skills for automated anomaly detection and alerting",
+          "Build AI-powered dashboards for enhanced visibility",
+          "Implement privacy and security best practices when using AI in Splunk"
+        ]
       }
+      
     ]
   };
 
-  const displayedModules = modules[activeCategory];
+   const displayedModules = modules[activeCategory];
 
   return (
-    <div className="site-background section-padding">
-      {/* Navigation */}
-      <nav className="mb-4 flex gap-4">
-        <button 
-          className={`nav-button-${activeCategory === 'knowledge' ? 'primary' : 'secondary'}`}
-          onClick={() => setActiveCategory('knowledge')}
-        >
-          AI Knowledge
-        </button>
-        <button 
-          className={`nav-button-${activeCategory === 'tools' ? 'primary' : 'secondary'}`}
-          onClick={() => setActiveCategory('tools')}
-        >
-          AI Tools
-        </button>
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
+      {/* Sidebar Navigation */}
+      <nav className="fixed h-full w-64 border-r border-white/10 p-6 space-y-6 bg-black/20 backdrop-blur-sm">
+        <div className="font-medium text-lg mb-8 text-white">Learning Path</div>
+        
+        <div className="space-y-4">
+          <div className="font-medium text-gray-300">Categories</div>
+          <div className="space-y-2">
+            <button 
+              className={`w-full text-left px-3 py-2 rounded-lg transition-all duration-300 ${
+                activeCategory === 'knowledge' 
+                  ? 'bg-blue-500 text-white shadow-lg' 
+                  : 'bg-white/20 backdrop-blur-sm text-white hover:bg-white/30'
+              }`}
+              onClick={() => setActiveCategory('knowledge')}
+            >
+              AI Knowledge
+            </button>
+            <button 
+              className={`w-full text-left px-3 py-2 rounded-lg transition-all duration-300 ${
+                activeCategory === 'tools' 
+                  ? 'bg-blue-500 text-white shadow-lg' 
+                  : 'bg-white/20 backdrop-blur-sm text-white hover:bg-white/30'
+              }`}
+              onClick={() => setActiveCategory('tools')}
+            >
+              AI Tools
+            </button>
+          </div>
+        </div>
       </nav>
 
-      {/* Header */}
-      <h1 className="heading-primary">
-        {activeCategory === 'knowledge' ? 'Knowledge Modules' : 'Tool Modules'}
-      </h1>
-      <p className="text-secondary content-margin">
-        {activeCategory === 'knowledge' 
-          ? 'Learn the fundamentals of AI and its applications'
-          : 'Hands-on modules for specific AI tools and implementations'}
-      </p>
-
-      {/* Modules Grid */}
-      <div className="modules-grid">
-        {displayedModules.map((module, index) => (
-          <div key={index} className="module-card">
-            <div className="text-left">
-              <h2 className="card-title">{module.title}</h2>
-              <p className="card-description">{module.description}</p>
+      {/* Main Content */}
+      <main className="pl-64">
+        <div className="p-8">
+          <div className="max-w-7xl mx-auto">
+            {/* Hero Section */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 mb-12 shadow-lg">
+              <h1 className="text-3xl font-bold mb-4 text-white">
+                {activeCategory === 'knowledge' ? 'AI Knowledge Modules' : 'AI Tools Modules'}
+              </h1>
+              <p className="text-gray-300">
+                {activeCategory === 'knowledge' 
+                  ? 'Master the fundamentals of AI and its applications through our comprehensive learning modules.'
+                  : 'Get hands-on experience with practical AI tools and implementations through guided tutorials.'}
+              </p>
             </div>
-            <div className="text-left">
-              <button 
-                onClick={() => setSelectedModule(module)}
-                className="px-4 py-2 bg-blue-500 text-white rounded"
-              >
-                Go!
-              </button>
+
+            {/* Modules Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              {displayedModules.map((module, index) => (
+                <div 
+                  key={index} 
+                  className="bg-white/10 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+                >
+                  <div>
+                    <h2 className="font-bold mb-2 text-white">{module.title}</h2>
+                    <p className="text-sm text-gray-300 mb-4">{module.description}</p>
+                    <div className="text-sm text-gray-300">
+                      <ul className="space-y-1">
+                        {module.keyTopics.slice(0, 3).map((topic, i) => (
+                          <li key={i} className="truncate">• {topic}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  <button 
+                    onClick={() => setSelectedModule(module)}
+                    className="mt-4 w-full bg-blue-500 hover:bg-blue-600 text-white rounded-lg px-4 py-2 shadow-md transition-all duration-300"
+                  >
+                    Start Learning
+                  </button>
+                </div>
+              ))}
             </div>
           </div>
-        ))}
-      </div>
+        </div>
+      </main>
 
       <Modal 
         isOpen={selectedModule !== null}
