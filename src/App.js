@@ -8,12 +8,14 @@ import GenAITutorial from './components/GenAITutorial';
 import RAGTutorial from './components/RAGTutorial';
 import PromptEngineeringTutorial from './components/PromptEngineeringTutorial';
 import SplunkAI from './components/SplunkAI';
+import AIHub from './components/AIHub';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/AI-Hub" element={<AIHub />} />
         <Route path="/modules/cti" element={<CTIPage />} />
         <Route path="/modules/pcap" element={<PcapTutorial />} />
         <Route path="/modules/doc-parsing" element={<DocumentParsingTutorial />} />

@@ -1,13 +1,11 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Modal from './Modal';
 
-
-const LearningModulesPage = () => {
+const AIHub = () => {
   const [selectedModule, setSelectedModule] = useState(null);
   const [activeCategory, setActiveCategory] = useState('knowledge');
   const navigate = useNavigate();
-
 
   const modules = {
     knowledge: [
@@ -208,54 +206,40 @@ const LearningModulesPage = () => {
     ]
   };
 
-
    const displayedModules = modules[activeCategory];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
-    {/* Landing Cards Section */}
-    <div className="min-h-screen flex flex-col">
-      <div className="flex-1 flex items-center justify-center">
-        <div className="max-w-5xl mx-auto px-4 w-full">
-        <div className="flex flex-col space-y-12">
-  {/* Top Row - Two Cards */}
-  <div className="flex justify-center space-x-8">
-    {/* CTI Card */}
-    <button 
-      onClick={() => navigate('/modules/cti')} 
-      className="w-96 bg-blue-950/50 backdrop-blur-sm rounded-3xl p-12 flex items-center justify-center shadow-lg hover:bg-blue-900/50 transform hover:scale-105 transition-all duration-300 cursor-pointer"
-    >
-      <h2 className="text-2xl font-bold text-white text-center">
-        Empower your CTI with AI!
-      </h2>
-    </button>
-
-    {/* PCAP Card */}
-    <button 
-      onClick={() => navigate('/modules/pcap')} 
-      className="w-96 bg-blue-950/50 backdrop-blur-sm rounded-3xl p-12 flex items-center justify-center shadow-lg hover:bg-blue-900/50 transform hover:scale-105 transition-all duration-300 cursor-pointer"
-    >
-      <h2 className="text-2xl font-bold text-white text-center">
-        2x your PCAP analysis with AI!
-      </h2>
-    </button>
-  </div>
-
-  {/* Bottom Row - Single Card */}
-  <div className="flex justify-center">
-    <button 
-      onClick={() => navigate('/AI-Hub')} 
-      className="w-96 bg-blue-950/50 backdrop-blur-sm rounded-3xl p-12 flex items-center justify-center shadow-lg hover:bg-blue-900/50 transform hover:scale-105 transition-all duration-300 cursor-pointer"
-    >
-      <h2 className="text-2xl font-bold text-white text-center">
-        Learn the in's and outs of AI and how it can improve your work!
-      </h2>
-    </button>
-  </div>
-    </div>
+      {/* Sidebar Navigation */}
+      <nav className="fixed h-full w-64 border-r border-white/10 p-6 space-y-6 bg-black/20 backdrop-blur-sm">
+        <div className="font-medium text-lg mb-8 text-white">Learning Path</div>
+        
+        <div className="space-y-4">
+          <div className="font-medium text-gray-300">Categories</div>
+          <div className="space-y-2">
+            <button 
+              className={`w-full text-left px-3 py-2 rounded-lg transition-all duration-300 ${
+                activeCategory === 'knowledge' 
+                  ? 'bg-blue-500 text-white shadow-lg' 
+                  : 'bg-white/20 backdrop-blur-sm text-white hover:bg-white/30'
+              }`}
+              onClick={() => setActiveCategory('knowledge')}
+            >
+              AI Knowledge
+            </button>
+            <button 
+              className={`w-full text-left px-3 py-2 rounded-lg transition-all duration-300 ${
+                activeCategory === 'tools' 
+                  ? 'bg-blue-500 text-white shadow-lg' 
+                  : 'bg-white/20 backdrop-blur-sm text-white hover:bg-white/30'
+              }`}
+              onClick={() => setActiveCategory('tools')}
+            >
+              AI Tools
+            </button>
+          </div>
         </div>
-    </div>
-    </div>
+      </nav>
 
       {/* Main Content */}
       <main className="pl-64">
@@ -313,4 +297,4 @@ const LearningModulesPage = () => {
   );
 };
 
-export default LearningModulesPage;
+export default AIHub;
