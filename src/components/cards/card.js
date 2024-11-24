@@ -1,9 +1,10 @@
+// src/components/cards/card.js
 import React from 'react';
 
 export function Card({ className = '', children, ...props }) {
   return (
     <div
-      className={`rounded-lg border bg-card text-card-foreground shadow-sm ${className}`}
+      className={`card ${className}`}
       {...props}
     >
       {children}
@@ -13,7 +14,7 @@ export function Card({ className = '', children, ...props }) {
 
 export function CardHeader({ className = '', children, ...props }) {
   return (
-    <div className={`flex flex-col space-y-1.5 p-6 ${className}`} {...props}>
+    <div className={`card-header ${className}`} {...props}>
       {children}
     </div>
   );
@@ -21,7 +22,7 @@ export function CardHeader({ className = '', children, ...props }) {
 
 export function CardTitle({ className = '', children, ...props }) {
   return (
-    <h3 className={`text-2xl font-semibold leading-none tracking-tight ${className}`} {...props}>
+    <h3 className={`card-title ${className}`} {...props}>
       {children}
     </h3>
   );
@@ -29,7 +30,7 @@ export function CardTitle({ className = '', children, ...props }) {
 
 export function CardContent({ className = '', children, ...props }) {
   return (
-    <div className={`p-6 pt-0 ${className}`} {...props}>
+    <div className={`card-content ${className}`} {...props}>
       {children}
     </div>
   );

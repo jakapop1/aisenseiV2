@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <main className="pt-16 px-10 pb-8 max-w-[1200px] mx-auto">
-      <section className="welcome-section text-center">
+    <main className="pt-16 px-10 pb-8 max-w-[1200px] mx-auto bg-background">
+      <section className="text-center">
         <h2 className="text-3xl font-bold text-secondary mb-4">Welcome to AI Sensei</h2>
         <p className="text-lg text-textColor max-w-2xl mx-auto leading-relaxed">
           Enhance your cybersecurity skills with our cutting-edge courses that

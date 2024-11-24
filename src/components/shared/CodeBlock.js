@@ -1,9 +1,10 @@
+// src/components/shared/CodeBlock.js
 import React from 'react';
 
 const CodeBlock = ({ code }) => {
   return (
-    <div className="bg-gray-100 p-4 rounded-md my-4">
-      <pre className="text-sm">
+    <div className="code-block">
+      <pre>
         <code>{code}</code>
       </pre>
     </div>

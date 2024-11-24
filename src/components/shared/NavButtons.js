@@ -1,13 +1,14 @@
+// src/components/shared/NavButtons.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const NavButtons = ({ previous, next }) => {
   return (
-    <div className="nav-buttons flex justify-between mt-8">
+    <div className="nav-buttons">
       {previous && (
         <Link 
           to={previous.link} 
-          className="text-blue-600 hover:text-blue-800"
+          className="nav-link"
         >
           ← {previous.text}
         </Link>
@@ -15,7 +16,7 @@ const NavButtons = ({ previous, next }) => {
       {next && (
         <Link 
           to={next.link} 
-          className="text-blue-600 hover:text-blue-800"
+          className="nav-link"
         >
           {next.text} →
         </Link>
