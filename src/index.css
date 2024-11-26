@@ -318,3 +318,34 @@ body {
   color: #3d5a44;
   margin: 1.5rem 0 1rem 0;
 }
+
+pre {
+  margin-bottom: 20px; /* Adds space below the code block */
+  padding: 10px;       /* Optional: Adds padding inside the code block */
+  background-color: #f4f4f4; /* Optional: Adds a background color */
+  border: 1px solid #ddd;    /* Optional: Adds a border */
+  border-radius: 4px;        /* Optional: Rounds the corners */
+  white-space: pre-wrap; /* Allows wrapping within <pre> */
+  word-wrap: break-word; /* Breaks words if necessary */
+  overflow-wrap: break-word; /* Ensures compatibility */
+}
+
+code {
+  display: block; /* Ensures code inside pre behaves like a block element */
+}
+
+blockquote {
+  margin: 20px 0; /* Adds space above and below */
+  padding: 10px 20px;
+  border-left: 4px solid #007bff;
+  background-color: #f9f9f9;
+  font-style: italic;
+  color: #555;
+}
+
+blockquote footer {
+  text-align: right;
+  font-style: normal;
+  font-size: 0.9em;
+  color: #333;
+}

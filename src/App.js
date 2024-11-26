@@ -5,7 +5,10 @@ import Home from './pages/Home';
 import LPWLanding from './pages/lpw/LPWLanding';
 import LPWPythonWireshark from './pages/lpw/LPWPythonWireshark';
 import CTILanding from './pages/cti/CTILanding';
+import CTISetup from './pages/cti/CTIInstallation';
 import OllamaSetup from './pages/lpw/OllamaSetup';
+import CTIIntro from './pages/cti/CTIIntroduction';
+import DockerSetup from './pages/cti/DockerInstall';
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
             <Route path="/lpw/python-wireshark" element={<LPWPythonWireshark />} />
             <Route path="/lpw/ollama" element={<OllamaSetup />} />
             <Route path ="/cti" element={<CTILanding />} />
+            <Route path ="/cti/introduction" element={<CTIIntro />} />
+            <Route path ="/cti/docker" element={<DockerSetup />} />
+            <Route path ="/cti/setup" element={<CTISetup />} />
           </Routes>
         </main>
       </div>

@@ -17,8 +17,8 @@ const CTISidebar = () => {
     setup: {
       title: 'OpenWebUI Setup',
       items: [
-        { path: '/cti/ollama', text: 'Installing Ollama' },
-        { path: '/cti/docker', text: 'Setting Up The Docker Container' },
+        { path: '/cti/docker', text: 'Installing Docker' },
+        { path: '/cti/setup', text: 'Installing OpenWebUI' },
         { path: '/cti/RAG', text: 'Setting Up the RAG Knowledge Base with OpenWebUI' },
         { path: '/cti/settings', text: 'Setting Up OpenWebUI settings' },
         { path: '/cti/tools', text: 'Creating Tools and Functions in OpenWebUI' },

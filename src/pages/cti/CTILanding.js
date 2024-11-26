@@ -25,6 +25,7 @@ const CTILanding = () => {
         the words, allowing LLMs to understand the documents it has access to. This understanding is what facilitates an LLMs ability 
         to query relevant information. It goes beyond what is capable with a Google search and LLMs can provide relevant information 
         that may have been previously missed.</p>
+
         <p>
         By combining a model&apos;s embeddings with RAG, we are able to use an LLMs ability to understand meaning and apply it to a database 
         of documents with relevant and approved data. Think of the LLM as a librarian that organizes the books by topic using the Dewey 
@@ -36,19 +37,16 @@ const CTILanding = () => {
         <h2>Benefits for Cyber Analysts</h2>
         <ul>
           <li>
-            <strong>Efficiency:</strong> Automates initial analysis process, enabling quick identification 
-            of relevant information and potential threats.
+            <strong>Efficiency:</strong> Filter irrelevant data and get the information you need faster.
           </li>
           <li>
-            <strong>Accessibility:</strong> Natural language interface makes PCAP analysis more 
-            accessible to analysts at all skill levels.
+            <strong>Accessibility:</strong> Talk to the LLM and narrow down your search to the right information.
           </li>
           <li>
             <strong>Local Control:</strong> Run entirely locally to ensure data privacy and security.
           </li>
           <li>
-            <strong>Customization:</strong> Integration with Ollama allows selection and customization 
-            of LLMs to suit specific needs.
+            <strong>Customization:</strong> Create your own RAG knowledge base to connect to the LLM for even better results.
           </li>
         </ul>
       </section>
