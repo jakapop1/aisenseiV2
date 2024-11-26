@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-const CTISidebar = () => {
+const LPWSidebar = () => {
   const location = useLocation();
   
   const isActive = (path) => {
@@ -11,27 +11,25 @@ const CTISidebar = () => {
 
   const menuItems = {
     introduction: {
-      title: 'Introduction to OpenWebUI',
-      path: '/cti/introduction'
+      title: 'Introduction to LPW',
+      path: '/lpw/introduction'
     },
     setup: {
-      title: 'OpenWebUI Setup',
+      title: 'LPW Setup',
       items: [
-        { path: '/cti/docker', text: 'Installing Docker' },
-        { path: '/cti/setup', text: 'Installing OpenWebUI' },
-        { path: '/cti/RAG', text: 'Setting Up the RAG Knowledge Base with OpenWebUI' },
-        { path: '/cti/settings', text: 'Setting Up OpenWebUI settings' },
-        { path: '/cti/tools', text: 'Creating Tools and Functions in OpenWebUI' },
-        { path: '/cti/pipelines', text: 'Using Pipelines in OpenWebUI'},
-        { path: '/cti/using', text: 'Using OpenWebUI' }
+        { path: '/lpw/python-wireshark', text: 'Installing Python and Wireshark' },
+        { path: '/lpw/ollama', text: 'Installing Ollama' },
+        { path: '/lpw/venvsetup', text: 'Setting Up LPW in a Virtual Environment' },
+        { path: '/lpw/configuration', text: 'Configuring LPW' },
+        { path: '/lpw/using', text: 'Using LPW' }
       ]
     },
     exercises: {
-      title: 'CTI Exercises',
+      title: 'LPW Exercises',
       items: [
-        { path: '/cti/prompt-engineering', text: 'Prompt Engineering and Models' },
-        { path: '/cti/basic-analysis', text: 'Basic Analysis Exercises' },
-        { path: '/cti/advanced-analysis', text: 'Advanced Analysis Exercises' }
+        { path: '/lpw/understandingLLMS', text: 'Prompt Engineering and Models' },
+        { path: '/lpw/basic-analysis', text: 'Basic Analysis Exercises' },
+        { path: '/lpw/advanced-analysis', text: 'Advanced Analysis Exercises' }
       ]
     }
   };
@@ -39,7 +37,7 @@ const CTISidebar = () => {
   return (
     <aside className="sidebar">
       <h2 className="sidebar-title">
-        OpenWebUI and RAG
+        Local Packet Whisperer (LPW)
       </h2>
       
       <div className="sidebar-section">
@@ -72,4 +70,4 @@ const CTISidebar = () => {
   );
 };
 
-export default CTISidebar;
+export default LPWSidebar;
