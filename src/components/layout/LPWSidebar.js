@@ -19,16 +19,15 @@ const LPWSidebar = () => {
       items: [
         { path: '/lpw/python-wireshark', text: 'Installing Python and Wireshark' },
         { path: '/lpw/ollama', text: 'Installing Ollama' },
-        { path: '/lpw/venv', text: 'Setting Up Virtual Environment' },
-        { path: '/lpw/interface', text: 'Setting Up LPW interface' },
-        { path: '/lpw/settings', text: 'Setting Up LPW settings' },
+        { path: '/lpw/venvsetup', text: 'Setting Up LPW in a Virtual Environment' },
+        { path: '/lpw/configuration', text: 'Configuring LPW' },
         { path: '/lpw/using', text: 'Using LPW' }
       ]
     },
     exercises: {
       title: 'LPW Exercises',
       items: [
-        { path: '/lpw/prompt-engineering', text: 'Prompt Engineering and Models' },
+        { path: '/lpw/understandingLLMS', text: 'Prompt Engineering and Models' },
         { path: '/lpw/basic-analysis', text: 'Basic Analysis Exercises' },
         { path: '/lpw/advanced-analysis', text: 'Advanced Analysis Exercises' }
       ]

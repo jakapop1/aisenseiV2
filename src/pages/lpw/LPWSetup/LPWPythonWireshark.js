@@ -1,7 +1,7 @@
 import React from 'react';
-import LPWLayout from '../../components/layout/LPWLayout';
-import NavButtons from '../../components/shared/NavButtons';
-import CodeBlock from '../../components/shared/CodeBlock';
+import LPWLayout from '../../../components/layout/LPWLayout';
+import NavButtons from '../../../components/shared/NavButtons';
+import CodeBlock from '../../../components/shared/CodeBlock';
 
 const LPWPythonWireshark = () => {
   return (
