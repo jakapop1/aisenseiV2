@@ -3,8 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navigation from './components/layout/Navigation';
 import Home from './pages/Home';
 import LPWLanding from './pages/lpw/LPWLanding';
-import LPWPythonWireshark from './pages/lpw/LPWPythonWireshark';
-import CTILanding from './pages/cti/CTILanding';
 import LPWPythonWireshark from './pages/lpw/LPWSetup/LPWPythonWireshark';
 import OllamaSetup from './pages/lpw/LPWSetup/OllamaSetup';
 import VirtualEnvironmentSetup from './pages/lpw/LPWSetup/VitrualEnvironmentSetup';
@@ -15,7 +13,6 @@ import ModelSelection from './pages/lpw/Exercises/ModelSelection';
 import PromptEngineering from './pages/lpw/Exercises/PromptEngineering';
 import CTILanding from './pages/cti/CTILanding';
 import CTISetup from './pages/cti/CTIInstallation';
-import OllamaSetup from './pages/lpw/OllamaSetup';
 import CTIIntro from './pages/cti/CTIIntroduction';
 import DockerSetup from './pages/cti/DockerInstall';
 
