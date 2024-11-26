@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navigation from './components/layout/Navigation';
 import Home from './pages/Home';
 import LPWLanding from './pages/lpw/LPWLanding';
+import LPWPythonWireshark from './pages/lpw/LPWPythonWireshark';
 import LPWPythonWireshark from './pages/lpw/LPWSetup/LPWPythonWireshark';
 import OllamaSetup from './pages/lpw/LPWSetup/OllamaSetup';
 import VirtualEnvironmentSetup from './pages/lpw/LPWSetup/VitrualEnvironmentSetup';
@@ -11,6 +12,11 @@ import UsingLPW from './pages/lpw/LPWSetup/UsingLPW';
 import UnderstandingLLMs from './pages/lpw/Exercises/UnderstandingLLMS';
 import ModelSelection from './pages/lpw/Exercises/ModelSelection';
 import PromptEngineering from './pages/lpw/Exercises/PromptEngineering';
+import CTILanding from './pages/cti/CTILanding';
+import CTISetup from './pages/cti/CTIInstallation';
+import OllamaSetup from './pages/lpw/OllamaSetup';
+import CTIIntro from './pages/cti/CTIIntroduction';
+import DockerSetup from './pages/cti/DockerInstall';
 
 function App() {
   return (
@@ -30,6 +36,10 @@ function App() {
             <Route path="/lpw/UnderstandingLLMs" element={<UnderstandingLLMs />} />
             <Route path="/lpw/ModelSelection" element={<ModelSelection />} />
             <Route path="/lpw/PromptEngineering" element={<PromptEngineering />} />
+            <Route path ="/cti" element={<CTILanding />} />
+            <Route path ="/cti/introduction" element={<CTIIntro />} />
+            <Route path ="/cti/docker" element={<DockerSetup />} />
+            <Route path ="/cti/setup" element={<CTISetup />} />
           </Routes>
         </main>
       </div>
