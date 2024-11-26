@@ -4,6 +4,7 @@ import Navigation from './components/layout/Navigation';
 import Home from './pages/Home';
 import LPWLanding from './pages/lpw/LPWLanding';
 import LPWPythonWireshark from './pages/lpw/LPWPythonWireshark';
+import CTILanding from './pages/cti/CTILanding';
 import LPWPythonWireshark from './pages/lpw/LPWSetup/LPWPythonWireshark';
 import OllamaSetup from './pages/lpw/LPWSetup/OllamaSetup';
 import VirtualEnvironmentSetup from './pages/lpw/LPWSetup/VitrualEnvironmentSetup';

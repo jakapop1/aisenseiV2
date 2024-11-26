@@ -25,7 +25,6 @@ const CTILanding = () => {
         the words, allowing LLMs to understand the documents it has access to. This understanding is what facilitates an LLMs ability 
         to query relevant information. It goes beyond what is capable with a Google search and LLMs can provide relevant information 
         that may have been previously missed.</p>
-
         <p>
         By combining a model&apos;s embeddings with RAG, we are able to use an LLMs ability to understand meaning and apply it to a database 
         of documents with relevant and approved data. Think of the LLM as a librarian that organizes the books by topic using the Dewey 
