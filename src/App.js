@@ -8,6 +8,7 @@ import OllamaSetup from './pages/lpw/LPWSetup/OllamaSetup';
 import VirtualEnvironmentSetup from './pages/lpw/LPWSetup/VitrualEnvironmentSetup';
 import LPWConfiguration from './pages/lpw/LPWSetup/LPWConfiguration';
 import UsingLPW from './pages/lpw/LPWSetup/UsingLPW';
+import LPWExercises from './pages/lpw/Exercises/LPWExercises';
 import UnderstandingLLMs from './pages/lpw/Exercises/UnderstandingLLMS';
 import ModelSelection from './pages/lpw/Exercises/ModelSelection';
 import PromptEngineering from './pages/lpw/Exercises/PromptEngineering';
@@ -28,11 +29,12 @@ function App() {
             <Route path="/lpw/introduction" element={<LPWLanding />} />
             <Route path="/lpw/python-wireshark" element={<LPWPythonWireshark />} />
             <Route path="/lpw/ollama" element={<OllamaSetup />} />
-            <Route path="/lpw/venvsetup" element={<VirtualEnvironmentSetup />} />
+            <Route path="/lpw/venv" element={<VirtualEnvironmentSetup />} />
             <Route path="/lpw/configuration" element={<LPWConfiguration />} />
             <Route path="/lpw/using" element={<UsingLPW />} />
             <Route path="/lpw/UnderstandingLLMs" element={<UnderstandingLLMs />} />
             <Route path="/lpw/ModelSelection" element={<ModelSelection />} />
+            <Route path="/lpw/Exercises" element={<LPWExercises />} />
             <Route path="/lpw/PromptEngineering" element={<PromptEngineering />} />
             <Route path ="/cti" element={<CTILanding />} />
             <Route path ="/cti/introduction" element={<CTIIntro />} />

@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <main className="pt-16 px-10 pb-8 max-w-[1200px] mx-auto bg-background">
-      <section className="text-center">
-        <h2 className="text-3xl font-bold text-secondary mb-4">Welcome to AI Sensei</h2>
-        <p className="text-lg text-textColor max-w-2xl mx-auto leading-relaxed">
+    <div className="px-8 py-6 max-w-[1200px] mx-auto">
+      <section className="mb-12 text-center">
+        <h1 className="text-4xl font-bold text-secondary mb-8 my-10">Welcome to AI Sensei</h1>
+        <p className="text-lg text-textColor leading-relaxed mb-8 max-w-3xl mx-auto px-4 py-2">
           Enhance your cybersecurity skills with our cutting-edge courses that
           combine artificial intelligence with security analysis. Learn how to
           leverage AI tools for more efficient and effective security operations.
         </p>
       </section>
 
-      <div className="flex flex-wrap justify-center gap-6">
+      <div className="flex flex-wrap justify-center gap-8 my-8">
         {[
           {
             title: "LPW for Packet Analysis",
@@ -52,16 +52,19 @@ const Home = () => {
             ]
           }
         ].map((course, index) => (
-          <div key={index} className="flex-1 min-w-[280px] max-w-[320px] bg-white rounded-lg shadow-md
-                                    hover:transform hover:-translate-y-2 hover:shadow-lg transition-all duration-300
-                                    flex flex-col">
-            <div className="p-4 flex-grow flex flex-col">
-              <h3 className="text-lg font-semibold text-secondary mb-3 pb-2 border-b-2 border-primary-hover text-center">
+          <div 
+            key={index} 
+            className="flex-1 min-w-[280px] max-w-[320px] bg-white rounded-lg shadow-md 
+                       hover:transform hover:-translate-y-2 hover:shadow-lg transition-all duration-300 
+                       flex flex-col my-4"
+          >
+            <div className="p-6 flex-grow flex flex-col">
+              <h3 className="text-xl font-semibold text-secondary mb-4 pb-2 border-b-2 border-primary-hover text-center">
                 {course.title}
               </h3>
-              <ul className="space-y-2 flex-grow mb-3">
+              <ul className="space-y-3 flex-grow mb-4 !list-none">
                 {course.items.map((item, itemIndex) => (
-                  <li key={itemIndex} className="pl-5 relative text-sm break-words">
+                  <li key={itemIndex} className="pl-5 relative text-base break-words">
                     <span className="absolute left-0 text-primary">→</span>
                     <span className="inline-block">{item}</span>
                   </li>
@@ -70,7 +73,7 @@ const Home = () => {
               <Link
                 to={course.link}
                 className="block w-full py-2 px-4 bg-primary text-white text-sm text-center rounded-md
-                           hover:bg-secondary transition-colors duration-300"
+                         hover:bg-secondary transition-colors duration-300"
               >
                 Learn More
               </Link>
@@ -78,7 +81,7 @@ const Home = () => {
           </div>
         ))}
       </div>
-    </main>
+    </div>
   );
 };
 

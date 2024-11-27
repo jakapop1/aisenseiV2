@@ -1,7 +1,7 @@
 import React from 'react';
 import LPWLayout from '../../../components/layout/LPWLayout';
 import NavButtons from '../../../components/shared/NavButtons';
-import CodeBlock from '../../../components/shared/CodeBlock';
+import CopyCodeButton from '../../../components/shared/CopyCodeButton';
 
 const OllamaSetup = () => {
   return (
@@ -94,11 +94,11 @@ const OllamaSetup = () => {
             <li>Download and install the appropriate version for your operating system</li>
             <li>
               If Ollama is not already running, use the following command to start Ollama:
-              <CodeBlock code="ollama serve" />
+              <CopyCodeButton code="ollama serve" />
             </li>
             <li>
               Open a new terminal window and run:
-              <CodeBlock code="ollama pull dolphin-mistral:latest" />
+              <CopyCodeButton code="ollama pull dolphin-mistral:latest" />
               <p className="mt-2">This will download a LLM model for LPW to use</p>
             </li>
           </ol>

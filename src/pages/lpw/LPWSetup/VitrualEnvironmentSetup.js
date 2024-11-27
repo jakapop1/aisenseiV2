@@ -1,6 +1,7 @@
 import React from 'react';
 import LPWLayout from '../../../components/layout/LPWLayout';
 import NavButtons from '../../../components/shared/NavButtons';
+import CopyCodeButton from '../../../components/shared/CopyCodeButton';
 import CodeBlock from '../../../components/shared/CodeBlock';
 
 const VirtualEnvironmentSetup = () => {
@@ -78,7 +79,7 @@ source bin/activate`} />
             </li>
             <li>
               Install LPW:
-              <CodeBlock code="pip install lpw" />
+              <CopyCodeButton code="pip install lpw" />
             </li>
           </ol>
         </section>
@@ -86,18 +87,18 @@ source bin/activate`} />
         <section className="mb-8">
           <h2 className="text-xl font-semibold mb-4">Running LPW</h2>
           <ol className="list-decimal space-y-2 mb-6">
-            <li>Start LPW: <CodeBlock code="lpw start" /></li>
-            <li>Stop LPW: <CodeBlock code="lpw stop" /></li>
-            <li>View help and options: <CodeBlock code="lpw -h" /></li>
+            <li>Start LPW: <CopyCodeButton code="lpw start" /></li>
+            <li>Stop LPW: <CopyCodeButton code="lpw stop" /></li>
+            <li>View help and options: <CopyCodeButton code="lpw -h" /></li>
           </ol>
 
           <p className="font-semibold mb-2">If the above fails:</p>
           <ol className="list-decimal space-y-2 ml-6">
             <li>Navigate to your Scripts directory within the virtual environment: 
-              <CodeBlock code="cd path\\to\\lpw_project\\lpw_env\\Scripts" />
+              <CopyCodeButton code="cd path\\to\\lpw_project\\lpw_env\\Scripts" />
             </li>
             <li>Run lpw directly from streamlit: 
-              <CodeBlock code="streamlit run lpw_main.py" />
+              <CopyCodeButton code="streamlit run lpw_main.py" />
             </li>
             <li>If this doesn't work go through your file explorer to the Scripts folder of the environment and ensure there is a streamlit file and lpw_main.py file among many other lpw files</li>
           </ol>
@@ -116,7 +117,7 @@ cd path/to/lpw_project/lpw_env
 source bin/activate`} />
 
           <p className="font-semibold mt-4 mb-2">To deactivate virtual environment:</p>
-          <CodeBlock code="deactivate" />
+          <CopyCodeButton code="deactivate" />
         </section>
 
         <section className="mb-8">
@@ -125,7 +126,7 @@ source bin/activate`} />
             <li>Keep the command prompt/terminal window open while using LPW</li>
             <li>
               To update LPW in the future, activate the virtual environment and run:
-              <CodeBlock code="pip install --upgrade lpw" />
+              <CopyCodeButton code="pip install --upgrade lpw" />
             </li>
             <li>For any issues or questions, please refer to the official documentation or community forum for the most up-to-date information and support.</li>
           </ul>
@@ -138,7 +139,7 @@ source bin/activate`} />
           }}
           next={{
             text: "Setting Up LPW Interface",
-            link: "/lpw/interface"
+            link: "/lpw/configuration"
           }}
         />
       </div>

@@ -101,8 +101,8 @@ const UnderstandingLLMs = () => {
 
         <NavButtons 
           previous={{
-            text: "Using LPW",
-            link: "/lpw/using"
+            text: "Exercises",
+            link: "/lpw/Exercises"
           }}
           next={{
             text: "Model Selection Guide",

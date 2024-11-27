@@ -1,7 +1,7 @@
 import React from 'react';
 import LPWLayout from '../../../components/layout/LPWLayout';
 import NavButtons from '../../../components/shared/NavButtons';
-import CodeBlock from '../../../components/shared/CodeBlock';
+import CopyCodeButton from '../../../components/shared/CopyCodeButton';
 
 const LPWConfiguration = () => {
   return (
@@ -68,13 +68,13 @@ const LPWConfiguration = () => {
               the following command in your terminal to install it:
             </p>
             
-            <CodeBlock code="ollama pull [modelname]:[model_type]" />
+            <CopyCodeButton code="ollama pull [modelname]:[model_type]" />
             
             <p className="mt-4 mb-4">
               For example, to install the model qwen2.5:3b, use:
             </p>
             
-            <CodeBlock code="ollama pull qwen2.5:3b" />
+            <CopyCodeButton code="ollama pull qwen2.5:3b" />
             
             <p className="mt-4 mb-4">
               You'll see a few progress bars as the model downloads. Once the installation 
@@ -97,7 +97,7 @@ const LPWConfiguration = () => {
           }}
           next={{
             text: "Using LPW",
-            link: "/lpw/usage"
+            link: "/lpw/using"
           }}
         />
       </div>
