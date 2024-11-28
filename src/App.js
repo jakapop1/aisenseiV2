@@ -15,6 +15,7 @@ import CTILanding from './pages/cti/CTILanding';
 import CTISetup from './pages/cti/CTIInstallation';
 import CTIIntro from './pages/cti/CTIIntroduction';
 import DockerSetup from './pages/cti/DockerInstall';
+import CTIRag from './pages/cti/CTIRag';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
             <Route path ="/cti/introduction" element={<CTIIntro />} />
             <Route path ="/cti/docker" element={<DockerSetup />} />
             <Route path ="/cti/setup" element={<CTISetup />} />
+            <Route path = "/cti/RAG" element={<CTIRag />} />
           </Routes>
         </main>
       </div>
