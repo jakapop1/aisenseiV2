@@ -16,6 +16,9 @@ import CTISetup from './pages/cti/CTIInstallation';
 import CTIIntro from './pages/cti/CTIIntroduction';
 import DockerSetup from './pages/cti/DockerInstall';
 import CTIRag from './pages/cti/CTIRag';
+import CTISettings from './pages/cti/CTISettings';
+import CTITools from './pages/cti/CTIToolsFunc';
+import CTIPipes from './pages/cti/CTIPipelines';
 
 function App() {
   return (
@@ -36,10 +39,13 @@ function App() {
             <Route path="/lpw/ModelSelection" element={<ModelSelection />} />
             <Route path="/lpw/PromptEngineering" element={<PromptEngineering />} />
             <Route path ="/cti" element={<CTILanding />} />
-            <Route path ="/cti/introduction" element={<CTIIntro />} />
+            <Route path ="/cti/openwebui" element={<CTIIntro />} />
             <Route path ="/cti/docker" element={<DockerSetup />} />
             <Route path ="/cti/setup" element={<CTISetup />} />
             <Route path = "/cti/RAG" element={<CTIRag />} />
+            <Route path = "/cti/settings" element={<CTISettings />} />
+            <Route path = "/cti/tools" element={<CTITools />} />
+            <Route path = "/cti/pipelines" element={<CTIPipes />} />
           </Routes>
         </main>
       </div>

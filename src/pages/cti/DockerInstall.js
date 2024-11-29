@@ -1,5 +1,6 @@
 import React from 'react';
 import CTILayout from '../../components/layout/CTILayout';
+import NavButtons from '../../components/shared/NavButtons';
 
 const DockerSetup = () => {
   return (
@@ -30,6 +31,16 @@ const DockerSetup = () => {
         </pre></a>
 
       </section>
+      <NavButtons 
+          previous = {{
+            link: "/cti/waystoinstall",
+            text: "Open WebUI Installation Methods"
+          }}
+          next={{
+            link: "/cti/setup",
+            text: "Installing Open WebUI With Docker"
+          }}
+        />
     </CTILayout>
   );
 };

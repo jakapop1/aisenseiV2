@@ -1,6 +1,7 @@
 import React from 'react';
 import CTILayout from '../../components/layout/CTILayout';
 import CopyCodeButton from '../../components/shared/CopyCodeButton';
+import NavButtons from '../../components/shared/NavButtons';
 
 const CTIRag = () => {
   return (
@@ -8,7 +9,7 @@ const CTIRag = () => {
       <h1>How To Create And Use Your Custom Knowledge</h1>
 
       <p>
-        Pre-requisite step: Install Open Web UI, Ollama, Install A Model With Ollama
+        Pre-requisite step: Install Open WebUI, Ollama, Install A Model With Ollama
       </p>
       
       <section>
@@ -25,7 +26,7 @@ const CTIRag = () => {
         <p>
             The Workspace is where we can access the settings for the Models, Knowledge, Tools, and Functions. 
             In the models panel we can change the settings of the models we have already installed. There are also options 
-            to import new models through the Open Web UI website but installing models through Ollama is safer. The Knowledge 
+            to import new models through the Open WebUI website but installing models through Ollama is safer. The Knowledge 
             section is where we will be focused on in this section as it contains the controls to create and manage the files 
             in one or multiple knowledge bases.
         </p>
@@ -56,7 +57,7 @@ const CTIRag = () => {
       <section>
         <h2>Step 1: Go To Workspace</h2>
         <p>If you would like to see other installation methods such as those using Python, Kubernetes, or a Third Party Option you can visit 
-            the Open Web UI Documentation and see the installation steps.
+            the Open WebUI Documentation and see the installation steps.
         </p>
         <a href="https://docs.openwebui.com/getting-started/quick-start/"><pre><code>https://docs.openwebui.com/getting-started/quick-start/</code></pre></a>
 
@@ -83,6 +84,16 @@ const CTIRag = () => {
       <section>
 
       </section>
+      <NavButtons 
+          previous = {{
+            link: "/cti/settings",
+            text: "Configuring OpenWebUI"
+          }}
+          next={{
+            link: "/cti/tools",
+            text: "Tools and Functions in Open WebUI"
+          }}
+        />
     </CTILayout>
   );
 };
