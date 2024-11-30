@@ -11,37 +11,37 @@ const CTISidebar = () => {
 
   const menuItems = {
     module: {
-      title: 'Introduction to CTI with Open WebUI',
+      title: '1. Introduction to CTI with Open WebUI',
       path: '/cti'
     },
     introduction: {
-      title: 'What Is Open WebUI?',
+      title: '2. What Is Open WebUI?',
       path: '/cti/openwebui'
     },
     install: {
-      title: 'Open WebUI Installation',
+      title: '3. Open WebUI Installation',
       items: [
-        { path: '/cti/waystoinstall', text: 'Open WebUI Installation Methods' },
-        { path: '/cti/docker', text: 'Installing Docker' },
-        { path: '/cti/setup', text: 'Installing Open WebUI With Docker' }
+        { path: '/cti/waystoinstall', text: '3.1. Open WebUI Installation Methods' },
+        { path: '/cti/docker', text: '3.2. Installing Docker' },
+        { path: '/cti/setup', text: '3.3. Installing Open WebUI With Docker' }
       ] 
     },
     setup: {
-      title: 'Open WebUI Setup',
+      title: '4. Open WebUI Setup',
       items: [
-        { path: '/cti/settings', text: 'Configuring Open WebUI' },
-        { path: '/cti/RAG', text: 'Create Your CTI Knowledge Collection' },
-        { path: '/cti/tools', text: 'Tools and Functions' },
-        { path: '/cti/pipelines', text: 'Introduction to Pipelines in Open WebUI'},
-        { path: '/cti/using', text: 'Using Open WebUI' }
+        { path: '/cti/settings', text: '4.1 Configuring Open WebUI' },
+        { path: '/cti/RAG', text: '4.2 Create Your CTI Knowledge Collection' },
+        { path: '/cti/tools', text: '4.3 Tools and Functions' },
+        { path: '/cti/pipelines', text: '4.4 Introduction to Pipelines in Open WebUI'},
+        { path: '/cti/using', text: '4.5 Using Open WebUI' }
       ]
     },
     exercises: {
-      title: 'CTI Exercises',
+      title: '5. CTI Exercises',
       items: [
-        { path: '/cti/prompt-engineering', text: 'Prompt Engineering and Models' },
-        { path: '/cti/basic-analysis', text: 'Basic Analysis Exercises' },
-        { path: '/cti/advanced-analysis', text: 'Advanced Analysis Exercises' }
+        { path: '/cti/prompt-engineering', text: '5.1 Prompt Engineering and Models' },
+        { path: '/cti/exercises/RAG-exercise', text: '5.2 Exercise: Testing The Benefits of RAG' },
+        { path: '/cti/advanced-analysis', text: '5.3 Advanced Analysis Exercises' }
       ]
     }
   };

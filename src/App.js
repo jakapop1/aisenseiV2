@@ -19,6 +19,7 @@ import CTIRag from './pages/cti/CTIRag';
 import CTISettings from './pages/cti/CTISettings';
 import CTITools from './pages/cti/CTIToolsFunc';
 import CTIPipes from './pages/cti/CTIPipelines';
+import CTIExercise from './pages/cti/exercises/CTIRAGExercise';
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
             <Route path = "/cti/settings" element={<CTISettings />} />
             <Route path = "/cti/tools" element={<CTITools />} />
             <Route path = "/cti/pipelines" element={<CTIPipes />} />
+            <Route path = "/cti/exercises/RAG-exercise" element={<CTIExercise />} />
           </Routes>
         </main>
       </div>
