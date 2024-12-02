@@ -16,6 +16,11 @@ import CTILanding from './pages/cti/CTILanding';
 import CTISetup from './pages/cti/CTIInstallation';
 import CTIIntro from './pages/cti/CTIIntroduction';
 import DockerSetup from './pages/cti/DockerInstall';
+import CTIRag from './pages/cti/CTIRag';
+import CTISettings from './pages/cti/CTISettings';
+import CTITools from './pages/cti/CTIToolsFunc';
+import CTIPipes from './pages/cti/CTIPipelines';
+import CTIExercise from './pages/cti/exercises/CTIRAGExercise';
 
 function App() {
   return (
@@ -37,9 +42,14 @@ function App() {
             <Route path="/lpw/Exercises" element={<LPWExercises />} />
             <Route path="/lpw/PromptEngineering" element={<PromptEngineering />} />
             <Route path ="/cti" element={<CTILanding />} />
-            <Route path ="/cti/introduction" element={<CTIIntro />} />
+            <Route path ="/cti/openwebui" element={<CTIIntro />} />
             <Route path ="/cti/docker" element={<DockerSetup />} />
             <Route path ="/cti/setup" element={<CTISetup />} />
+            <Route path = "/cti/RAG" element={<CTIRag />} />
+            <Route path = "/cti/settings" element={<CTISettings />} />
+            <Route path = "/cti/tools" element={<CTITools />} />
+            <Route path = "/cti/pipelines" element={<CTIPipes />} />
+            <Route path = "/cti/exercises/RAG-exercise" element={<CTIExercise />} />
           </Routes>
         </main>
       </div>

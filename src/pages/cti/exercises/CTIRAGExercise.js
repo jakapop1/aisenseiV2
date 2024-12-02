@@ -1,9 +1,9 @@
 import React from 'react';
-import CTILayout from '../../components/layout/CTILayout';
-import CopyCodeButton from '../../components/shared/CopyCodeButton';
-import NavButtons from '../../components/shared/NavButtons';
+import CTILayout from '../../../components/layout/CTILayout';
+import CopyCodeButton from '../../../components/shared/CopyCodeButton';
+import NavButtons from '../../../components/shared/NavButtons';
 
-const CTISetup = () => {
+const CTIExercise = () => {
   return (
     <CTILayout>
       <h1>Quick-Start Guide to Installing Open WebUI</h1>
@@ -64,4 +64,4 @@ const CTISetup = () => {
   );
 };
 
-export default CTISetup;
+export default CTIExercise;

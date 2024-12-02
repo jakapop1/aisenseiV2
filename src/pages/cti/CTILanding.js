@@ -1,10 +1,11 @@
 import React from 'react';
 import CTILayout from '../../components/layout/CTILayout';
+import NavButtons from '../../components/shared/NavButtons';
 
 const CTILanding = () => {
   return (
     <CTILayout>
-      <h1>Guide to using OpenWebUI</h1>
+      <h1>Guide to using Open WebUI</h1>
       
       <section>
         <h2>Introduction</h2>
@@ -49,6 +50,13 @@ const CTILanding = () => {
           </li>
         </ul>
       </section>
+      <NavButtons 
+          next={{
+            link: "/cti/openwebui",
+            text: "What Is Open WebUI?"
+          }}
+          singleButtonPosition="right"
+        />
     </CTILayout>
   );
 };
