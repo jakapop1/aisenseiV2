@@ -33,15 +33,15 @@ const CTISidebar = () => {
         { path: '/cti/RAG', text: '3.2 Create Your CTI Knowledge Collection' },
         { path: '/cti/tools', text: '3.3 Tools and Functions' },
         { path: '/cti/pipelines', text: '3.4 Introduction to Pipelines in Open WebUI'},
-        { path: '/cti/using', text: '3.5 Using Open WebUI' }
+        //{ path: '/cti/using', text: '3.5 Using Open WebUI' }
       ]
     },
     exercises: {
       title: '4. CTI Exercises',
       items: [
-        { path: '/cti/prompt-engineering', text: '4.1 Prompt Engineering and Models' },
-        { path: '/cti/exercises/RAG-exercise', text: '4.2 Exercise: Testing The Benefits of RAG' },
-        { path: '/cti/advanced-analysis', text: '4.3 Advanced Analysis Exercises' }
+        //{ path: '/cti/prompt-engineering', text: '4.1 Prompt Engineering and Models' },
+        { path: '/cti/exercises/RAG-exercise', text: '4.1 Exercise: Testing The Benefits of RAG' },
+        //{ path: '/cti/advanced-analysis', text: '4.3 Advanced Analysis Exercises' }
       ]
     }
   };
