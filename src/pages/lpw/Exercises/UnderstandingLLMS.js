@@ -18,12 +18,6 @@ const UnderstandingLLMs = () => {
             traffic relies on how well we can guide the LLM through our model selection and 
             prompting strategy.
           </p>
-
-          <img 
-            src="/images/llm-overview.png" 
-            alt="LLM Overview in Packet Analysis" 
-            className="rounded-lg shadow-md mb-6"
-          />
         </section>
 
         <section className="mb-8">
@@ -84,7 +78,7 @@ const UnderstandingLLMs = () => {
 
         <section className="mb-8">
           <h2 className="text-xl font-semibold mb-4">Understanding Model Limitations</h2>
-          <div className="bg-yellow-50 p-4 rounded-lg">
+          <div className="p-4 rounded-lg">
             <ul className="space-y-2">
               <li><strong>Knowledge Cutoff:</strong> Models can only reference information they 
                 were trained on - similar to a person who hasn't read any news or learned 

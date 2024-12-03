@@ -13,9 +13,9 @@ const OllamaSetup = () => {
           <h2>What is Ollama?</h2>
           <div className="mb-6">
             <img 
-              src="/images/ollama-logo.jpg" 
+              src="/images/ollama_logo.png" 
               alt="Ollama Logo" 
-              className="mb-4"
+              className="mb-4 w-[300px]"
             />
             <p className="mb-4">
               Ollama is an open-source platform designed to make large language models
@@ -42,9 +42,9 @@ const OllamaSetup = () => {
             </p>
 
             <img 
-              src="/images/ollama-models.png" 
+              src="/images/ollama_models.png" 
               alt="Ollama Models" 
-              className="mb-8"
+              className="mb-8 w-[400px]"
             />
           </div>
         </section>
