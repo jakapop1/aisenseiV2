@@ -363,3 +363,10 @@ blockquote footer {
   font-size: 0.9em;
   color: #333;
 }
+
+.highlight-text {
+  color:#527a5c;
+  text-decoration-line: underline;
+  font-weight: bold;
+}
+
