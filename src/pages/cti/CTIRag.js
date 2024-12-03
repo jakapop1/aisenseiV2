@@ -88,7 +88,7 @@ const CTIRag = () => {
 
         <h2>Step 3: Go To Settings</h2>
         <img 
-                src="/images/step2_connectrag.png" 
+                src="/images/step2_connect.png" 
                 alt="Step 2: connect Rag" 
                 className="rounded-lg shadow-md mb-4"
               />
@@ -96,7 +96,7 @@ const CTIRag = () => {
 
         <h2>Step 4: Add Knowledge</h2>
         <img 
-                src="/images/step4_connectrag.png" 
+                src="/images/step4_connect.png" 
                 alt="Step 4: connect Rag" 
                 className="rounded-lg shadow-md mb-4"
               />
@@ -111,7 +111,7 @@ const CTIRag = () => {
             the responses.
         </p>
         <img 
-                src="/images/step5_connectrag.png" 
+                src="/images/step5_connect.png" 
                 alt="Step 5: Connect Rag" 
                 className="rounded-lg shadow-md mb-4"
               />
