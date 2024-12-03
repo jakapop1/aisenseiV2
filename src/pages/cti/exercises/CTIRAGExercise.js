@@ -1,6 +1,5 @@
 import React from 'react';
 import CTILayout from '../../../components/layout/CTILayout';
-import CopyCodeButton from '../../../components/shared/CopyCodeButton';
 import NavButtons from '../../../components/shared/NavButtons';
 
 const CTIExercise = () => {
