@@ -31,7 +31,7 @@ body {
   width: 100%;
   background: linear-gradient(to right, #527a5c, #3d5a44);
   color: white;
-  padding: 1rem 2rem;
+  padding: 1rem;
   z-index: 50;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
@@ -93,10 +93,24 @@ body {
 }
 
 .sidebar-section-title {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.sidebar-section-title h3 {
   font-size: 1.125rem;
   font-weight: 600;
   color: #3d5a44;
-  margin-bottom: 1rem;
+  margin: 0;
+}
+
+.sidebar-section-title:hover h3 {
+  color: #527a5c;
+}
+
+.sidebar-section-title.active h3 {
+  color: #527a5c;
 }
 
 .sidebar-list {
@@ -355,3 +369,4 @@ blockquote footer {
   text-decoration-line: underline;
   font-weight: bold;
 }
+

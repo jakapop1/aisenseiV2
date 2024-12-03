@@ -1,7 +1,7 @@
 import React from 'react';
 import LPWLayout from '../../../components/layout/LPWLayout';
 import NavButtons from '../../../components/shared/NavButtons';
-import CodeBlock from '../../../components/shared/CodeBlock';
+import CopyCodeButton from '../../../components/shared/CopyCodeButton';
 
 const OllamaSetup = () => {
   return (
@@ -13,9 +13,9 @@ const OllamaSetup = () => {
           <h2>What is Ollama?</h2>
           <div className="mb-6">
             <img 
-              src="/images/ollama-logo.jpg" 
+              src="/images/ollama_logo.png" 
               alt="Ollama Logo" 
-              className="mb-4"
+              className="mb-4 w-[300px]"
             />
             <p className="mb-4">
               Ollama is an open-source platform designed to make large language models
@@ -42,9 +42,9 @@ const OllamaSetup = () => {
             </p>
 
             <img 
-              src="/images/ollama-models.png" 
+              src="/images/ollama_models.png" 
               alt="Ollama Models" 
-              className="mb-8"
+              className="mb-8 w-[400px]"
             />
           </div>
         </section>
@@ -94,11 +94,11 @@ const OllamaSetup = () => {
             <li>Download and install the appropriate version for your operating system</li>
             <li>
               If Ollama is not already running, use the following command to start Ollama:
-              <CodeBlock code="ollama serve" />
+              <CopyCodeButton code="ollama serve" />
             </li>
             <li>
               Open a new terminal window and run:
-              <CodeBlock code="ollama pull dolphin-mistral:latest" />
+              <CopyCodeButton code="ollama pull dolphin-mistral:latest" />
               <p className="mt-2">This will download a LLM model for LPW to use</p>
             </li>
           </ol>

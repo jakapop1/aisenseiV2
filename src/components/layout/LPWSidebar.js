@@ -1,4 +1,3 @@
-// src/components/layout/LPWSidebar.js
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -11,25 +10,30 @@ const LPWSidebar = () => {
 
   const menuItems = {
     introduction: {
-      title: 'Introduction to LPW',
-      path: '/lpw/introduction'
+      title: '1. Introduction to LPW',
+      path: '/lpw/introduction',
+      items: [
+        { path: '/lpw/introduction', text: '1.1 Introduction to LPW' }
+      ]
     },
     setup: {
-      title: 'LPW Setup',
+      title: '2. LPW Setup',
+      path: '/lpw/python-wireshark', 
       items: [
-        { path: '/lpw/python-wireshark', text: 'Installing Python and Wireshark' },
-        { path: '/lpw/ollama', text: 'Installing Ollama' },
-        { path: '/lpw/venvsetup', text: 'Setting Up LPW in a Virtual Environment' },
-        { path: '/lpw/configuration', text: 'Configuring LPW' },
-        { path: '/lpw/using', text: 'Using LPW' }
+        { path: '/lpw/python-wireshark', text: '2.1 Installing Python and Wireshark' },
+        { path: '/lpw/ollama', text: '2.2 Installing Ollama' },
+        { path: '/lpw/venv', text: '2.3 Setting Up LPW in a Virtual Environment' },
+        { path: '/lpw/configuration', text: '2.4 Configuring LPW' },
+        { path: '/lpw/using', text: '2.5 Using LPW' }
       ]
     },
     exercises: {
-      title: 'LPW Exercises',
+      title: '3. LPW Exercises',
+      path: '/lpw/Exercises', 
       items: [
-        { path: '/lpw/understandingLLMS', text: 'Prompt Engineering and Models' },
-        { path: '/lpw/basic-analysis', text: 'Basic Analysis Exercises' },
-        { path: '/lpw/advanced-analysis', text: 'Advanced Analysis Exercises' }
+        { path: '/lpw/understandingLLMS', text: '3.1 Prompt Engineering and Models' },
+        { path: '/lpw/basic-analysis', text: '3.2 Basic Analysis Exercises' },
+        { path: '/lpw/advanced-analysis', text: '3.3 Advanced Analysis Exercises' }
       ]
     }
   };
@@ -43,15 +47,20 @@ const LPWSidebar = () => {
       <div className="sidebar-section">
         <Link 
           to={menuItems.introduction.path}
-          className={`sidebar-link ${isActive(menuItems.introduction.path) ? 'active' : ''}`}
+          className={`sidebar-section-title  ${isActive(menuItems.introduction.path) ? 'active' : ''}`}
         >
-          {menuItems.introduction.title}
+          <h3>{menuItems.introduction.title}</h3>
         </Link>
       </div>
 
       {Object.entries({setup: menuItems.setup, exercises: menuItems.exercises}).map(([key, section]) => (
         <div key={key} className="sidebar-section">
-          <h3 className="sidebar-section-title">{section.title}</h3>
+          <Link 
+            to={section.path}
+            className={`sidebar-section-title ${isActive(section.path) ? 'active' : ''}`}
+          >
+            <h3>{section.title}</h3>
+          </Link>
           <ul className="sidebar-list">
             {section.items.map((item) => (
               <li key={item.path}>

@@ -10,6 +10,11 @@ const LPWLanding = () => {
         <h1>Guide to using Local Packet Whisperer (LPW)</h1>
         <section>
           <h2>Introduction</h2>
+          <img 
+              src="/images/ChatGPT-logo.jpg" 
+              alt="ChatGPT-logo" 
+              className="float-right mr-6 mb-4 w-[100px] rounded-lg shadow-md"
+            />
           <p>
           In this module, we will explore the transformative potential of Large Language Models (LLMs) in streamlining 
           packet capture (PCAP) analysis. Traditional PCAP analysis can be a time-consuming and demanding process, 
@@ -18,7 +23,6 @@ const LPWLanding = () => {
           the power of LLMs, we can revolutionize this process, making it more efficient, accessible, and insightful 
           for cyber analysts at all skill levels.
           </p>
-
           <h2>The Power of LLMs in PCAP Analysis</h2>
           <p>
           LLMs, with their ability to understand and generate human-like text, offer a unique opportunity to enhance PCAP analysis.
@@ -35,6 +39,11 @@ const LPWLanding = () => {
           </p>
 
           <h2>Introducing Local Packet Whisperer (LPW):</h2>
+          <img 
+              src="/images/lpw-logo.png" 
+              alt="LPW-logo" 
+              className="float-left mr-6 mb-4 w-[210px] rounded-lg shadow-md"
+            />
           <p>
             Local Packet Whisperer (LPW) is an open source AI tool that harnesses the power of LLMs for PCAP analysis while prioritizing 
             data privacy and local control. LPW allows analysts to interact with PCAP files using natural language queries, 

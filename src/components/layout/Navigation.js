@@ -1,4 +1,3 @@
-// src/components/layout/Navigation.js
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -12,11 +11,12 @@ const Navigation = () => {
   return (
     <header className="nav-header">
       <div className="nav-container">
-        <h1 className="nav-title">AI Sensei</h1>
+        <Link to="/" className="nav-logo">
+          <h1 className="nav-title">AI Sensei</h1>
+        </Link>
         <nav>
           <div className="nav-links">
             {[
-              { path: '/', text: 'Home' },
               { path: '/lpw', text: 'LPW for Packet Analysis' },
               { path: '/raptor', text: 'Packet Raptor' },
               { path: '/cti', text: 'CTI with OpenWebUI' },

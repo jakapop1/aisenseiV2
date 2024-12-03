@@ -1,7 +1,7 @@
 import React from 'react';
 import LPWLayout from '../../../components/layout/LPWLayout';
 import NavButtons from '../../../components/shared/NavButtons';
-import CodeBlock from '../../../components/shared/CodeBlock';
+import CopyCodeButton from '../../../components/shared/CopyCodeButton';
 
 const LPWConfiguration = () => {
   return (
@@ -10,15 +10,15 @@ const LPWConfiguration = () => {
         <h1>Configuring Local Packet Whisperer</h1>
         
         <section className="mb-8">
-          <p className="mb-4">
-            After activating the LPW environment, you'll see the main interface on your localhost browser.
+          <p className="mb-4 w-[57%]">
+            After activating the LPW environment, you'll see the main interface on your localhost browser. 
+            The video below will show guide you through some basic setting you are able to change.
           </p>
-          <img 
-            src="/images/lpw-interface.png" 
-            alt="LPW Main Interface" 
-            className="mb-6 rounded-lg shadow-md"
-          />
-          
+          <video className="my-6" width="60%" controls>
+            <source src="/videos/lpw_landing_guide.webm" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+        
           <div className="space-y-4">
             <p>
               <strong className="font-semibold">User Settings:</strong> In the top-right corner, 
@@ -52,11 +52,10 @@ const LPWConfiguration = () => {
               you could set a system message that instructs the LLM to focus on specific packet 
               attributes or to present data in a concise, tabular format.
             </p>
-            <img 
-              src="/images/system-message.png" 
-              alt="System Message Configuration" 
-              className="mb-6 rounded-lg shadow-md"
-            />
+            <video className="my-6" width="60%" controls>
+              <source src="/videos/lpw_systemprompt_guide.webm" type="video/webm" />
+              Your browser does not support the video tag.
+            </video>
           </div>
 
           <div className="mb-6">
@@ -68,25 +67,33 @@ const LPWConfiguration = () => {
               the following command in your terminal to install it:
             </p>
             
-            <CodeBlock code="ollama pull [modelname]:[model_type]" />
+            <CopyCodeButton code="ollama pull [modelname]:[model_type]" />
             
             <p className="mt-4 mb-4">
-              For example, to install the model qwen2.5:3b, use:
+              For example, to install the model phi3:3.8b, use:
             </p>
             
-            <CodeBlock code="ollama pull qwen2.5:3b" />
+            <CopyCodeButton code="ollama pull phi3:3.8b" />
             
             <p className="mt-4 mb-4">
-              You'll see a few progress bars as the model downloads. Once the installation 
-              completes, restart LPW (by pressing Ctrl+C and re-launching LPW) to activate 
-              the new model.
+              You'll see a few progress bars as the model downloads. Note that in the video below 
+              the model was already downloaded and normally takes a few minutes to download. 
+              Once the installation completes, you can immediately start using the model in LPW by 
+              pressing R or navigating to the settings menu in the top right for the Rerun button.
             </p>
-            
-            <img 
-              src="/images/llm-settings.png" 
-              alt="LLM Server Settings" 
-              className="rounded-lg shadow-md"
-            />
+
+            <p className="mt-4 mb-4">
+              If the Rerun option does not work, you can restart LPW by going back to your terminal,
+              pressing Ctrl+C to kill the program, and restart it using the same command we 
+              previously used to start LPW:
+            </p>
+
+            <CopyCodeButton code="streamlit run lpw_main.py" />
+
+          <video className="my-6" width="60%" controls>
+            <source src="/videos/lpw_models_guide.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
           </div>
         </section>
 
@@ -97,7 +104,7 @@ const LPWConfiguration = () => {
           }}
           next={{
             text: "Using LPW",
-            link: "/lpw/usage"
+            link: "/lpw/using"
           }}
         />
       </div>

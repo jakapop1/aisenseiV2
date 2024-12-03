@@ -8,7 +8,6 @@ const CTIIntro = () => {
       <h1>What Is Open WebUI?</h1>
       
       <section>
-        <h2>Introduction</h2>
         <p>
         Open WebUI is a user-friendly and self-hosted AI interface designed to operate locally and offline. It supports 
         various LLM runners such as Ollama and OpenAI compatible APIs. It also is extensible and offers a variety of 

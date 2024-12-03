@@ -1,7 +1,7 @@
 import React from 'react';
 import LPWLayout from '../../../components/layout/LPWLayout';
 import NavButtons from '../../../components/shared/NavButtons';
-import CodeBlock from '../../../components/shared/CodeBlock';
+import CopyCodeButton from '../../../components/shared/CopyCodeButton';
 
 const ModelSelection = () => {
   return (
@@ -15,22 +15,22 @@ const ModelSelection = () => {
             Before diving into model selection, you'll need to install the models through Ollama. 
             First, ensure Ollama is running:
           </p>
-          <CodeBlock code="ollama serve" />
+          <CopyCodeButton code="ollama serve" />
           
           <div className="mt-6 space-y-6">
             <div>
               <h3 className="text-lg font-semibold mb-2">Install Dolphin Mistral (default)</h3>
-              <CodeBlock code="ollama pull dolphin-mistral:latest" />
+              <CopyCodeButton code="ollama pull dolphin-mistral:latest" />
             </div>
 
             <div>
               <h3 className="text-lg font-semibold mb-2">Install Llama 2</h3>
-              <CodeBlock code="ollama pull llama2:13b" />
+              <CopyCodeButton code="ollama pull llama2:13b" />
             </div>
 
             <div>
               <h3 className="text-lg font-semibold mb-2">Install Qwen 2.5</h3>
-              <CodeBlock code="ollama pull qwen2.5:3b" />
+              <CopyCodeButton code="ollama pull qwen2.5:3b" />
             </div>
           </div>
         </section>

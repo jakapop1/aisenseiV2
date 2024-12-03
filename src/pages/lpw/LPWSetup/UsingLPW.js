@@ -59,7 +59,7 @@ const UsingLPW = () => {
           }}
           next={{
             text: "Moving onto Exercises",
-            link: "/lpw/exercises"
+            link: "/lpw/Exercises"
           }}
         />
       </div>

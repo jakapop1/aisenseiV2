@@ -1,7 +1,7 @@
 import React from 'react';
 import LPWLayout from '../../../components/layout/LPWLayout';
 import NavButtons from '../../../components/shared/NavButtons';
-import CodeBlock from '../../../components/shared/CodeBlock';
+import CopyCodeButton from '../../../components/shared/CopyCodeButton';
 
 const PromptEngineering = () => {
   return (
@@ -37,7 +37,7 @@ const PromptEngineering = () => {
           <div className="space-y-6">
             <div className="border rounded-lg p-6">
               <h3 className="text-lg font-semibold mb-3">Basic Prompt</h3>
-              <CodeBlock code="What's in this packet capture?" />
+              <CopyCodeButton code="What's in this packet capture?" />
               <p className="mt-3 text-gray-600">
                 This type of prompt typically results in surface-level analysis that lacks 
                 actionable insights. Without specific guidance, the model may miss critical 
@@ -47,7 +47,7 @@ const PromptEngineering = () => {
 
             <div className="border rounded-lg p-6">
               <h3 className="text-lg font-semibold mb-3">Intermediate Prompt</h3>
-              <CodeBlock code={`Analyze this PCAP file for:
+              <CopyCodeButton code={`Analyze this PCAP file for:
 - Source and destination IPs
 - Protocol information
 - Unusual patterns`} />
@@ -60,7 +60,7 @@ const PromptEngineering = () => {
 
             <div className="border rounded-lg p-6 bg-green-50">
               <h3 className="text-lg font-semibold mb-3">Advanced Prompt (Recommended)</h3>
-              <CodeBlock code={`Perform a detailed analysis of this PCAP with focus on:
+              <CopyCodeButton code={`Perform a detailed analysis of this PCAP with focus on:
 1. Layer-by-layer packet inspection
 2. All IP addresses and their geolocation
 3. Protocol anomalies and potential security issues
@@ -136,10 +136,10 @@ Output format:
         <NavButtons 
           previous={{
             text: "Model Selection Guide",
-            link: "/lpw/model-selection"
+            link: "/lpw/ModelSelection"
           }}
           next={{
-            text: "Moving onto Exercises",
+            text: "Back to Exercises",
             link: "/lpw/exercises"
           }}
         />
