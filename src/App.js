@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navigation from './components/layout/Navigation';
 import Home from './pages/Home';
+import ContactPage from './pages/lpw/ContactUs';
 import LPWLanding from './pages/lpw/LPWLanding';
 import LPWPythonWireshark from './pages/lpw/LPWSetup/LPWPythonWireshark';
 import OllamaSetup from './pages/lpw/LPWSetup/OllamaSetup';
@@ -10,8 +11,7 @@ import LPWConfiguration from './pages/lpw/LPWSetup/LPWConfiguration';
 import UsingLPW from './pages/lpw/LPWSetup/UsingLPW';
 import LPWExercises from './pages/lpw/Exercises/LPWExercises';
 import UnderstandingLLMs from './pages/lpw/Exercises/UnderstandingLLMS';
-import ModelSelection from './pages/lpw/Exercises/ModelSelection';
-import PromptEngineering from './pages/lpw/Exercises/PromptEngineering';
+import EnhanceLPW from './pages/lpw/Exercises/EnhancingLPW';
 import CTILanding from './pages/cti/CTILanding';
 import CTISetup from './pages/cti/CTIInstallation';
 import CTIIntro from './pages/cti/CTIIntroduction';
@@ -31,6 +31,7 @@ function App() {
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/contact-page" element={<ContactPage />} />
             <Route path="/lpw" element={<LPWLanding />} />
             <Route path="/lpw/introduction" element={<LPWLanding />} />
             <Route path="/lpw/python-wireshark" element={<LPWPythonWireshark />} />
@@ -39,9 +40,8 @@ function App() {
             <Route path="/lpw/configuration" element={<LPWConfiguration />} />
             <Route path="/lpw/using" element={<UsingLPW />} />
             <Route path="/lpw/UnderstandingLLMs" element={<UnderstandingLLMs />} />
-            <Route path="/lpw/ModelSelection" element={<ModelSelection />} />
+            <Route path="/lpw/enhance-lpw" element={<EnhanceLPW />} />
             <Route path="/lpw/Exercises" element={<LPWExercises />} />
-            <Route path="/lpw/PromptEngineering" element={<PromptEngineering />} />
             <Route path ="/cti" element={<CTILanding />} />
             <Route path ="/cti/openwebui" element={<CTIIntro />} />
             <Route path ="/cti/waystoinstall" element={<CTIWaysToInstall />} />

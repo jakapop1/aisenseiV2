@@ -32,8 +32,7 @@ const LPWSidebar = () => {
       path: '/lpw/Exercises', 
       items: [
         { path: '/lpw/understandingLLMS', text: '3.1 Prompt Engineering and Models' },
-        { path: '/lpw/basic-analysis', text: '3.2 Basic Analysis Exercises' },
-        { path: '/lpw/advanced-analysis', text: '3.3 Advanced Analysis Exercises' }
+        { path: '/lpw/enhance-lpw', text: '3.2 Enhancing LPW' },
       ]
     }
   };
@@ -44,16 +43,7 @@ const LPWSidebar = () => {
         Local Packet Whisperer (LPW)
       </h2>
       
-      <div className="sidebar-section">
-        <Link 
-          to={menuItems.introduction.path}
-          className={`sidebar-section-title  ${isActive(menuItems.introduction.path) ? 'active' : ''}`}
-        >
-          <h3>{menuItems.introduction.title}</h3>
-        </Link>
-      </div>
-
-      {Object.entries({setup: menuItems.setup, exercises: menuItems.exercises}).map(([key, section]) => (
+      {Object.entries(menuItems).map(([key, section]) => (
         <div key={key} className="sidebar-section">
           <Link 
             to={section.path}

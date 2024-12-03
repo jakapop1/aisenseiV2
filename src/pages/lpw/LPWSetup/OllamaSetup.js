@@ -99,8 +99,9 @@ const OllamaSetup = () => {
             <li>
               Open a new terminal window and run:
               <CopyCodeButton code="ollama pull dolphin-mistral:latest" />
-              <p className="mt-2">This will download a LLM model for LPW to use</p>
+              <p>This will download a starting LLM model for LPW to use.</p>
             </li>
+            <p>We have now downloaded all the required programs and can move onto installing LPW.</p>
           </ol>
         </section>
 

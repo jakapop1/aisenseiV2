@@ -30,28 +30,32 @@ const LPWPythonWireshark = () => {
             <div>
               <h3 className="text-xl font-semibold mb-3">Installation Steps</h3>
               <ol className="list-decimal list-inside space-y-2">
-                <li>Visit <a href="https://python.org/downloads" className="text-blue-600 hover:underline">python.org/downloads</a></li>
-                <li>Download Python 3.11 or higher</li>
-                <li>During installation, check "Add Python to PATH"</li>
-                <li>Verify installation:</li>
-              </ol>
+                <li>Download Python 3.12 from this <a target='_blank' rel="noreferrer" href="https://www.python.org/downloads/release/python-3120/" className="text-blue-600 hover:underline">link</a>. (Note that our setup guide does not work with Python 3.13)</li>
+                <li>During installation, check "Add Python to PATH" 
+                  <img 
+                    src="/images/python_addtopath.png" 
+                    alt="python Add to Path" 
+                    className="mr-6 mb-4 w-[400px] rounded-lg shadow-md"
+                  />
+                </li>
+                <li>Verify python installation:</li>
               
-              <CodeBlock code={`# Windows
+              
+              <CodeBlock code={`Windows
 python --version
 
-# Linux/MacOS
+Linux/MacOS
 python3 --version`} />
-            </div>
-
-            <div>
-              <h3 className="text-xl font-semibold mb-3">Troubleshooting</h3>
-              <CodeBlock code={`# If 'python' is not recognized, try:
-py --version
-
-# Install pip if missing:
+            <li>Verify pip installation:</li>
+              </ol>
+              
+              <CodeBlock code={`Windows/Linux
+pip --version
+              
+Install pip if missing:
 python -m ensurepip --default-pip
 
-# Upgrade pip:
+Upgrade pip:
 python -m pip install --upgrade pip`} />
             </div>
           </div>
@@ -80,7 +84,7 @@ python -m pip install --upgrade pip`} />
             <div>
               <h3 className="text-xl font-semibold mb-3">Installation Steps</h3>
               <ol className="list-decimal list-inside space-y-2">
-                <li>Visit <a href="https://wireshark.org/download.html" className="text-blue-600 hover:underline">wireshark.org/download.html</a></li>
+                <li>Visit <a target='_blank' rel="noreferrer" href="https://wireshark.org/download.html" className="text-blue-600 hover:underline">wireshark.org/download.html</a></li>
                 <li>Download and install the version for your operating system</li>
                 <li>Follow the default installation options</li>
               </ol>

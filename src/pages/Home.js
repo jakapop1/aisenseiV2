@@ -27,7 +27,7 @@ const Home = () => {
               "Create reproducible analysis workflows"
             ]
           },
-          {
+          /*{
             title: "Packet Raptor for Analysis",
             link: "/raptor",
             items: [
@@ -38,17 +38,16 @@ const Home = () => {
               "Work with offline analysis capabilities",
               "Navigate hierarchical packet structures"
             ]
-          },
+          },*/
           {
             title: "CTI with OpenWebUI",
             link: "/cti",
             items: [
               "Streamline threat intelligence gathering",
-              "Create custom CTI dashboards",
-              "Automated report generation",
-              "Integration with MISP and STIX",
-              "Real-time threat monitoring",
-              "Advanced visualization techniques"
+              "Intergration with MITRE ATT&CK Framework",
+              "Enhanced report generation",
+              "Understand RAG applications",
+              "Learn pipelining for task automation"
             ]
           }
         ].map((course, index) => (

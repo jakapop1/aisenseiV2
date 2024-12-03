@@ -46,8 +46,8 @@ const VirtualEnvironmentSetup = () => {
             <li>
               Navigate to your desired installation directory:
               <CodeBlock code={`cd Documents
-mkdir lpw_project
-cd lpw_project`} />
+cd Desktop
+cd [desired directory]`} />
             </li>
             <li>
               Create a new virtual environment:
@@ -69,6 +69,12 @@ cd lpw_env
 source bin/activate`} />
             </li>
           </ol>
+          <img 
+            src="/images/lpw_venv.png" 
+            alt="Virtual Environment Setup Example" 
+            className="mr-6 mb-4 w-[500px] rounded-lg shadow-md"
+          />
+                  
         </section>
 
         <section className="mb-8">
@@ -81,26 +87,44 @@ source bin/activate`} />
               Install LPW:
               <CopyCodeButton code="pip install lpw" />
             </li>
+          <img 
+            src="/images/pip-install-lpw_1.png" 
+            alt="pip Install lpw 1" 
+            className="mr-6 mb-4 w-[500px] rounded-lg shadow-md"
+          />
+          <img 
+            src="/images/pip-install-lpw_2.png" 
+            alt="pip Install lpw 2" 
+            className="mr-6 mb-4 w-[500px] rounded-lg shadow-md"
+          />
           </ol>
         </section>
 
         <section className="mb-8">
           <h2 className="text-xl font-semibold mb-4">Running LPW</h2>
-          <ol className="list-decimal space-y-2 mb-6">
-            <li>Start LPW: <CopyCodeButton code="lpw start" /></li>
-            <li>Stop LPW: <CopyCodeButton code="lpw stop" /></li>
-            <li>View help and options: <CopyCodeButton code="lpw -h" /></li>
-          </ol>
-
-          <p className="font-semibold mb-2">If the above fails:</p>
-          <ol className="list-decimal space-y-2 ml-6">
+          <ol className="list-decimal space-y-4">
             <li>Navigate to your Scripts directory within the virtual environment: 
-              <CopyCodeButton code="cd path\\to\\lpw_project\\lpw_env\\Scripts" />
+              <CopyCodeButton code="cd Scripts" />
             </li>
             <li>Run lpw directly from streamlit: 
               <CopyCodeButton code="streamlit run lpw_main.py" />
             </li>
+            <img 
+              src="/images/streamlit-run.png" 
+              alt="pip Install lpw 1" 
+              className="mr-6 mb-4 w-[600px] rounded-lg shadow-md"
+            />
             <li>If this doesn't work go through your file explorer to the Scripts folder of the environment and ensure there is a streamlit file and lpw_main.py file among many other lpw files</li>
+            <img 
+              src="/images/lpw-directory-lpwfile.png" 
+              alt="pip Install lpw 1" 
+              className="mr-6 mb-4 w-[500px] rounded-lg shadow-md"
+            />
+            <img 
+              src="/images/lpw-directory-streamlitfile.png" 
+              alt="pip Install lpw 1" 
+              className="mr-6 mb-4 w-[500px] rounded-lg shadow-md"
+            />
           </ol>
         </section>
 
@@ -128,7 +152,7 @@ source bin/activate`} />
               To update LPW in the future, activate the virtual environment and run:
               <CopyCodeButton code="pip install --upgrade lpw" />
             </li>
-            <li>For any issues or questions, please refer to the official documentation or community forum for the most up-to-date information and support.</li>
+            <li>For any issues or questions, please refer to the <a target='_blank' rel="noreferrer" href="https://github.com/krsna1729/local-packet-whisperer/tree/main" className="text-blue-600 hover:underline">LPW github page</a> or community forum for the most up-to-date information and support.</li>
           </ul>
         </section>
 

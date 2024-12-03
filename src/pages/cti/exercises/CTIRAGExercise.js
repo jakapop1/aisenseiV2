@@ -1,6 +1,5 @@
 import React from 'react';
 import CTILayout from '../../../components/layout/CTILayout';
-import NavButtons from '../../../components/shared/NavButtons';
 
 const CTIExercise = () => {
   return(
@@ -22,7 +21,7 @@ const CTIExercise = () => {
         <p>
           <li>Choose a model you would like to work with, in this example we will be using Llama3.2:1B which is available through Ollama. 
           Feel free to try this exercise with a different model.</li>
-          <li>Determine a prompt to ask the model throughout this exercise. In this exercise we will be using the json files provided in the 
+          <li>Determine a prompt to ask the model throughout this exercise. In this exercise we will be using the json files provided in the  
           <a class="highlight-text" href="https://github.com/mitre/cti"> MITRE ATT&CK</a> CTI repository on github. So we should ask a question that is relevant to this 
           information.<br /><br/>The prompt used in the example is:<br /> &quot;What are the defensive and mitigative strategies Mitre Att&ck recommends 
           when dealing with a DNS attack? Give me a list of TTPs, assume I am an entry level analyst that has just discovered an anomaly in 
@@ -34,7 +33,7 @@ const CTIExercise = () => {
 
         <h2>Step 3: Connect The Model To The Knowledge Base</h2>
         <li>Connect your model to your personal knowledge base. In this exercise we will be using the json files provided in the 
-            <a href="https://github.com/mitre/cti">MITRE ATT&CK</a> CTI repository on github. If you need to create 
+            <a href="https://github.com/mitre/cti"> MITRE ATT&CK</a> CTI repository on github. If you need to create 
               your own knowledge base you can see our tutorial here: <a class="highlight-text" href="/cti/RAG">Create Your CTI Knowledge Collection</a></li>
         <li>Now ask the exact same prompt again but this time include the collection in the context by typing the &quot;#&quot; symbol. 
           It should bring up a list of your collections so you can choose the one you want to use. We will be using our MITRE ATT&CK collection 
@@ -79,16 +78,6 @@ const CTIExercise = () => {
           to pull data from the web on demand. 
         </p>
       </section>
-      <NavButtons 
-          previous = {{
-            link: "/cti/docker",
-            text: "Install Docker"
-          }}
-          next={{
-            link: "/cti/settings",
-            text: "Configuring Open WebUI"
-          }}
-        />
     </CTILayout>
   );
 };
