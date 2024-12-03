@@ -4,51 +4,78 @@ import CopyCodeButton from '../../../components/shared/CopyCodeButton';
 import NavButtons from '../../../components/shared/NavButtons';
 
 const CTIExercise = () => {
-  return (
+  return(
     <CTILayout>
-      <h1>Quick-Start Guide to Installing Open WebUI</h1>
+      <h1>Exercise: Create Your Own LLM With RAG</h1>
 
       <p>
-        Pre-requisite step: Install Docker Desktop
+        Pre-requisite steps: Open WebUI Installation, Open WebUI Setup
       </p>
       
       <section>
-        <h2>Step 1: Install Ollama</h2>
+        <h2>Step 1: Install Check-In</h2>
         <p>
-          We want to install Ollama and run it in a docker container. Open WebUI utilizes Ollama to install and download new models. So we need Ollama running in a docker container for OpenWebUI. 
+          Make sure you have followed the steps outlined in our Installation and Setup Guides. For this exercise you will need 
+          Open WebUI installed, running, and connected to Ollama. Ollama should have models downloaded and visible in your Open WebUI 
+          Workspace. Once you have completed these steps you can continue with the tutorial.
         </p>
+        <h2>Step 2: Test Base Model's Response</h2>
+        <p>
+          <li>Choose a model you would like to work with, in this example we will be using Llama3.2:1B which is available through Ollama. 
+          Feel free to try this exercise with a different model.</li>
+          <li>Determine a prompt to ask the model throughout this exercise. In this exercise we will be using the json files provided in the 
+          <a class="highlight-text" href="https://github.com/mitre/cti"> MITRE ATT&CK</a> CTI repository on github. So we should ask a question that is relevant to this 
+          information.<br /><br/>The prompt used in the example is:<br /> &quot;What are the defensive and mitigative strategies Mitre Att&ck recommends 
+          when dealing with a DNS attack? Give me a list of TTPs, assume I am an entry level analyst that has just discovered an anomaly in 
+          the network logs. I do not know what my next steps should be and need all the relevant information to help me deal with the DNS 
+          attack.&quot;</li>
+          <li>Now ask your prompt to the model and let's see how it responds.</li>
+        </p>
+        <image />
 
-        <CopyCodeButton 
-                code={`docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama:latest`}
-        />
+        <h2>Step 3: Connect The Model To The Knowledge Base</h2>
+        <li>Connect your model to your personal knowledge base. In this exercise we will be using the json files provided in the 
+            <a href="https://github.com/mitre/cti">MITRE ATT&CK</a> CTI repository on github. If you need to create 
+              your own knowledge base you can see our tutorial here: <a class="highlight-text" href="/cti/RAG">Create Your CTI Knowledge Collection</a></li>
+        <li>Now ask the exact same prompt again but this time include the collection in the context by typing the &quot;#&quot; symbol. 
+          It should bring up a list of your collections so you can choose the one you want to use. We will be using our MITRE ATT&CK collection 
+          for the example.
+        </li>
+        <li>Notice how the knowledge base completely transforms the response, the model now can answer questions with responses directly 
+          from the MITRE ATT&CK documentation.
+        </li>
 
         <p>
-            If you do not have Ollama installed already this command should install it for you locally. If you already ran through the
-            Ollama setup guide in the LPW section of our website, then this command should run it in a docker container. If you have 
-            already installed models locally in Ollama then they should appear in Open WebUI.
+          It is clear to see that RAG improves the performance of LLMs so they can answer niche questions if provided the proper information.
+          Open WebUI makes RAG easy with its file manager UI, creating it is as easy as using Google Drive. One key drawback of this easy to use 
+          implementation is the manual process of pulling and updating documents. With a large enough knowledge base we can see how this poses a 
+          big issue. This leads us to the next section of our exercise.
         </p>
-
-        <h2>Step 2: Install and Launch Open WebUI with new features</h2>
-        <p>
-            Next we will Install Open WebUI and Launch it in Docker. Run the following line of code in a terminal window.
-        </p>
-
-        <CopyCodeButton code={`docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main`} />
-
-        <p>
-            If you use Docker Desktop you should be able to open the localhost url and see Open WebUI running. Next step is to download a few models and test out the environment.
-        </p>
-
       </section>
 
-      <h1>Full Setup Guide for Open WebUI</h1>
+      <h1>Implementing RAG with Pipelines</h1>
+      <p>
+        Pipelines enable us to call functions and implement RAG in a different and more dynamic way. We can use Pipelines to tell the model 
+        to fetch and parse data from the web. This allows the model to pull data at the time it receives a user request, ensuring all information 
+        is up to date.
+      </p>
 
       <section>
-        <h2>Manual Setup</h2>
-        <p>If you would like to see other installation methods such as those using Python, Kubernetes, or a Third Party Option you can visit 
-            the Open WebUI Documentation and see the installation steps.
+        <h2>Step 1: Install and Configure Pipelines</h2>
+        <p>
+          You can follow the Open WebUI Documentation and its guide to set up Pipelines.
         </p>
-        <a href="https://docs.openwebui.com/getting-started/quick-start/"><pre><code>https://docs.openwebui.com/getting-started/quick-start/</code></pre></a>
+        <h2>Step 2: Creating the RAG pipeline</h2>
+        <h3>Step 3: Test the pipeline</h3>
+      </section>
+
+      <h1>Complete RAG Implementation</h1>
+      <section>
+        <p>
+          If we combine the static knowledge base with RAG pipelines we can create an easy to use custom model with cybersecurity expertise. 
+          We can use pipelines to update our knowledge base so our collection of documents stays up to date, or we can use pipelines like APIs 
+          to pull data from the web on demand. 
+        </p>
       </section>
       <NavButtons 
           previous = {{

@@ -20,6 +20,7 @@ import CTISettings from './pages/cti/CTISettings';
 import CTITools from './pages/cti/CTIToolsFunc';
 import CTIPipes from './pages/cti/CTIPipelines';
 import CTIExercise from './pages/cti/exercises/CTIRAGExercise';
+import CTIWaysToInstall from './pages/cti/CTIInstallMethods';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
             <Route path="/lpw/PromptEngineering" element={<PromptEngineering />} />
             <Route path ="/cti" element={<CTILanding />} />
             <Route path ="/cti/openwebui" element={<CTIIntro />} />
+            <Route path ="/cti/waystoinstall" element={<CTIWaysToInstall />} />
             <Route path ="/cti/docker" element={<DockerSetup />} />
             <Route path ="/cti/setup" element={<CTISetup />} />
             <Route path = "/cti/RAG" element={<CTIRag />} />
