@@ -44,6 +44,9 @@ const CTIExercise = () => {
         <li>Notice how the knowledge base completely transforms the response, the model now can answer questions with responses directly 
           from the MITRE ATT&CK documentation.
         </li>
+        <iframe src="https://drive.google.com/file/d/1T8D1C_BHjKK3KOB0siImJWkoK9x2V94k/preview" width="640" height="480" allow="autoplay"></iframe>
+        <br />
+        <iframe src="https://drive.google.com/file/d/1ByY_MXmPgWLZBdZ3AvEy9pzRW8BPSlcK/preview" width="640" height="480" allow="autoplay"></iframe>
 
         <p>
           It is clear to see that RAG improves the performance of LLMs so they can answer niche questions if provided the proper information.
