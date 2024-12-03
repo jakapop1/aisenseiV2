@@ -17,8 +17,11 @@ const CTIRag = () => {
             Click the sidebar menu icon as shown in the image below. This sidebar will be where our previous chats are logged 
             and where we can access our workspace. 
         </p>
-
-        <image src="public\images\step1_createrag.png"/>
+        <img 
+                src="/images/step1_createrag.png" 
+                alt="Step 1: Create Rag" 
+                className="rounded-lg shadow-md mb-4"
+              />
 
         <h2>Step 2: Go To Workspace</h2>
 
@@ -30,14 +33,22 @@ const CTIRag = () => {
             in one or multiple knowledge bases.
         </p>
 
-        <image src="public\images\step2_createrag.png"/>
+        <img 
+                src="/images/step2_createrag.png" 
+                alt="Step 2: Create Rag" 
+                className="rounded-lg shadow-md mb-4"
+              />
 
         <h2>Step 3: Go To Knowledge</h2>
 
         <p>
             Click on the Knowledge tab and start curating your custom Knowledge.
         </p>
-        <image src="public\images\step3_createrag.png"/>
+        <img 
+                src="/images/step3_createrag.png" 
+                alt="Step 3: Create Rag" 
+                className="rounded-lg shadow-md mb-4"
+              />
 
         <h2>Step 4: Add Knowledge</h2>
 
@@ -47,10 +58,18 @@ const CTIRag = () => {
             Both the name and the description are for your own use and do not the behavior of the collection or the LLM, so you can 
             add anything you please. Click create and you can start uploading documents you have saved locally.
         </p>
-        <image src="public\images\step4_createrag.png"/>
+        <img 
+                src="/images/step4_createrag.png" 
+                alt="Step 4: Create Rag" 
+                className="rounded-lg shadow-md mb-4"
+              />
 
         <h2>Step 5: Upload Documents</h2>
-        <image src="public\images\step5_createrag.png"/>
+        <img 
+                src="/images/step5_createrag.png" 
+                alt="Step 5: Create Rag" 
+                className="rounded-lg shadow-md mb-4"
+              />
 
       </section>
 
@@ -58,17 +77,29 @@ const CTIRag = () => {
 
       <section>
         <h2>Step 1: Go To Workspace</h2>
-        <image src="public\images\step2_createrag.png"/>
+        <img 
+                src="/images/step2_createrag.png" 
+                alt="Step 2: Create Rag" 
+                className="rounded-lg shadow-md mb-4"
+              />
 
         <h2>Step 2: Go To Models</h2>
 
 
         <h2>Step 3: Go To Settings</h2>
-        <image src="public\images\step2_connectrag.png"/>
+        <img 
+                src="/images/step2_connectrag.png" 
+                alt="Step 2: connect Rag" 
+                className="rounded-lg shadow-md mb-4"
+              />
 
 
         <h2>Step 4: Add Knowledge</h2>
-        <image src="public\images\step4_createrag.png"/>
+        <img 
+                src="/images/step4_connectrag.png" 
+                alt="Step 4: connect Rag" 
+                className="rounded-lg shadow-md mb-4"
+              />
 
 
         <h2>Step 5: Include # When Starting A New Chat</h2>
@@ -79,7 +110,11 @@ const CTIRag = () => {
             the LLM to reference it. This allows you to augment different saved chat instances with different collections and see the difference in 
             the responses.
         </p>
-        <image src="public\images\step5_connectrag.png"/>
+        <img 
+                src="/images/step5_connectrag.png" 
+                alt="Step 5: Connect Rag" 
+                className="rounded-lg shadow-md mb-4"
+              />
 
 
 
