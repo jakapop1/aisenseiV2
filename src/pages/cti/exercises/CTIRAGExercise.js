@@ -54,7 +54,7 @@ const CTIExercise = () => {
         </p>
       </section>
 
-      <h1>Implementing RAG with Pipelines</h1>
+      {/* <h1>Implementing RAG with Pipelines</h1>
       <p>
         Pipelines enable us to call functions and implement RAG in a different and more dynamic way. We can use Pipelines to tell the model 
         to fetch and parse data from the web. This allows the model to pull data at the time it receives a user request, ensuring all information 
@@ -77,7 +77,7 @@ const CTIExercise = () => {
           We can use pipelines to update our knowledge base so our collection of documents stays up to date, or we can use pipelines like APIs 
           to pull data from the web on demand. 
         </p>
-      </section>
+      </section> */}
     </CTILayout>
   );
 };
