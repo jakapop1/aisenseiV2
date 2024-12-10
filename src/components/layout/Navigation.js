@@ -18,7 +18,7 @@ const Navigation = () => {
           <div className="nav-links">
             {[
               { path: '/lpw', text: 'LPW for Packet Analysis' },
-              //{ path: '/raptor', text: 'Packet Raptor' },
+              { path: '/raptor', text: 'Packet Raptor' },
               { path: '/cti', text: 'CTI with OpenWebUI' },
               { path: '/contact-page', text: 'Contact' }
             ].map((item) => (

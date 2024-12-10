@@ -27,7 +27,7 @@ const Home = () => {
               "Create reproducible analysis workflows"
             ]
           },
-          /*{
+          {
             title: "Packet Raptor for Analysis",
             link: "/raptor",
             items: [
@@ -38,7 +38,7 @@ const Home = () => {
               "Work with offline analysis capabilities",
               "Navigate hierarchical packet structures"
             ]
-          },*/
+          },
           {
             title: "CTI with OpenWebUI",
             link: "/cti",

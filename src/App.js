@@ -23,6 +23,14 @@ import CTIPipes from './pages/cti/CTIPipelines';
 import CTIExercise from './pages/cti/exercises/CTIRAGExercise';
 import CTIWaysToInstall from './pages/cti/CTIInstallMethods';
 
+import RaptorLanding from './pages/raptor/RaptorLanding';
+import DockerRaptorSetup from './pages/raptor/DockerSetup';
+import PythonRaptorSetup from './pages/raptor/PythonSetup';
+import RaptorStart from './pages/raptor/RaptorStart';
+import RaptorConfig from './pages/raptor/RaptorConfig';
+import TryRaptor from './pages/raptor/TryRaptor';
+import UsingDemo from './pages/raptor/UsingDemo';
+
 function App() {
   return (
     <Router>
@@ -52,6 +60,15 @@ function App() {
             <Route path = "/cti/tools" element={<CTITools />} />
             <Route path = "/cti/pipelines" element={<CTIPipes />} />
             <Route path = "/cti/exercises/RAG-exercise" element={<CTIExercise />} />
+            
+            <Route path="/raptor" element={<RaptorLanding />} />
+            <Route path="/raptor/introduction" element={<RaptorLanding />} />
+            <Route path="/raptor/docker" element={<DockerRaptorSetup />} />
+            <Route path="/raptor/python" element={<PythonRaptorSetup />} />
+            <Route path="/raptor/raptor-start" element={<RaptorStart />} />
+            <Route path="/raptor/raptor-config" element={<RaptorConfig />} />
+            <Route path="/raptor/try-packet-raptor" element={<TryRaptor />} />
+            <Route path="/raptor/using-the-demo" element={<UsingDemo />} />
           </Routes>
         </main>
       </div>
