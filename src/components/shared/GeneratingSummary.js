@@ -61,8 +61,6 @@ const TypewriterEffect = ({ text, onComplete }) => {
 };
 
 const GeneratingSummary = ({ text, onComplete }) => {
-  const [showTyping, setShowTyping] = useState(true);
-  
   return (
     <div className="module-card overflow-hidden">
       <div className="flex items-center space-x-2 mb-4">
@@ -73,10 +71,7 @@ const GeneratingSummary = ({ text, onComplete }) => {
       <div className="bg-gray-900 rounded-lg p-4 text-gray-300 max-h-[600px] overflow-y-auto">
         <TypewriterEffect 
           text={text} 
-          onComplete={() => {
-            setShowTyping(false);
-            if (onComplete) onComplete();
-          }}
+          onComplete={onComplete}
         />
       </div>
     </div>

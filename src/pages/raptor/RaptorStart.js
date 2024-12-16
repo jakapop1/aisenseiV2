@@ -1,7 +1,6 @@
 import React from 'react';
 import RaptorLayout from '../../components/layout/RaptorLayout';
 import NavButtons from '../../components/shared/NavButtons';
-import CodeBlock from '../../components/shared/CodeBlock';
 import CopyCodeButton from '../../components/shared/CopyCodeButton';
 
 const RaptorStart = () => {

@@ -1,6 +1,6 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useRef, useEffect } from 'react';
-import { ArrowRight, Terminal, Link, Github, Cloud, Upload, X, ChevronDown, Send } from 'lucide-react';
-import { Link as RouterLink } from 'react-router-dom';
+import { Terminal, Cloud, X, ChevronDown, Send } from 'lucide-react';
 import GeneratingSummary from '../../components/shared/GeneratingSummary';
 
 const PacketRaptor = () => {
