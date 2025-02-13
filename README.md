@@ -11,6 +11,8 @@ To bridge this gap, AI Sensei was developed—an initiative designed to equip th
 
 [Week 2](#week-2)
 
+[Week 3](#week-3)
+
 [Project Roadmap](#project-roadmap)
 
 
