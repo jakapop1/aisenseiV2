@@ -15,6 +15,87 @@ To bridge this gap, AI Sensei was developed—an initiative designed to equip th
 
 [Project Roadmap](#project-roadmap)
 
+-----------------------------------------------------------------------------------------------------------------------------
+
+### Week 1
+• Met with the project sponsor to define the project scope and review the previous team's work.
+
+• Identified key objectives, clarified team responsibilities, and established an initial roadmap for the project.
+
+• Reviewed existing documentation and assessed the overall feasibility of the MVP.
+
+### Week 2 
+• Assigned team members to analyze previously implemented use cases.
+
+• Each member documented potential issues, identified areas for improvement, and assessed how the current implementation 
+ aligns with the project goals.
+
+### Week 3
+#### Started Development of the Minimal Viable Product (MVP)
+
+Began refining the platform based on previous findings.
+Identified key areas for improvement, including usability, documentation, and technical enhancements.
+
+#### Collaborated with the Previous Team Lead
+
+Reviewed past development challenges and technical roadblocks.
+Gained insights on Local Packet Whisper and Packet Raptor implementation issues.
+Discussed potential solutions and enhancements for deployment.
+#### Completed Phase 1 Gantt Chart & Project Planning
+
+Established a basic timeline for development, testing, and deployment.
+Defined milestones for feature implementation and debugging.
+Established team responsibilities and checkpoints for progress tracking through the Gant Chart.
+Next Steps:
+
+• Refine and Update Instructions for Local Packet Whisper and Packet Raptor to ensure seamless deployment.
+
+• Implement Initial MVP Enhancements, including UI/UX refinements and backend improvements.
+
+• Test and Validate existing features, ensuring compatibility across different operating systems.
+
+• Continue Collaboration with the Previous Team Lead to address pending technical challenges.
+
+
+# Project Roadmap
+
+ ### Phase 1: Research & Analysis 
+ 
+Review previous implementation and identify issues.
+
+Meet with project sponsor to define scope and goals.
+
+Collaborate with previous team lead to understand challenges.
+
+Research field professionals' feedback on cybersecurity AI tools.
+
+### Phase 2: Planning & Strategy 
+Define MVP improvements and prioritize fixes.
+
+Plan technical updates (improved setup, OS support, new features).
+
+Finalize documentation updates (clearer instructions, troubleshooting).
+
+Communicate with stakeholders to validate planned changes.
+
+### Phase 3: Implementation & Deployment Prep 
+Develop and integrate improvements into the MVP.
+
+Test for compatibility, security, and performance.
+
+Refine UI and fix critical bugs.
+
+Conduct user testing with security professionals.
+
+Prepare for final deployment and handoff.
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------
 
 # Getting Started with Create React App
 
@@ -86,77 +167,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
------------------------------------------------------------------------------------------------------------------------------
-
-### Week 1
-• Met with the project sponsor to define the project scope and review the previous team's work.
-
-• Identified key objectives, clarified team responsibilities, and established an initial roadmap for the project.
-
-• Reviewed existing documentation and assessed the overall feasibility of the MVP.
-
-### Week 2 
-• Assigned team members to analyze previously implemented use cases.
-
-• Each member documented potential issues, identified areas for improvement, and assessed how the current implementation 
- aligns with the project goals.
-
-### Week 3
-#### Started Development of the Minimal Viable Product (MVP)
-
-Began refining the platform based on previous findings.
-Identified key areas for improvement, including usability, documentation, and technical enhancements.
-
-#### Collaborated with the Previous Team Lead
-
-Reviewed past development challenges and technical roadblocks.
-Gained insights on Local Packet Whisper and Packet Raptor implementation issues.
-Discussed potential solutions and enhancements for deployment.
-#### Completed Gantt Chart & Project Planning
-
-Finalized the timeline for development, testing, and deployment.
-Defined milestones for feature implementation and debugging.
-Established team responsibilities and checkpoints for progress tracking through the Gant Chart.
-Next Steps:
-
-• Refine and Update Instructions for Local Packet Whisper and Packet Raptor to ensure seamless deployment.
-
-• Implement Initial MVP Enhancements, including UI/UX refinements and backend improvements.
-
-• Test and Validate existing features, ensuring compatibility across different operating systems.
-
-• Continue Collaboration with the Previous Team Lead to address pending technical challenges.
-
-
-# Project Roadmap
-
- ### Phase 1: Research & Analysis 
- 
-Review previous implementation and identify issues.
-
-Meet with project sponsor to define scope and goals.
-
-Collaborate with previous team lead to understand challenges.
-
-Research field professionals' feedback on cybersecurity AI tools.
-
-### Phase 2: Planning & Strategy 
-Define MVP improvements and prioritize fixes.
-
-Plan technical updates (improved setup, OS support, new features).
-
-Finalize documentation updates (clearer instructions, troubleshooting).
-
-Communicate with stakeholders to validate planned changes.
-
-### Phase 3: Implementation & Deployment Prep 
-Develop and integrate improvements into the MVP.
-
-Test for compatibility, security, and performance.
-
-Refine UI and fix critical bugs.
-
-Conduct user testing with security professionals.
-
-Prepare for final deployment and handoff.
