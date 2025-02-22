@@ -13,6 +13,8 @@ To bridge this gap, AI Sensei was developed—an initiative designed to equip th
 
 [Week 3](#week-3)
 
+[Week 4](#week-4)
+
 [Project Roadmap](#project-roadmap)
 
 -----------------------------------------------------------------------------------------------------------------------------
@@ -56,6 +58,24 @@ Next Steps:
 
 • Continue Collaboration with the Previous Team Lead to address pending technical challenges.
 
+### Week 4
+#### Further Refinement of the Minimal Viable Product (MVP)
+
+Coordinated with Sponsor to Refine the MVP.
+Engaged in discussions with our sponsor to align the MVP with project goals and expectations.
+Gathered feedback on initial implementations and identified key refinements to improve functionality.
+Incorporated recommended use cases to enhance the platform's practical applications.
+
+#### Prepared for Subject Matter Expert (SME) Consultation
+
+• Developed a structured approach to validate proposed changes with SMEs.
+
+• Outlined critical areas for expert review, including usability, technical feasibility, and deployment strategy.
+
+• Compiled documentation and supporting materials to facilitate productive discussions.
+
+#### Adjustments of Roadmap
+Revised Gantt Chart to reflect new priorities based on sponsor input.
 
 # Project Roadmap
 
