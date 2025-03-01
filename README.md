@@ -15,6 +15,8 @@ To bridge this gap, AI Sensei was developed—an initiative designed to equip th
 
 [Week 4](#week-4)
 
+[Week 5](#week-5)
+
 [Project Roadmap](#project-roadmap)
 
 -----------------------------------------------------------------------------------------------------------------------------
@@ -76,6 +78,10 @@ Incorporated recommended use cases to enhance the platform's practical applicati
 
 #### Adjustments of Roadmap
 Revised Gantt Chart to reflect new priorities based on sponsor input.
+
+### Week 5
+#### Final Revision of the Minimal Viable Product (MVP) & Modular 
+Completed final revisions to the MVP and consulted with our subject matter expert and product manager for feedback and validation.
 
 # Project Roadmap
 
