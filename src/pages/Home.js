@@ -52,15 +52,15 @@ const Home = () => {
             ]
           },
           {
-            title: "Use Case 4 (Coming Soon)",
-            link: "/use-case-4",
+            title: "G3PO: AI-Assisted Reverse Engineering",
+            link: "/g3po",
             items: [
-              "Enhance security workflows with AI-driven insights",
-              "Explore automation for advanced cybersecurity tasks",
-              "Increase efficiency in data processing and analysis",
-              "Leverage AI for decision-making support",
-              "Optimize security operations through intelligent tooling",
-              "Develop skills in integrating AI with cybersecurity"
+              "Integrate G3PO with Ghidra for enhanced code analysis",
+              "Utilize local Ollama models to interpret and explain decompiled functions",
+              "Automate function vulnerability identification",
+              "Streamline reverse-engineering workflows with AI assistance",
+              "Enhance understanding of complex code structures",
+              "Develop proficiency in combining Ghidra with advanced AI models"
             ]
           }
           

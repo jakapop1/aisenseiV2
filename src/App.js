@@ -31,6 +31,11 @@ import RaptorConfig from './pages/raptor/RaptorConfig';
 import TryRaptor from './pages/raptor/TryRaptor';
 import UsingDemo from './pages/raptor/UsingDemo';
 
+import G3POLanding from './pages/g3po/g3poLanding';
+import G3POIntro from './pages/g3po/g3poIntroduction';
+import G3PODockerSetup from './pages/g3po/g3poDockerInstall';
+import G3POExample from './pages/g3po/g3poExample';
+
 function App() {
   return (
     <Router>
@@ -69,6 +74,14 @@ function App() {
             <Route path="/raptor/raptor-config" element={<RaptorConfig />} />
             <Route path="/raptor/try-packet-raptor" element={<TryRaptor />} />
             <Route path="/raptor/using-the-demo" element={<UsingDemo />} />
+
+            <Route path="/g3po" element={<G3POLanding />} />
+            <Route path="/g3po/g3po-introduction" element={<G3POIntro />} />
+            <Route path="/g3po/docker" element={<G3PODockerSetup />} />
+            <Route path="/g3po/g3po-introduction/g3po-example" element={<G3POExample />} />
+
+
+
           </Routes>
         </main>
       </div>
