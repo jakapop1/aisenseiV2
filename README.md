@@ -17,6 +17,8 @@ To bridge this gap, AI Sensei was developed—an initiative designed to equip th
 
 [Week 5](#week-5)
 
+[Week 6](#week-6)
+
 [Project Roadmap](#project-roadmap)
 
 -----------------------------------------------------------------------------------------------------------------------------
@@ -83,6 +85,12 @@ Revised Gantt Chart to reflect new priorities based on sponsor input.
 #### Final Revision of the Minimal Viable Product (MVP) & Modular 
 Completed final revisions to the MVP and consulted with our subject matter expert and product manager for feedback and validation.
 
+### Week 6
+#### Use Case Research
+
+G3PO Tested on implementation. The source code provided by Tenable operates with ChatGPT API Keys. With modifications, I was able to utilize a local large language model provided by the Ollama framework.
+
+
 # Project Roadmap
 
  ### Phase 1: Research & Analysis 
@@ -114,10 +122,6 @@ Refine UI and fix critical bugs.
 Conduct user testing with security professionals.
 
 Prepare for final deployment and handoff.
-
-
-
-
 
 
 
