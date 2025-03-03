@@ -12,7 +12,7 @@ const LPWConfiguration = () => {
         <section className="mb-8">
           <p className="mb-4 w-[57%]">
             After activating the LPW environment, you'll see the main interface on your localhost browser. 
-            The video below will show guide you through some basic setting you are able to change.
+            The video below will guide you through some basic setting you are able to change.
           </p>
           <video className="my-6" width="60%" controls>
             <source src="/videos/lpw_landing_guide.webm" type="video/webm" />

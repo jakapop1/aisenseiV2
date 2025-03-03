@@ -30,7 +30,7 @@ const LPWPythonWireshark = () => {
             <div>
               <h3 className="text-xl font-semibold mb-3">Installation Steps</h3>
               <ol className="list-decimal list-inside space-y-2">
-                <li>Download Python 3.12 from this <a target='_blank' rel="noreferrer" href="https://www.python.org/downloads/release/python-3120/" className="text-blue-600 hover:underline">link</a>. (Note that our setup guide does not work with Python 3.13)</li>
+                <li>Download <a target='_blank' rel="noreferrer" href="https://www.python.org/downloads/release/python-3120/" className="text-blue-600 hover:underline">Python 3.12</a> <strong>(LPW does not function on Python 3.13+)</strong></li>
                 <li>During installation, check "Add Python to PATH" 
                   <img 
                     src="/images/python_addtopath.png" 
@@ -38,7 +38,7 @@ const LPWPythonWireshark = () => {
                     className="mr-6 mb-4 w-[400px] rounded-lg shadow-md"
                   />
                 </li>
-                <li>Verify python installation:</li>
+                <li>Verify Python installation:</li>
               
               
               <CodeBlock code={`Windows
@@ -85,7 +85,7 @@ python -m pip install --upgrade pip`} />
               <h3 className="text-xl font-semibold mb-3">Installation Steps</h3>
               <ol className="list-decimal list-inside space-y-2">
                 <li>Visit <a target='_blank' rel="noreferrer" href="https://wireshark.org/download.html" className="text-blue-600 hover:underline">wireshark.org/download.html</a></li>
-                <li>Download and install the version for your operating system</li>
+                <li>Download and install the appropriate version for your operating system</li>
                 <li>Follow the default installation options</li>
               </ol>
             </div>
@@ -108,9 +108,9 @@ tshark --version`} />
 
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">Verification</h2>
-          <p className="mb-4">After installation, verify that both tools are working correctly:</p>
+          <p className="mb-4">After installation, verify that both tools are installed and working correctly:</p>
           <CodeBlock code={`# Python verification
-python -c "import sys; print(sys.version)"
+python -c "import sys; print(sys.version)" 
 
 # TShark verification
 tshark -v`} />
