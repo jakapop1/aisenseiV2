@@ -18,9 +18,14 @@ const CTISetup = () => {
           We want to install Ollama and run it in a docker container. Open WebUI utilizes Ollama to install and download new models. So we need Ollama running in a docker container for OpenWebUI. 
         </p>
 
+
+
         <CopyCodeButton 
                 code={`docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama:latest`}
         />
+
+<img src="/images/1.png" alt="Instruction 1" width="700" height="auto" />
+
 
         <p>
             If you do not have Ollama installed already this command should install it for you locally. If you already ran through the
