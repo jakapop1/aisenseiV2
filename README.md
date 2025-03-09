@@ -8,17 +8,12 @@ To bridge this gap, AI Sensei was developed—an initiative designed to equip th
 [Project Overview](#project-overview)
 
 [Week 1](#week-1)
-
 [Week 2](#week-2)
-
 [Week 3](#week-3)
-
 [Week 4](#week-4)
-
 [Week 5](#week-5)
-
 [Week 6](#week-6)
-
+[Week 7](#week-7)
 [Project Roadmap](#project-roadmap)
 
 -----------------------------------------------------------------------------------------------------------------------------
@@ -90,6 +85,12 @@ Completed final revisions to the MVP and consulted with our subject matter exper
 
 G3PO Tested on implementation. The source code provided by Tenable operates with ChatGPT API Keys. With modifications, I was able to utilize a local large language model provided by the Ollama framework.
 
+### Week 7
+#### Demo Presentation
+Showed the current progress of our current working demo to the class.
+
+#### Subject Matter Expert Evaluation
+In meeting with Mr.Munroe and Mrs.Holmes, we got to meet our project's subject matter expert and our project coordinator. For each of the team members, we were assigned various areas to look into regarding our specific use cases.
 
 # Project Roadmap
 
