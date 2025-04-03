@@ -14,6 +14,8 @@ To bridge this gap, AI Sensei was developed—an initiative designed to equip th
 [Week 5](#week-5)
 [Week 6](#week-6)
 [Week 7](#week-7)
+[Week 8](#week-8)
+[Week 9](#week-9)
 [Project Roadmap](#project-roadmap)
 
 -----------------------------------------------------------------------------------------------------------------------------
@@ -91,6 +93,17 @@ Showed the current progress of our current working demo to the class.
 
 #### Subject Matter Expert Evaluation
 In meeting with Mr.Munroe and Mrs.Holmes, we got to meet our project's subject matter expert and our project coordinator. For each of the team members, we were assigned various areas to look into regarding our specific use cases.
+
+### Week 8
+#### Stake Holder Presentation
+In this week, we met up with our stakeholders to showcase our project usecase and its implementations.
+
+### Week 9
+#### Usecase Refinement
+For this week, our main goals were to coordinate and plan for our posterboard creation due on April 17th while at the same time fine tuning our currently deployed website. 
+
+
+
 
 # Project Roadmap
 
