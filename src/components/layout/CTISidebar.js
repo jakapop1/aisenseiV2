@@ -4,9 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 const CTISidebar = () => {
   const location = useLocation();
   
-  const isActive = (path) => {
-    return location.pathname === path;
-  };
+  const isActive = (path) => location.pathname === path;
 
   const menuItems = {
     introduction: {
@@ -31,16 +29,24 @@ const CTISidebar = () => {
       path: '/cti/settings',
       items: [
         { path: '/cti/settings', text: '3.1. Configuring Open WebUI' },
-        { path: '/cti/RAG', text: '3.2 Create Your CTI Knowledge Collection' },
-        { path: '/cti/tools', text: '3.3 Tools and Functions' },
-        { path: '/cti/pipelines', text: '3.4 Introduction to Pipelines in Open WebUI'}
+        { path: '/cti/RAG', text: '3.2. Create Your CTI Knowledge Collection' },
+        { path: '/cti/tools', text: '3.3. Tools and Functions' },
+        { path: '/cti/pipelines', text: '3.4. Introduction to Pipelines in Open WebUI' }
+      ]
+    },
+    vmSetup: {
+      title: '4. Open WebUI Virtual Machine Setup',
+      path: '/cti/vm-setup',
+      items: [
+        { path: '/cti/vm-setup/virtualbox', text: '4.1. Setting Up a VM with VirtualBox' },
+        { path: '/cti/vm-setup/vmware', text: '4.2. Setting Up a VM with VMware' },
       ]
     },
     exercises: {
-      title: '4. CTI Exercises',
+      title: '5. CTI Exercises',
       path: '/cti/exercises/RAG-exercise',
       items: [
-        { path: '/cti/exercises/RAG-exercise', text: '4.1 Exercise: Testing The Benefits of RAG' }
+        { path: '/cti/exercises/RAG-exercise', text: '5.1. Exercise: Testing The Benefits of RAG' }
       ]
     }
   };

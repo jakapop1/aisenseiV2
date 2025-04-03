@@ -13,7 +13,8 @@ const Home = () => {
         </p>
       </section>
 
-      <div className="flex flex-wrap justify-center gap-8 my-8">
+      {/* Updated Grid Layout for Four Equal Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 my-8">
         {[
           {
             title: "LPW for Packet Analysis",
@@ -44,39 +45,49 @@ const Home = () => {
             link: "/cti",
             items: [
               "Streamline threat intelligence gathering",
-              "Intergration with MITRE ATT&CK Framework",
+              "Integration with MITRE ATT&CK Framework",
               "Enhanced report generation",
               "Understand RAG applications",
               "Learn pipelining for task automation"
             ]
+          },
+          {
+            title: "G3PO: AI-Assisted Reverse Engineering",
+            link: "/g3po",
+            items: [
+              "Integrate G3PO with Ghidra for enhanced code analysis",
+              "Utilize local Ollama models to interpret and explain decompiled functions",
+              "Automate function vulnerability identification",
+              "Streamline reverse-engineering workflows with AI assistance",
+              "Enhance understanding of complex code structures",
+              "Develop proficiency in combining Ghidra with advanced AI models"
+            ]
           }
+          
         ].map((course, index) => (
           <div 
             key={index} 
-            className="flex-1 min-w-[280px] max-w-[320px] bg-white rounded-lg shadow-md 
-                       hover:transform hover:-translate-y-2 hover:shadow-lg transition-all duration-300 
-                       flex flex-col my-4"
+            className="bg-white rounded-lg shadow-md hover:transform hover:-translate-y-2 hover:shadow-lg 
+                       transition-all duration-300 flex flex-col p-6"
           >
-            <div className="p-6 flex-grow flex flex-col">
-              <h3 className="text-xl font-semibold text-secondary mb-4 pb-2 border-b-2 border-primary-hover text-center">
-                {course.title}
-              </h3>
-              <ul className="space-y-3 flex-grow mb-4 !list-none">
-                {course.items.map((item, itemIndex) => (
-                  <li key={itemIndex} className="pl-5 relative text-base break-words">
-                    <span className="absolute left-0 text-primary">→</span>
-                    <span className="inline-block">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <Link
-                to={course.link}
-                className="block w-full py-2 px-4 bg-primary text-white text-sm text-center rounded-md
-                         hover:bg-secondary transition-colors duration-300"
-              >
-                Learn More
-              </Link>
-            </div>
+            <h3 className="text-xl font-semibold text-secondary mb-4 pb-2 border-b-2 border-primary-hover text-center">
+              {course.title}
+            </h3>
+            <ul className="space-y-3 flex-grow mb-4 !list-none">
+              {course.items.map((item, itemIndex) => (
+                <li key={itemIndex} className="pl-5 relative text-base break-words">
+                  <span className="absolute left-0 text-primary">→</span>
+                  <span className="inline-block">{item}</span>
+                </li>
+              ))}
+            </ul>
+            <Link
+              to={course.link}
+              className="block w-full py-2 px-4 bg-primary text-white text-sm text-center rounded-md
+                       hover:bg-secondary transition-colors duration-300"
+            >
+              Learn More
+            </Link>
           </div>
         ))}
       </div>
