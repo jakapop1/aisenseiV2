@@ -62,6 +62,14 @@ const Home = () => {
               "Enhance understanding of complex code structures",
               "Develop proficiency in combining Ghidra with advanced AI models"
             ]
+          },
+          {
+            title: "Garak: Open-Source LLM Vulnerability Scanner",
+            link: "/garak",
+            items: [
+              "Install Garak to check for vulnerabilities in your LLM",
+              "Run scans to test for XSS, prompt manipulation, and more",
+            ]
           }
           
         ].map((course, index) => (
