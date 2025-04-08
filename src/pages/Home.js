@@ -62,7 +62,18 @@ const Home = () => {
               "Enhance understanding of complex code structures",
               "Develop proficiency in combining Ghidra with advanced AI models"
             ]
-          }
+          },
+            {
+                title: "LLM Agents for Security Automation",
+                link: "/agents",
+                items: [
+                    "Leverage LLM agents to automate cybersecurity workflows",
+                    "Orchestrate multi-agent collaboration using LangChain and CrewAI",
+                    "Integrate with tools like VirusTotal, Shodan, and Elastic SIEM",
+                    "Automate tasks like threat triage and log analysis",
+                    "Customize agents for modular, reproducible workflows"
+                ]
+            }
           
         ].map((course, index) => (
           <div 

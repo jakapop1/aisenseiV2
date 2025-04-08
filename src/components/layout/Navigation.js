@@ -21,6 +21,7 @@ const Navigation = () => {
               { path: '/raptor', text: 'Packet Raptor' },
               { path: '/cti', text: 'CTI with OpenWebUI' },
               { path: '/g3po', text: 'Decompilation with G3PO' },
+              { path: '/agents', text: 'Agentic AI Automation' },
               { path: '/contact-page', text: 'Contact' }
             ].map((item) => (
               <Link 

@@ -36,6 +36,15 @@ import G3POIntro from './pages/g3po/g3poIntroduction';
 import G3PODockerSetup from './pages/g3po/g3poDockerInstall';
 import G3POExample from './pages/g3po/g3poExample';
 
+import AgentsLanding from './pages/agents/AgentsLanding';
+import AgentsLanding2 from './pages/agents/AgentsLanding2';
+import PythonSetup from "./pages/agents/AgentsSetup/PythonSetup";
+import VenvSetup from "./pages/agents/AgentsSetup/VenvSetup";
+import CalderaSetup from './pages/agents/AgentsSetup/CalderaSetup';
+import AgentsSetup from './pages/agents/AgentsSetup/AgentsSetup';
+import BasicAgents from './pages/agents/Exercises/BasicAgents';
+import CreatingAgents from './pages/agents/Exercises/CreatingAgents';
+
 function App() {
   return (
     <Router>
@@ -79,6 +88,16 @@ function App() {
             <Route path="/g3po/g3po-introduction" element={<G3POIntro />} />
             <Route path="/g3po/docker" element={<G3PODockerSetup />} />
             <Route path="/g3po/g3po-introduction/g3po-example" element={<G3POExample />} />
+
+            <Route path="/agents" element={<AgentsLanding />} />
+            <Route path="/agents/introduction" element={<AgentsLanding />} />
+            <Route path="/agents/introduction2" element={<AgentsLanding2 />} />
+            <Route path="/agents/python" element={<PythonSetup />} />
+            <Route path="/agents/venv" element={<VenvSetup />} />
+            <Route path="/agents/caldera" element={<CalderaSetup />} />
+            <Route path="/agents/setup" element={<AgentsSetup />} />
+            <Route path="/agents/basic" element={<BasicAgents />} />
+            <Route path="/agents/create" element={<CreatingAgents />} />
 
 
 
