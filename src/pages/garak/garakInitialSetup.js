@@ -76,7 +76,7 @@ nothing to do 🤷 try --help</code></pre>
         <p>
           For additional help, you can check the official documentation:
         </p>
-        <a href='https://docs.garak.ai/' target='_blank'><pre><code>https://docs.garak.ai/</code></pre></a>
+        <a href='https://docs.garak.ai/' target='_blank' rel='noreferrer noopener'><pre><code>https://docs.garak.ai/</code></pre></a>
       </section>
       <NavButtons
         previous = {{
