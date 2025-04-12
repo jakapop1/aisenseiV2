@@ -45,13 +45,18 @@ body {
 }
 
 .nav-title {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.25rem;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-right: 2rem;
 }
 
 .nav-links {
   display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
   gap: 1rem;
+  white-space: nowrap;
 }
 
 .nav-link {
