@@ -2,7 +2,7 @@ import React from 'react';
 import G3POLayout from '../../components/layout/G3POLayout';
 import NavButtons from '../../components/shared/NavButtons';
 
-const G3PODockerSetup = () => {
+const G3POScripts = () => {
   return (
     <G3POLayout>
       <h1>Guide to Installing Docker</h1>
@@ -21,7 +21,7 @@ const G3PODockerSetup = () => {
 
         <h2>Installation: Docker Compose Standalone</h2>
         <p>
-            The reccommended way to install Docker Compose is by installing Docker Desktop but if you just need Docker Compose you can install it following these directions.
+            Hello World
         </p>
 
         <a href='https://docs.docker.com/compose/install/standalone/'><pre>
@@ -33,16 +33,16 @@ const G3PODockerSetup = () => {
       </section>
       <NavButtons 
           previous = {{
-            link: "/g3po/g3po-introduction/g3po-example",
-            text: "G3PO Example"
+            link: "/g3po/docker/ollama/ghidra",
+            text: "Ghidra Installation"
           }}
           next={{
-            link: "/g3po/docker/ollama",
-            text: "Ollama with Docker"
+            link: "/g3po/docker/ollama/ghidra",
+            text: "Tbd"
           }}
         />
     </G3POLayout>
   );
 };
 
-export default G3PODockerSetup;
+export default G3POScripts;

@@ -8,26 +8,30 @@ const G3POSidebar = () => {
 
   const menuItems = {
     introduction: {
-      title: '1. Decompiling with G3PO',
+      title: '1. Introduction',
       path: '/g3po',
       items: [
-        { path: '/g3po', text: 'Module Introduction' },
-        { path: '/g3po/g3po-introduction', text: '1.2. What Is G3PO?' }
+        { path: '/g3po', text: '1.1 Use Case' },
+        { path: '/g3po/g3po-introduction', text: '1.2 What is G3PO?' },
+        { path: '/g3po/g3po-introduction/g3po-example', text: '1.3 Example Use Case' }
       ]
     },
-    Example: {
-      title: 'Example',
-      path: '/g3po/g3po-introduction/g3po-example',
+    setup: {
+      title: '2. Set Up',
+      path: '/g3po/docker',
       items: [
-        { path: '/g3po/g3po-introduction/g3po-example', text: 'Using Ghidra with G3PO' },
+        { path: '/g3po/docker', text: 'Docker Installation' },
+        { path: '/g3po/docker/ollama', text: 'Ollama with Docker Setup'},
+        { path: '/g3po/docker/ollama/ghidra', text: 'Installing and Using Ghidra' },
+        { path: '/g3po/docker/ollama/ghidra/script', text: 'Running the G3PO Script' }
       ]
     }
   };
-
+  
   return (
     <aside className="sidebar">
       <h2 className="sidebar-title">
-        G3PO and Ollama
+        G3PO
       </h2>
       
       {Object.entries(menuItems).map(([key, section]) => (

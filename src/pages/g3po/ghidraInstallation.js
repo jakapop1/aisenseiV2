@@ -2,7 +2,7 @@ import React from 'react';
 import NavButtons from '../../components/shared/NavButtons';
 import G3POLayout from '../../components/layout/G3POLayout';
 
-const G3POExample = () => {
+const GhidraInstallation = () => {
   return (
     <G3POLayout>
       <h1>Use Case Example</h1>
@@ -39,16 +39,16 @@ const G3POExample = () => {
       </section>
       <NavButtons 
           previous = {{
-            link: "/g3po/g3po-introduction",
-            text: "G3PO Introduction"
+            link: "/g3po/docker/ollama",
+            text: "Ollama with Docker Setup"
           }}
           next={{
-            link: "/g3po/docker",
-            text: "Docker Set Up"
+            link: "/g3po/docker/ollama/ghidra/script",
+            text: "G3PO Script"
           }}
         />
     </G3POLayout>
   );
 };
 
-export default G3POExample;
+export default GhidraInstallation;
