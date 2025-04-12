@@ -35,6 +35,10 @@ import G3POLanding from './pages/g3po/g3poLanding';
 import G3POIntro from './pages/g3po/g3poIntroduction';
 import G3PODockerSetup from './pages/g3po/g3poDockerInstall';
 import G3POExample from './pages/g3po/g3poExample';
+import GarakFirstScan from './pages/garak/garakFirstScan';
+import GarakLanding from './pages/garak/garakLanding';
+import GarakInitialSetup from './pages/garak/garakInitialSetup';
+import GarakUnderstandingOutput from './pages/garak/garakUnderstandingOutput';
 
 import AgentsLanding from './pages/agents/AgentsLanding';
 import AgentsLanding2 from './pages/agents/AgentsLanding2';
@@ -88,6 +92,11 @@ function App() {
             <Route path="/g3po/g3po-introduction" element={<G3POIntro />} />
             <Route path="/g3po/docker" element={<G3PODockerSetup />} />
             <Route path="/g3po/g3po-introduction/g3po-example" element={<G3POExample />} />
+
+            <Route path="/garak" element={<GarakLanding/>} />
+            <Route path="/garak/first-scan" element={<GarakFirstScan />} />
+            <Route path="/garak/initial-setup" element={<GarakInitialSetup />} />
+            <Route path="/garak/understanding-output" element={<GarakUnderstandingOutput />} />
 
             <Route path="/agents" element={<AgentsLanding />} />
             <Route path="/agents/introduction" element={<AgentsLanding />} />

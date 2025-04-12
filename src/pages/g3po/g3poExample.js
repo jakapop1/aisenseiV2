@@ -16,7 +16,7 @@ const G3POExample = () => {
 
 
         <img src="/images/Jack/simpleCode.png" alt="Example Code" width="700" height="auto" />
-        <h1></h1>
+      
 
     <h2>After Decompilation</h2>
         <img src="/images/Jack/beforeAI.png" alt="Example Code" width="700" height="auto" />

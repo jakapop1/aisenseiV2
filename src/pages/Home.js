@@ -63,6 +63,14 @@ const Home = () => {
               "Develop proficiency in combining Ghidra with advanced AI models"
             ]
           },
+          {
+            title: "Garak: Open-Source LLM Vulnerability Scanner",
+            link: "/garak",
+            items: [
+              "Install Garak to check for vulnerabilities in your LLM",
+              "Run scans to test for XSS, prompt manipulation, and more",
+            ]
+          },
             {
                 title: "CSLA for Agentic Automation",
                 link: "/agents",
@@ -74,7 +82,7 @@ const Home = () => {
                     "Customize agents for modular, reproducible workflows"
                 ]
             }
-          
+
         ].map((course, index) => (
           <div 
             key={index} 
