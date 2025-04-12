@@ -10,25 +10,25 @@ const AgentsSidebar = () => {
 
   const menuItems = {
     introduction: {
-      title: '1. Introduction to LLM Agents',
+      title: '1. Introduction to CSLA',
       path: '/agents/introduction',
       items: [
         { path: '/agents/introduction', text: '1.1 Module Introduction' },
-        { path: '/agents/introduction2', text: '1.2 What is cyber-security-llm-agents?' }
+        { path: '/agents/introduction2', text: '1.2 What is CSLA?' }
       ]
     },
     setup: {
-      title: '2. LLM Agents Setup',
+      title: '2. CSLA Setup',
       path: '/agents/venv',
       items: [
-        { path: '/agents/venv', text: '2.1 Installing Python' },
+        { path: '/agents/python', text: '2.1 Installing Python' },
         { path: '/agents/venv', text: '2.2 Setting Up a Virtual Environment' },
         { path: '/agents/caldera', text: '2.3 Installing Caldera' },
-        { path: '/agents/setup', text: '2.4 Installing cyber-security-llm-agents' }
+        { path: '/agents/setup', text: '2.4 Installing CSLA' }
       ]
     },
     exercises: {
-      title: '3. LLM Agents Exercises',
+      title: '3. CSLA Exercises',
       path: '/agents/basic',
       items: [
         { path: '/agents/basic', text: '3.1 Basic Actions' },
@@ -40,7 +40,7 @@ const AgentsSidebar = () => {
   return (
     <aside className="sidebar">
       <h2 className="sidebar-title">
-        cyber-security-llm-agents (LLM Agents)
+        cyber-security-llm-agents (CSLA)
       </h2>
       
       {Object.entries(menuItems).map(([key, section]) => (

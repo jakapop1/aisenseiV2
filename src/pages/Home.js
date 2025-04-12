@@ -64,7 +64,7 @@ const Home = () => {
             ]
           },
             {
-                title: "LLM Agents for Security Automation",
+                title: "CSLA for Agentic Automation",
                 link: "/agents",
                 items: [
                     "Leverage LLM agents to automate cybersecurity workflows",

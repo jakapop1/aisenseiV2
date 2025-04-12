@@ -8,7 +8,7 @@ const VenvSetup = () => {
   return (
     <AgentsLayout>
       <div className="lpw-content">
-        <h1>Setting Up Virtual Environment for LPW</h1>
+        <h1>Setting Up Virtual Environment for CSLA</h1>
         
         <section className="mb-8">
           <p className="mb-4">
@@ -83,50 +83,9 @@ source bin/activate`} />
             <li>
               Ensure your virtual environment is activated (you should see (lpw_env) at the start of your command line)
             </li>
-            <li>
-              Install LPW:
-              <CopyCodeButton code="pip install lpw" />
-            </li>
-          <img 
-            src="/images/pip-install-lpw_1.png" 
-            alt="pip Install lpw 1" 
-            className="mr-6 mb-4 w-[500px] rounded-lg shadow-md"
-          />
-          <img 
-            src="/images/pip-install-lpw_2.png" 
-            alt="pip Install lpw 2" 
-            className="mr-6 mb-4 w-[500px] rounded-lg shadow-md"
-          />
           </ol>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-4">Running LPW</h2>
-          <ol className="list-decimal space-y-4">
-            <li>Navigate to your Scripts directory within the virtual environment: 
-              <CopyCodeButton code="cd Scripts" />
-            </li>
-            <li>Run lpw directly from streamlit: 
-              <CopyCodeButton code="streamlit run lpw_main.py" />
-            </li>
-            <img 
-              src="/images/streamlit-run.png" 
-              alt="pip Install lpw 1" 
-              className="mr-6 mb-4 w-[600px] rounded-lg shadow-md"
-            />
-            <li>If this doesn't work go through your file explorer to the Scripts folder of the environment and ensure there is a streamlit file and lpw_main.py file among many other lpw files</li>
-            <img 
-              src="/images/lpw-directory-lpwfile.png" 
-              alt="pip Install lpw 1" 
-              className="mr-6 mb-4 w-[500px] rounded-lg shadow-md"
-            />
-            <img 
-              src="/images/lpw-directory-streamlitfile.png" 
-              alt="pip Install lpw 1" 
-              className="mr-6 mb-4 w-[500px] rounded-lg shadow-md"
-            />
-          </ol>
-        </section>
 
         <section className="mb-8">
           <h2 className="text-xl font-semibold mb-4">Common Commands Reference</h2>
@@ -144,17 +103,6 @@ source bin/activate`} />
           <CopyCodeButton code="deactivate" />
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-4">Additional Notes</h2>
-          <ul className="list-disc ml-6 space-y-2">
-            <li>Keep the command prompt/terminal window open while using LPW</li>
-            <li>
-              To update LPW in the future, activate the virtual environment and run:
-              <CopyCodeButton code="pip install --upgrade lpw" />
-            </li>
-            <li>For any issues or questions, please refer to the <a target='_blank' rel="noreferrer" href="https://github.com/krsna1729/local-packet-whisperer/tree/main" className="text-blue-600 hover:underline">LPW github page</a> or community forum for the most up-to-date information and support.</li>
-          </ul>
-        </section>
 
         <NavButtons 
           previous={{

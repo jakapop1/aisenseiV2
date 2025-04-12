@@ -7,7 +7,7 @@ const AgentsLanding = () => {
   return (
     <AgentsLayout>
       <div classname="lpw-content">
-        <h1>Guide to using cyber-security-llm-agents (LLM Agents)</h1>
+        <h1>Guide to using cyber-security-llm-agents (CSLA)</h1>
         <section>
           <h2>Introduction</h2>
           <p>
@@ -27,14 +27,18 @@ const AgentsLanding = () => {
             Agentic AI refers to the use of AI agents—autonomous software entities that can make decisions, take
             actions, and interact with tools or data sources—to complete specific tasks in real time. Each agent is
             designed with a role, a goal, and often access to one or more tools it can use to achieve that goal.
-            For instance, in a cybersecurity application, an agent might be responsible for extracting indicators of compromise (IOCs) from a threat
-            report, querying an IP address against external databases, or analyzing a stream of log data. The agent
-            processes information, reasons through the task, and either completes it or passes results to another agent
-            in the system.
+            For instance, in a cybersecurity application, an agent might be responsible for extracting indicators of
+            compromise (IOCs) from a threat report, querying an IP address against external databases, or analyzing a
+            stream of log data. The agent processes information, reasons through the task, and either completes it
+            or passes results to another agent in the system.
           </p>
           <p>
-            When multiple agents are connected and work together toward a shared objective, we refer to this as agentic AI. These agents can communicate, coordinate, and divide work—mirroring how human teams operate. This makes it possible to automate complex, multi-step tasks such as incident triage, threat hunting, or report generation in a modular and scalable way.
-            By structuring AI in this way, cybersecurity professionals can build workflows that are more adaptive, efficient, and capable of handling the growing scale and complexity of modern threats.
+            When multiple agents are connected and work together toward a shared objective, we refer to this as agentic
+            AI. These agents can communicate, coordinate, and divide work—mirroring how human teams operate. This makes
+            it possible to automate complex, multi-step tasks such as incident triage, threat hunting, or report
+            generation in a modular and scalable way. By structuring AI in this way, cybersecurity professionals can
+            build workflows that are more adaptive, efficient, and capable of handling the growing scale and complexity
+            of modern threats.
           </p>
 
 
