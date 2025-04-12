@@ -11,7 +11,8 @@ const AgentsLanding2 = () => {
         <section>
           <h2>cyber-security-llm-agents</h2>
           <p>
-            cyber-security-llm-agents (or CSLA, for brevity, though not to be confused with CSLA .NET) is an open-source
+            cyber-security-llm-agents (or CSLA, for brevity, not to be confused with the unrelated CSLA .NET) is an
+            open-source
             framework designed to help analysts
             automate and streamline repetitive or data-heavy cybersecurity tasks through the use of AI agents. It does
             this by allowing users to design and deploy AI-powered workflows that can be customized for a variety of
@@ -22,17 +23,19 @@ const AgentsLanding2 = () => {
             it.
           </p>
           <p>
-            It supports local language models through tools like Ollama, and connects to real-world data sources such as
+            CSLA supports various large language models locally through tools like Ollama, but can also connect to
+            real-world data sources such as
             VirusTotal, Shodan, and Elastic SIEM. The system is built on top of LangChain and CrewAI, making it easy to
-            configure intelligent, role-specific agents that can collaborate to complete complex workflows. </p>
+            configure intelligent, role-specific agents that can collaborate to complete complex workflows.
+          </p>
 
           <h2>Why use cyber-security-llm-agents?</h2>
           <p>
             cyber-security-llm-agents is a powerful, flexible, and most importantly, easy-to-use toolset that offers
             multiple deployment methods, including local execution with tools like Ollama, allowing analysts to keep
-            data on-premises while still taking advantage of powerful language models. It’s also integrated with widely
+            data on-premises while still taking advantage of powerful language models. It’s also integrated with many widely
             used services such as VirusTotal, Shodan, and Elastic, providing direct access to threat intelligence and
-            log data. But more importantly, it’s designed to be accessible for beginners and simple to run, but it is
+            log data. But most importantly, it’s designed to be accessible for beginners and simple to run, yet is
             still extensible for advanced users who want full control over their workflows.
           </p>
 

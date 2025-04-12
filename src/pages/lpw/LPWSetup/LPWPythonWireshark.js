@@ -8,20 +8,33 @@ const LPWPythonWireshark = () => {
     <LPWLayout>
       <div className="lpw-content">
         <h1 className="text-3xl font-bold mb-8">Installing Prerequisites for LPW</h1>
-        
+
+        <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6">
+          <p className="mb-2"><strong>IMPORTANT:</strong> LPW is currently buggy for Windows devices. You will likely need to use a VM, like WSL Ubuntu, in order for it to function properly.</p>
+          <p>To install WSL, simply run:
+            <CodeBlock code={`wsl --install`}/>
+          </p>
+          <p>
+            You can find Ubuntu on the Microsoft Store (recommended), or you can download it from the official website.
+          </p>
+        </div>
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-6">Install Python</h2>
-          
+
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-3">Why Python?</h3>
             <p className="mb-4">
-              Python is a versatile and beginner-friendly programming language known for its simplicity and extensive libraries. 
-              It is widely used for various applications, including web development, data analysis, artificial intelligence, and more. 
+              Python is a versatile and beginner-friendly programming language known for its simplicity and extensive
+              libraries.
+              It is widely used for various applications, including web development, data analysis, artificial
+              intelligence, and more.
               Python provides a clear and concise syntax, making it easier for developers to write and maintain code.
             </p>
             <p>
-              Python is essential for running LPW as the program is written in Python. LPW relies on Python's capabilities to 
-              process and analyze packet data, interact with the LLM, and provide a user-friendly interface. Without Python 
+              Python is essential for running LPW as the program is written in Python. LPW relies on Python's
+              capabilities to
+              process and analyze packet data, interact with the LLM, and provide a user-friendly interface. Without
+              Python
               installed, you won't be able to execute the LPW scripts and run the program.
             </p>
           </div>
@@ -30,25 +43,28 @@ const LPWPythonWireshark = () => {
             <div>
               <h3 className="text-xl font-semibold mb-3">Installation Steps</h3>
               <ol className="list-decimal list-inside space-y-2">
-                <li>Download <a target='_blank' rel="noreferrer" href="https://www.python.org/downloads/release/python-3120/" className="text-blue-600 hover:underline">Python 3.12</a> <strong>(LPW does not function on Python 3.13+)</strong></li>
-                <li>During installation, check "Add Python to PATH" 
-                  <img 
-                    src="/images/python_addtopath.png" 
-                    alt="python Add to Path" 
-                    className="mr-6 mb-4 w-[400px] rounded-lg shadow-md"
+                <li>Download <a target='_blank' rel="noreferrer"
+                                href="https://www.python.org/downloads/release/python-3120/"
+                                className="text-blue-600 hover:underline">Python 3.12</a> <strong>(LPW does not function
+                  on Python 3.13+)</strong></li>
+                <li>During installation, check "Add Python to PATH"
+                  <img
+                      src="/images/python_addtopath.png"
+                      alt="python Add to Path"
+                      className="mr-6 mb-4 w-[400px] rounded-lg shadow-md"
                   />
                 </li>
                 <li>Verify Python installation:</li>
-              
-              
-              <CodeBlock code={`Windows
+
+
+                <CodeBlock code={`Windows
 python --version
 
 Linux/MacOS
-python3 --version`} />
-            <li>Verify pip installation:</li>
+python3 --version`}/>
+                <li>Verify pip installation:</li>
               </ol>
-              
+
               <CodeBlock code={`Windows/Linux
 pip --version
               
@@ -56,26 +72,32 @@ Install pip if missing:
 python -m ensurepip --default-pip
 
 Upgrade pip:
-python -m pip install --upgrade pip`} />
+python -m pip install --upgrade pip`}/>
             </div>
           </div>
         </section>
 
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-6">Install Wireshark</h2>
-          
+
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-3">Why Wireshark?</h3>
             <p className="mb-4">
-              Wireshark is a powerful and widely used network protocol analyzer. It allows you to capture, inspect, and analyze 
-              network traffic in real-time or from previously captured packet data. Wireshark provides a graphical user interface 
-              (GUI) for easy navigation and analysis of network packets, making it accessible to both beginners and experienced 
+              Wireshark is a powerful and widely used network protocol analyzer. It allows you to capture, inspect, and
+              analyze
+              network traffic in real-time or from previously captured packet data. Wireshark provides a graphical user
+              interface
+              (GUI) for easy navigation and analysis of network packets, making it accessible to both beginners and
+              experienced
               network professionals.
             </p>
             <p>
-              LPW utilizes Wireshark's command-line utility, TShark, to process and extract relevant information from PCAP files. 
-              TShark is a crucial component that enables LPW to convert the binary packet data into a format that can be fed to 
-              the LLM for analysis. Without Wireshark and its TShark executable, LPW would not be able to handle and process the 
+              LPW utilizes Wireshark's command-line utility, TShark, to process and extract relevant information from
+              PCAP files.
+              TShark is a crucial component that enables LPW to convert the binary packet data into a format that can be
+              fed to
+              the LLM for analysis. Without Wireshark and its TShark executable, LPW would not be able to handle and
+              process the
               packet capture files effectively.
             </p>
           </div>
@@ -84,7 +106,8 @@ python -m pip install --upgrade pip`} />
             <div>
               <h3 className="text-xl font-semibold mb-3">Installation Steps</h3>
               <ol className="list-decimal list-inside space-y-2">
-                <li>Visit <a target='_blank' rel="noreferrer" href="https://wireshark.org/download.html" className="text-blue-600 hover:underline">wireshark.org/download.html</a></li>
+                <li>Visit <a target='_blank' rel="noreferrer" href="https://wireshark.org/download.html"
+                             className="text-blue-600 hover:underline">wireshark.org/download.html</a></li>
                 <li>Download and install the appropriate version for your operating system</li>
                 <li>Follow the default installation options</li>
               </ol>
@@ -101,7 +124,7 @@ sudo usermod -a -G wireshark $USER
 sudo dnf install wireshark
 
 # Verify TShark installation
-tshark --version`} />
+tshark --version`}/>
             </div>
           </div>
         </section>
@@ -113,18 +136,18 @@ tshark --version`} />
 python -c "import sys; print(sys.version)" 
 
 # TShark verification
-tshark -v`} />
+tshark -v`}/>
         </section>
 
-        <NavButtons 
-          previous={{
-            link: "/lpw/introduction",
-            text: "Introduction to LPW"
-          }}
-          next={{
-            link: "/lpw/ollama",
-            text: "Installing Ollama"
-          }}
+        <NavButtons
+            previous={{
+              link: "/lpw/introduction",
+              text: "Introduction to LPW"
+            }}
+            next={{
+              link: "/lpw/ollama",
+              text: "Installing Ollama"
+            }}
         />
       </div>
     </LPWLayout>
