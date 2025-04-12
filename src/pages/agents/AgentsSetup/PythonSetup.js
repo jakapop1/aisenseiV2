@@ -7,10 +7,9 @@ const PythonSetup = () => {
   return (
     <AgentsLayout>
       <div className="lpw-content">
-        <h1 className="text-3xl font-bold mb-8">Installing Prerequisites for CSLA</h1>
+        <h1 className="text-3xl font-bold mb-8">Installing Python</h1>
         
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-6">Install Python</h2>
 
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-3">Why Python?</h3>
@@ -29,10 +28,10 @@ const PythonSetup = () => {
             <div>
               <h3 className="text-xl font-semibold mb-3">Installation Steps</h3>
               <ol className="list-decimal list-inside space-y-2">
-                <li>Download <a target='_blank' rel="noreferrer"
+                <li>Download the <a target='_blank' rel="noreferrer"
                                 href="https://www.python.org/downloads/"
-                                className="text-blue-600 hover:underline">Python</a></li>
-                <li>During installation, check "Add Python to PATH"
+                                className="text-blue-600 hover:underline">Python installer</a>.</li>
+                <li>Follow the installation instructions. Make sure to check "Add python.exe to PATH".
                   <img
                       src="/images/python_addtopath.png"
                     alt="python Add to Path" 

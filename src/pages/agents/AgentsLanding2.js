@@ -2,6 +2,7 @@
 import React from 'react';
 import AgentsLayout from '../../components/layout/AgentsLayout';
 import NavButtons from '../../components/shared/NavButtons';
+import CodeBlock from "../../components/shared/CodeBlock";
 
 const AgentsLanding2 = () => {
   return (
@@ -33,7 +34,8 @@ const AgentsLanding2 = () => {
           <p>
             cyber-security-llm-agents is a powerful, flexible, and most importantly, easy-to-use toolset that offers
             multiple deployment methods, including local execution with tools like Ollama, allowing analysts to keep
-            data on-premises while still taking advantage of powerful language models. It’s also integrated with many widely
+            data on-premises while still taking advantage of powerful language models. It’s also integrated with many
+            widely
             used services such as VirusTotal, Shodan, and Elastic, providing direct access to threat intelligence and
             log data. But most importantly, it’s designed to be accessible for beginners and simple to run, yet is
             still extensible for advanced users who want full control over their workflows.
@@ -47,6 +49,15 @@ const AgentsLanding2 = () => {
           </p>
 
         </section>
+
+
+        <div className="bg-red-50 border-l-4 border-red-500 p-4 mb-6">
+          <p className="mb-2"><strong>CAUTION:</strong> cyber-security-llm-agents uses LLMs to generate code and
+            commands that interact directly with your system. Running LLM-generated source code and commands poses a
+            security risk to your host environment! Be careful and only run this in a virtual or test environment.</p>
+        </div>
+
+
         <NavButtons
             previous={{
               text: "Module Introduction",

@@ -22,7 +22,7 @@ const AgentsSidebar = () => {
       path: '/agents/venv',
       items: [
         { path: '/agents/python', text: '2.1 Installing Python' },
-        { path: '/agents/venv', text: '2.2 Setting Up a Virtual Environment' },
+        { path: '/agents/venv', text: '2.2 Setting Up VirtualBox' },
         { path: '/agents/caldera', text: '2.3 Installing Caldera' },
         { path: '/agents/setup', text: '2.4 Installing CSLA' }
       ]
@@ -31,7 +31,7 @@ const AgentsSidebar = () => {
       title: '3. CSLA Exercises',
       path: '/agents/basic',
       items: [
-        { path: '/agents/basic', text: '3.1 Basic Actions' },
+        { path: '/agents/basic', text: '3.1 Using CSLA' },
         { path: '/agents/create', text: '3.2 Creating New Actions' },
       ]
     }
