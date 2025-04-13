@@ -8,255 +8,128 @@ const BasicAgents = () => {
   return (
     <AgentsLayout>
       <div className="lpw-content">
-        <h1>Understanding LLMs in Packet Analysis</h1>
-        
+        <h1>Using cyber-security-llm-agents</h1>
+
+        <div className="bg-red-50 border-l-4 border-red-500 p-4 mb-6">
+          <p className="mb-2"><strong>CAUTION:</strong> cyber-security-llm-agents uses LLMs to generate code and
+            commands that interact directly with your system. Running LLM-generated source code and commands poses a
+            security risk to your host environment! Be careful and only run this in a virtual or test environment.</p>
+        </div>
+
         <section className="mb-8">
           <p className="mb-6">
-            Local Packet Whisperer (LPW) represents a significant advancement in packet analysis 
-            by leveraging Large Language Models (LLMs). However, its effectiveness heavily depends 
-            on two critical factors: the choice of the underlying model and the way we communicate 
-            with it through prompts. Unlike traditional packet analysis tools that work with 
-            predefined rules and signatures, LPW's ability to understand and analyze network 
-            traffic relies on how well we can guide the LLM through our model selection and 
-            prompting strategy.
+            Cyber-security-llm-agents is a straightforward and flexible tool that compacts multi-step cybersecurity
+            workflows into single, easy-to-run "actions." Each action represents a predefined task—such as summarizing
+            threat reports, gathering simulation data from Caldera, or extracting MITRE techniques—that can be executed
+            directly from the command line with minimal setup. The framework includes nine built-in actions, providing a
+            strong foundation for automating common cybersecurity scenarios and red team simulations. To run an action,
+            simply use the following syntax:
           </p>
+          <CopyCodeButton code="python run_agents.py <ACTION NAME>"/>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-4">Understanding Model Capabilities</h2>
-          <p className="mb-4">
-            Before diving into specific models, it's helpful to understand that each language 
-            model has been pretrained - meaning it has learned to understand language and concepts 
-            by analyzing vast amounts of text data. While all these models can handle general 
-            tasks, they each have their own strengths that make them better suited for different 
-            situations.
-          </p>
-
-          <div className="grid md:grid-cols-3 gap-6 mb-6">
-            <div className="p-4 border rounded-lg">
-              <h3 className="text-lg font-semibold mb-2">Dolphin Mistral (Default)</h3>
-              <p>
-                Built on the Mistral foundation model, it prioritizes speed and efficiency. 
-                Excellent for quick responses and good general understanding rather than deep 
-                technical analysis.
+          <h2 className="text-xl font-semibold mb-4">Actions Available by Default</h2>
+          <ol>
+            <li>
+              <h3 className="text-lg font-semibold mb-2">1. HELLO_AGENTS</h3>
+              <CopyCodeButton code="python run_agents.py HELLO_AGENTS"/>
+              <p className="mb-4">
+                Sends a playful prompt to the agent asking for a cybersecurity-themed joke. This action is meant as a
+                basic health check to verify that the LLM agent pipeline is functioning properly.
               </p>
-              <ul className="list-disc ml-4 mt-2">
-                <li>Writing emails or blog posts</li>
-                <li>Answering general questions</li>
-                <li>Summarizing documents</li>
-                <li>Basic research tasks</li>
-              </ul>
-            </div>
+            </li>
 
-            <div className="p-4 border rounded-lg">
-              <h3 className="text-lg font-semibold mb-2">Llama 2</h3>
-              <p>
-                Developed by Meta, represents a middle ground in capabilities. Excels at maintaining 
-                context and generating detailed, human-like responses.
+            <li>
+              <h3 className="text-lg font-semibold mb-2">2. SUMMARIZE_RECENT_CISA_VULNS</h3>
+              <CopyCodeButton code="python run_agents.py SUMMARIZE_RECENT_CISA_VULNS"/>
+              <p className="mb-4">
+                Downloads the CISA Known Exploited Vulnerabilities (KEV) JSON feed, extracts the 10 most recent entries
+                using jq, and summarizes them. It highlights affected products, descriptions, and links—helping users
+                stay informed on actively exploited vulnerabilities.
               </p>
-              <ul className="list-disc ml-4 mt-2">
-                <li>Educational content creation</li>
-                <li>Detailed explanations</li>
-                <li>Long-form writing</li>
-                <li>Complex conversations</li>
-              </ul>
-            </div>
+            </li>
 
-            <div className="p-4 border rounded-lg bg-green-50">
-              <h3 className="text-lg font-semibold mb-2">Qwen 2.5 (Recommended)</h3>
-              <p>
-                Stands out for technical and analytical tasks. Excels at processing structured 
-                information and following complex instructions with high accuracy.
+            <li>
+              <h3 className="text-lg font-semibold mb-2">3. DETECT_AGENT_PRIVILEGES</h3>
+              <CopyCodeButton code="python run_agents.py DETECT_AGENT_PRIVILEGES"/>
+              <p className="mb-4">
+                Uses PowerShell on the Caldera agent to check the user's privilege level (e.g., user, admin, system) and
+                summarizes it in a structured table. Helps assess how much access an agent has during simulation.
               </p>
-              <ul className="list-disc ml-4 mt-2">
-                <li>Technical documentation</li>
-                <li>Data analysis</li>
-                <li>Scientific writing</li>
-                <li>Complex problem-solving</li>
-              </ul>
-            </div>
-          </div>
-        </section>
+            </li>
 
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-4">Understanding Model Limitations</h2>
-          <div className="p-4 rounded-lg">
-            <ul className="space-y-2">
-              <li><strong>Knowledge Cutoff:</strong> Models can only reference information they 
-                were trained on - similar to a person who hasn't read any news or learned 
-                anything new since a certain date.</li>
-              <li><strong>Technical Knowledge:</strong> While these models can discuss many topics, 
-                they may struggle with highly specialized subjects that weren't well-represented 
-                in their training data.</li>
-              <li><strong>Accuracy Concerns:</strong> Models can sometimes generate incorrect 
-                information that sounds convincing - a phenomenon known as "hallucination" in 
-                AI terminology. Always verify critical information from reliable sources.</li>
-            </ul>
-          </div>
-        </section>
-
-        <h1>Model Selection and Installation Guide</h1>
-        
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-4">Installing Models with Ollama</h2>
-          <p className="mb-4">
-            Before diving into model selection, you'll need to install the models through Ollama. 
-            First, ensure Ollama is running:
-          </p>
-          <CopyCodeButton code="ollama serve" />
-          
-          <div className="mt-6 space-y-6">
-            <div>
-              <h3 className="text-lg font-semibold mb-2">Install Dolphin Mistral (default)</h3>
-              <CopyCodeButton code="ollama pull dolphin-mistral:latest" />
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-2">Install Llama 2</h3>
-              <CopyCodeButton code="ollama pull llama2:13b" />
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-2">Install Qwen 2.5</h3>
-              <CopyCodeButton code="ollama pull qwen2.5:3b" />
-            </div>
-          </div>
-        </section>
-
-        <h1>Prompt Engineering for LPW</h1>
-        
-        <section className="mb-8">
-          <p className="mb-6">
-            Prompt engineering is particularly crucial for LPW because it bridges the gap between 
-            general language models and specialized packet analysis. The way we structure our 
-            prompts directly influences the quality and usefulness of the analysis we receive.
-          </p>
-
-          <div className="bg-blue-50 p-6 rounded-lg mb-6">
-            <h2 className="text-xl font-semibold mb-4">Basic Principles of Effective Prompting</h2>
-            <ul className="space-y-2">
-              <li><strong>Specificity:</strong> Clear, specific requests help the model focus on 
-                relevant packet attributes and patterns.</li>
-              <li><strong>Context:</strong> Including technical details about network protocols 
-                and attack patterns improves analysis accuracy.</li>
-              <li><strong>Structure:</strong> Requesting organized output formats makes findings 
-                more actionable.</li>
-              <li><strong>Domain Knowledge:</strong> Incorporating cybersecurity context helps 
-                guide the model's analysis.</li>
-            </ul>
-          </div>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-4">Practical Prompt Engineering Examples</h2>
-          
-          <div className="space-y-6">
-            <div className="border rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3">Basic Prompt</h3>
-              <CodeBlock code="What's in this packet capture?" />
-              <p className="mt-3 text-gray-600">
-                This type of prompt typically results in surface-level analysis that lacks 
-                actionable insights. Without specific guidance, the model may miss critical 
-                security indicators or fail to focus on relevant packet attributes.
+            <li>
+              <h3 className="text-lg font-semibold mb-2">4. COLLECT_CALDERA_INFO</h3>
+              <CopyCodeButton code="python run_agents.py COLLECT_CALDERA_INFO"/>
+              <p className="mb-4">
+                Queries the active Caldera instance to get the current operation ID and the PAW
+                (Platform/Architecture/Window) of the connected agent. Useful as setup info for other Caldera-based
+                actions.
               </p>
-            </div>
+            </li>
 
-            <div className="border rounded-lg p-6">
-              <h3 className="text-lg font-semibold mb-3">Intermediate Prompt</h3>
-              <CodeBlock code={`Analyze this PCAP file for:
-- Source and destination IPs
-- Protocol information
-- Unusual patterns`} />
-              <p className="mt-3 text-gray-600">
-                While this prompt provides more structure, it still doesn't give the model 
-                enough context about what constitutes "unusual" or what specific protocol 
-                behaviors might be significant.
+            <li>
+              <h3 className="text-lg font-semibold mb-2">5. IDENTIFY_EDR_BYPASS_TECHNIQUES</h3>
+              <CopyCodeButton code="python run_agents.py IDENTIFY_EDR_BYPASS_TECHNIQUES"/>
+              <p className="mb-4">
+                Downloads and parses a dataset of EDR telemetry gaps (from the EDR-Telemetry repo) to highlight areas
+                where Elastic EDR may lack visibility. The output is a categorized list of telemetry gaps.
               </p>
-            </div>
+            </li>
 
-            <div className="border rounded-lg p-6 bg-green-50">
-              <h3 className="text-lg font-semibold mb-3">Advanced Prompt (Recommended)</h3>
-              <CodeBlock code={`Perform a detailed analysis of this PCAP with focus on:
-1. Layer-by-layer packet inspection
-2. All IP addresses and their geolocation
-3. Protocol anomalies and potential security issues
-
-Context:
-- Look for indicators of C2 communication
-- Check for unusual port usage
-- Identify potential data exfiltration patterns
-
-Output format:
-1. Executive Summary
-2. Technical Details Table
-3. Suspicious Activities List
-4. Recommended Actions`} />
-              <p className="mt-3 text-gray-600">
-                This prompt provides comprehensive guidance that helps the model understand 
-                exactly what to look for and how to present its findings. The inclusion of 
-                specific security concerns and output structure requirements results in more 
-                valuable analysis.
+            <li>
+              <h3 className="text-lg font-semibold mb-2">6. DETECT_EDR</h3>
+              <CopyCodeButton code="python run_agents.py DETECT_EDR"/>
+              <p className="mb-4">
+                Downloads an EDR telemetry dataset README and lists all security products mentioned. Then, it queries
+                the active Caldera agent for running Windows services and cross-references them to detect which EDRs
+                might be active.
               </p>
-            </div>
-          </div>
+            </li>
+
+            <li>
+              <h3 className="text-lg font-semibold mb-2">7. HELLO_CALDERA</h3>
+              <CopyCodeButton code="python run_agents.py HELLO_CALDERA"/>
+              <p className="mb-4">
+                Retrieves Caldera operation and agent info, then sends a PowerShell command to display a message box
+                (containing a cybersecurity joke) on the desktop of the active Caldera agent. Great for testing Caldera
+                integration and agent visibility.
+              </p>
+            </li>
+
+            <li>
+              <h3 className="text-lg font-semibold mb-2">8. TTP_REPORT_TO_TECHNIQUES</h3>
+              <CopyCodeButton code="python run_agents.py TTP_REPORT_TO_TECHNIQUES"/>
+              <p className="mb-4">
+                Downloads a specific Microsoft threat report and extracts all MITRE ATT&CK technique IDs mentioned in
+                the article. The result is a clean list of relevant techniques observed in the campaign.
+              </p>
+            </li>
+
+            <li>
+              <h3 className="text-lg font-semibold mb-2">9. TTP_REPORT_TO_ADVERSARY_PROFILE</h3>
+              <CopyCodeButton code="python run_agents.py TTP_REPORT_TO_ADVERSARY_PROFILE"/>
+              <p className="mb-4">
+                Downloads a DFIR report, extracts MITRE techniques, maps them to Caldera abilities, and creates a full
+                adversary profile within Caldera—mirroring real-world threat behavior. This action demonstrates
+                automated threat emulation from public intel.
+              </p>
+            </li>
+
+          </ol>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-4">Practice Exercise</h2>
-          <div className="bg-gray-50 p-6 rounded-lg">
-            <p className="mb-4">To practice prompt engineering with LPW, try this exercise:</p>
-            <ol className="list-decimal ml-6 space-y-2">
-              <li>Start with a basic PCAP analysis prompt</li>
-              <li>
-                Gradually enhance it by adding:
-                <ul className="list-disc ml-6 mt-2">
-                  <li>Specific technical elements to examine</li>
-                  <li>Context about potential security concerns</li>
-                  <li>Structured output requirements</li>
-                </ul>
-              </li>
-              <li>Compare the results from each iteration</li>
-              <li>Note how the addition of context and structure improves the quality of analysis</li>
-            </ol>
-          </div>
-        </section>
 
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-4">Best Practices</h2>
-          <div className="">
-            <ul className="space-y-3">
-              <li><strong>Provide Security Context:</strong> Include information about potential 
-                attack patterns, normal network behavior, and specific security concerns you're 
-                investigating.</li>
-              <li><strong>Structure Output:</strong> Clearly specify how you want the analysis 
-                presented, including any specific formats or categories of information.</li>
-              <li><strong>Layer Analysis:</strong> Start with broader questions and progressively 
-                narrow down to specific areas of concern based on initial findings.</li>
-            </ul>
-          </div>
-        </section>
-
-        <section className="mb-8">
-          <div className="bg-blue-50 p-6 rounded-lg">
-            <h2 className="text-xl font-semibold mb-4">Remember</h2>
-            <p>
-              Prompt engineering is an iterative process. As you work with LPW, you'll develop 
-              a better understanding of how different prompting strategies affect the quality 
-              of analysis. Keep refining your prompts based on the results you receive, and 
-              don't hesitate to experiment with different approaches to find what works best 
-              for your specific analysis needs.
-            </p>
-          </div>
-        </section>
-        <NavButtons 
-          previous={{
-            text: "Installing LLM Agents",
-            link: "/agents/setup"
-          }}
-          next={{
-            text: "Creating New Actions",
-            link: "/agents/create"
-          }}
+        <NavButtons
+            previous={{
+              text: "Installing LLM Agents",
+              link: "/agents/setup"
+            }}
+            next={{
+              text: "Creating New Actions",
+              link: "/agents/create"
+            }}
         />
       </div>
     </AgentsLayout>

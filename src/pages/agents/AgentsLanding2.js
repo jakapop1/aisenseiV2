@@ -12,40 +12,42 @@ const AgentsLanding2 = () => {
         <section>
           <h2>cyber-security-llm-agents</h2>
           <p>
-            cyber-security-llm-agents (or CSLA, for brevity, not to be confused with the unrelated CSLA .NET) is an
-            open-source
-            framework designed to help analysts
-            automate and streamline repetitive or data-heavy cybersecurity tasks through the use of AI agents. It does
-            this by allowing users to design and deploy AI-powered workflows that can be customized for a variety of
-            cybersecurity tasks, compacting them into easy to use “actions” that you can run from the command line. Once
-            run, an action activates a group of AI agents—capable of reasoning, decision-making, and tool usage—to
-            complete the task and return the result. Users can quickly and easily create new actions using natural
-            language, but the framework also comes with ten ready-to-go actions that you can use as soon as you download
-            it.
+            cyber-security-llm-agents (or CSLA, for brevity—not to be confused with the unrelated CSLA .NET framework)
+            is an open-source toolkit that helps analysts automate and streamline repetitive or data-heavy cybersecurity
+            tasks using autonomous AI agents. It does this by letting users design and run AI-powered workflows, each
+            packaged as a simple "action" that can be executed from the command line. Once run, an action triggers one
+            or more agents—capable of reasoning, executing commands, and interpreting results—to complete a task and
+            return the output. Users can create new actions using natural language prompts, and the framework also
+            includes nine ready-to-run actions out of the box that cover everything from summarizing threat reports to
+            building adversary profiles from public data.
           </p>
           <p>
-            CSLA supports various large language models locally through tools like Ollama, but can also connect to
-            real-world data sources such as
-            VirusTotal, Shodan, and Elastic SIEM. The system is built on top of LangChain and CrewAI, making it easy to
-            configure intelligent, role-specific agents that can collaborate to complete complex workflows.
+            CSLA supports running large language models locally with Ollama, giving users full control over data and
+            execution. It also integrates with simulation environments like MITRE Caldera, and uses structured datasets
+            like EDR telemetry reports and public threat intelligence sources to power meaningful, security-relevant
+            automation. The system is built on top of LangChain and CrewAI, making it easy to configure role-specific
+            agents and orchestrate them into complete, multi-step workflows.
           </p>
 
           <h2>Why use cyber-security-llm-agents?</h2>
           <p>
-            cyber-security-llm-agents is a powerful, flexible, and most importantly, easy-to-use toolset that offers
-            multiple deployment methods, including local execution with tools like Ollama, allowing analysts to keep
-            data on-premises while still taking advantage of powerful language models. It’s also integrated with many
-            widely
-            used services such as VirusTotal, Shodan, and Elastic, providing direct access to threat intelligence and
-            log data. But most importantly, it’s designed to be accessible for beginners and simple to run, yet is
-            still extensible for advanced users who want full control over their workflows.
+            cyber-security-llm-agents is designed to be powerful, modular, and beginner-friendly. It supports both local
+            and remote deployment options, and allows analysts to explore the use of LLMs in cybersecurity without
+            needing deep machine learning knowledge. Analysts can create custom workflows, adapt existing ones, or run
+            out-of-the-box actions for common use cases like:
           </p>
+          <ul>
+            <li>Collecting telemetry and simulating endpoint behavior using Caldera</li>
+            <li>Summarizing MITRE techniques from live threat intel reports</li>
+            <li>Mapping TTPs to adversary profiles</li>
+            <li>Detecting security tools and EDR coverage gaps</li>
+          </ul>
 
           <p>
-            The real strength of CSLA lies in its modularity. Analysts can define their own agents,
-            assign tools, and customize prompts to suit different environments, threat profiles, or operational needs.
-            Whether building a red team simulation, setting up automated triage, or experimenting with AI-driven threat
-            hunting, the platform offers a streamlined, repeatable way to apply LLMs in cybersecurity.
+            The real strength of CSLA lies in its flexibility. You can define your own agents, assign tools, write
+            prompts, and connect tasks together however you need—whether you're building a red team lab, automating a
+            triage pipeline, or testing a detection hypothesis. The platform is built to scale with your skills and
+            needs, offering a repeatable and customizable way to explore how AI can support cybersecurity operations.
           </p>
 
         </section>

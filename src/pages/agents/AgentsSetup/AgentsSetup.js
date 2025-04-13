@@ -20,6 +20,7 @@ const AgentsSetup = () => {
             </li>
             <li>Choose the "Download ZIP" option (under the green "Code" button) to download the repository as a zip
               file, and unzip it.
+              <img src="/images/agents/github.png" alt="Example Output" width="350"/>
             </li>
             <li>
               Navigate to the directory where you unzipped the repository and run the following command:
@@ -37,8 +38,8 @@ OPENAI_API_KEY = "<OPENAI API KEY>""'/>
             <li>
               Verify the installation by running the following command in the terminal:
               <CopyCodeButton code="python run_agents.py HELLO_AGENTS"/>
-              <p>The output should show the agents attempt at humor, something like:</p>
-              <img src="/images/Jack/simpleCode.png" alt="Example Code" width="700" height="auto"/>
+              <p>If it's working, the output should show the agents attempt at humor, something like:</p>
+              <img src="/images/agents/defaultoutput.png" alt="Example Output" width="750"/>
             </li>
           </ol>
         </section>

@@ -9,7 +9,12 @@ const CreatingAgents = () => {
     <AgentsLayout>
       <div className="lpw-content">
         <h1>Enhancing LPW Processing Speed</h1>
-        
+        <div className="bg-red-50 border-l-4 border-red-500 p-4 mb-6">
+          <p className="mb-2"><strong>CAUTION:</strong> cyber-security-llm-agents uses LLMs to generate code and
+            commands that interact directly with your system. Running LLM-generated source code and commands poses a
+            security risk to your host environment! Be careful and only run this in a virtual or test environment.</p>
+        </div>
+
         <section className="mb-8">
           <p className="mb-6">
             While Local Packet Whisperer (LPW) provides powerful packet analysis capabilities through LLMs,
@@ -20,19 +25,21 @@ const CreatingAgents = () => {
             information.
           </p>
           <p className="mb-6">
-            Note that the LPW changes we go over below is unoptimized and rather a demonstration of the 
-            possible ways to enhance LLMs. In our enhancement, we change the default packet processing which takes 
+            Note that the LPW changes we go over below is unoptimized and rather a demonstration of the
+            possible ways to enhance LLMs. In our enhancement, we change the default packet processing which takes
             time and provides too much informationand cut it down to what is necessary and is easy for the LLM to read.
-            When following our example, you will see that a pcap to json script can make the program run quite a bit faster.
-            You may also find that with further optimizations, a fully functioning tool could be made. While this exercise
-            does not go past the base level enhancements, feel free to test it out yourselves in creating a robust AI 
+            When following our example, you will see that a pcap to json script can make the program run quite a bit
+            faster.
+            You may also find that with further optimizations, a fully functioning tool could be made. While this
+            exercise
+            does not go past the base level enhancements, feel free to test it out yourselves in creating a robust AI
             enhanced packet analysis tool.
           </p>
         </section>
 
         <section className="mb-8">
           <h2 className="text-xl font-semibold mb-4">Understanding the Enhancement</h2>
-          
+
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div className="p-4 border rounded-lg">
               <h3 className="text-lg font-semibold mb-2">Default LPW Processing</h3>
@@ -64,12 +71,12 @@ const CreatingAgents = () => {
 
         <section className="mb-8">
           <h2 className="text-xl font-semibold mb-4">Implementation Guide</h2>
-          
+
           <div className="space-y-6">
             <div className="border rounded-lg p-6">
               <h3 className="text-lg font-semibold mb-3">Step 1: Create the Python Script</h3>
               <p className="mb-4">Create a new file named packet_extractor.py in your LPW directory:</p>
-              <CopyCodeButton code="touch packet_extractor.py" />
+              <CopyCodeButton code="touch packet_extractor.py"/>
             </div>
 
             <div className="border rounded-lg p-6">
@@ -299,9 +306,9 @@ def get_pcap_json(pcap_file, display_filter=None, max_packets=None, debug_mode=F
         return extractor.process_pcap(display_filter=display_filter, max_packets=max_packets)
     except Exception as e:
         logging.error(f"Failed to process PCAP: {e}")
-        return None`} />
-        <h3 className="text-lg font-semibold mb-3">Step 3: Replace Dependent Code</h3>
-        <p className="mb-4">Copy and paste the following code into lpw_home.py:</p>
+        return None`}/>
+              <h3 className="text-lg font-semibold mb-3">Step 3: Replace Dependent Code</h3>
+              <p className="mb-4">Copy and paste the following code into lpw_home.py:</p>
               <CollapsibleCode code={`
               import streamlit as st
 from lpw_init import *
@@ -439,8 +446,8 @@ else:
                 else:
                     st.markdown(full_response)
         st.button('Reset Chat 🗑️', use_container_width=True, on_click=resetChat)
-                `} />
-        <p className="mb-4">Copy and paste the following code into lpw_packet.py:</p>
+                `}/>
+              <p className="mb-4">Copy and paste the following code into lpw_packet.py:</p>
               <CollapsibleCode code={`import streamlit as st
 import os
 import asyncio
@@ -483,7 +490,7 @@ def getPcapData(input_file:str = "", filter="", decode_info={}):
     except Exception as e:
         st.error(f'Error processing PCAP file: {e}', icon='🚨')
         st.stop()
-                `} />
+                `}/>
             </div>
 
             <div className="border rounded-lg p-6">
@@ -491,8 +498,8 @@ def getPcapData(input_file:str = "", filter="", decode_info={}):
               <p>
                 After implementing the packet extractor, restart LPW to apply the changes. The tool will
                 now automatically use the optimized JSON format for packet processing. Try doing a packet
-                analysis now and see the difference from before. The result it provides will be more focused 
-                on the packet and will work alot quicker. 
+                analysis now and see the difference from before. The result it provides will be more focused
+                on the packet and will work alot quicker.
               </p>
             </div>
           </div>
@@ -514,7 +521,9 @@ def getPcapData(input_file:str = "", filter="", decode_info={}):
           <h2 className="text-xl font-semibold mb-4">Key Features</h2>
           <div className="p-4 rounded-lg">
             <ul className="space-y-2">
-              <li><strong>Flexible Data Extraction:</strong> Captures key packet information including timestamps, IPs, ports, and protocols</li>
+              <li><strong>Flexible Data Extraction:</strong> Captures key packet information including timestamps, IPs,
+                ports, and protocols
+              </li>
               <li><strong>Protocol Support:</strong> Handles TCP, UDP, and DNS protocols</li>
               <li><strong>Error Handling:</strong> Includes robust error checking and reporting</li>
               <li><strong>Command Line Support:</strong> Can be run directly from the command line</li>
@@ -528,19 +537,19 @@ def getPcapData(input_file:str = "", filter="", decode_info={}):
             <p>
               This enhancement significantly improves LPW's processing capabilities while maintaining
               all the benefits of LLM-based analysis. The structured JSON format not only speeds up
-              processing but also provides a cleaner foundation for detailed packet analysis. However, 
-              as mentioned previously, the packet extractor is not optimized and can be improved to 
-              transform LPW into a well working packet analysis tool. Try go into the packet extractor script 
+              processing but also provides a cleaner foundation for detailed packet analysis. However,
+              as mentioned previously, the packet extractor is not optimized and can be improved to
+              transform LPW into a well working packet analysis tool. Try go into the packet extractor script
               and try optimizing it yourselves!
             </p>
           </div>
         </section>
 
-        <NavButtons 
-          previous={{
-            text: "Basic Actions",
-            link: "/agents/basic"
-          }}
+        <NavButtons
+            previous={{
+              text: "Basic Actions",
+              link: "/agents/basic"
+            }}
         />
       </div>
     </AgentsLayout>
