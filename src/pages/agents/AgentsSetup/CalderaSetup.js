@@ -49,7 +49,7 @@ const CalderaSetup = () => {
                                                                                                        className="text-blue-600 hover:underline">https://0.0.0.0:8888</a>.
                   <img
                       src="/images/agents/caldera.png"
-                      alt="python Add to Path"
+                      alt="Caldera Web Interface"
                       className="mr-6 mb-4 w-[800px] rounded-lg shadow-md"
                   />
                 </li>

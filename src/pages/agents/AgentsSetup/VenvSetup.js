@@ -38,14 +38,14 @@ const VenvSetup = () => {
                 <li>Run the installer and follow the instructions.
                   <img
                       src="/images/agents/docker1.png"
-                      alt="python Add to Path"
+                      alt="Docker Installer"
                       className="mr-6 mb-4 w-[400px] rounded-lg shadow-md"
                   />
                 </li>
                 <li>Verify Docker installation by running Docker Desktop. You will need it for the next tool, so keep it open.</li>
                 <img
                     src="/images/agents/docker2.png"
-                    alt="python Add to Path"
+                    alt="Docker Desktop Running"
                     className="mr-6 mb-4 w-[700px] rounded-lg shadow-md"
                 />
               </ol>

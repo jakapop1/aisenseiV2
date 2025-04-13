@@ -22,13 +22,18 @@ const BasicAgents = () => {
 
         <section className="mb-8">
           <p className="mb-6">
-          Cyber-security-llm-agents is a straightforward and flexible tool that compacts multi-step cybersecurity
+            Cyber-security-llm-agents is a straightforward and flexible tool that compacts multi-step cybersecurity
             workflows into single, easy-to-run "actions." Each action represents a predefined task—such as summarizing
             threat reports, gathering simulation data from Caldera, or extracting MITRE techniques—that can be executed
             directly from the command line with minimal setup. The framework includes nine built-in actions, providing a
-            strong foundation for automating common cybersecurity scenarios and red team simulations. To run an action,
-            simply use the following syntax:
+            strong foundation for automating common cybersecurity scenarios and red team simulations.
           </p>
+          <img
+              src="/images/agents/detect_edr.gif"
+              alt="CSLA Demo Gif"
+              className="mr-6 mb-4 w-[800px] rounded-lg shadow-md"
+          />
+          <p>To run an action, simply use the following syntax:</p>
           <CopyCodeButton code="python run_agents.py <ACTION NAME>"/>
         </section>
 
