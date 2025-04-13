@@ -127,7 +127,7 @@ const BasicAgents = () => {
 
         <NavButtons
             previous={{
-              text: "Installing LLM Agents",
+              text: "Installing CSLA",
               link: "/agents/setup"
             }}
             next={{

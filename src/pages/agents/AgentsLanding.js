@@ -67,7 +67,7 @@ const AgentsLanding = () => {
           <NavButtons
               next={{
                 link: "/agents/introduction2",
-                text: "What is cyber-security-llm-agents?"
+                text: "What is CSLA?"
               }}
               singleButtonPosition="right"
           />

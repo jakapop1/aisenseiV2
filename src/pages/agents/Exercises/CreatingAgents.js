@@ -88,7 +88,7 @@ const CreatingAgents = () => {
 
         <NavButtons
             previous={{
-              text: "Basic Actions",
+              text: "Using CSLA",
               link: "/agents/basic"
             }}
         />

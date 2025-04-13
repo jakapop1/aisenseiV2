@@ -12,26 +12,25 @@ const PythonSetup = () => {
         <section className="mb-12">
 
           <div className="mb-6">
-            <h3 className="text-xl font-semibold mb-3">Why Python?</h3>
+            <h2 className="text-xl font-semibold mb-3">What is Python?</h2>
             <p className="mb-4">
-              Python is a versatile and beginner-friendly programming language known for its simplicity and extensive
-              libraries.
-              It is widely used for various applications, including web development, data analysis, artificial
-              intelligence, and more.
-              Python provides a clear and concise syntax, making it easier for developers to write and maintain code.
-              CSLA is written in Python, so you won't be able to execute the CSLA
-              scripts or run the program without it.
+              To use CSLA, you’ll need to have Python installed on your system. Python is a popular, beginner-friendly
+              programming language that powers the CSLA framework. It’s known for its simple syntax, strong community
+              support, and wide use in fields like cybersecurity, AI, data science, and automation. Since CSLA is
+              written entirely in Python, installing it is a required first step before running any actions or setting
+              up agents. The installation process is straightforward and works across all major operating systems.
             </p>
           </div>
 
           <div className="space-y-6">
             <div>
-              <h3 className="text-xl font-semibold mb-3">Installation Steps</h3>
+              <h2 className="text-xl font-semibold mb-3">Installation Steps</h2>
               <ol className="list-decimal list-inside space-y-2">
                 <li>Download the <a target='_blank' rel="noreferrer"
-                                href="https://www.python.org/downloads/"
-                                className="text-blue-600 hover:underline">Python installer</a>.</li>
-                <li>Follow the installation instructions. Make sure to check "Add python.exe to PATH".
+                                    href="https://www.python.org/downloads/"
+                                    className="text-blue-600 hover:underline">Python installer</a>.
+                </li>
+                <li>Run the installer and follow the instructions. Make sure to check "Add python.exe to PATH".
                   <img
                       src="/images/python_addtopath.png"
                     alt="python Add to Path" 
@@ -65,11 +64,11 @@ python -m pip install --upgrade pip`} />
         <NavButtons 
           previous={{
             link: "/agents/introduction2",
-            text: "What is cyber-security-llm-agents?"
+            text: "What is CSLA?"
           }}
           next={{
-            link: "/agents/caldera",
-            text: "Installing Caldera"
+            link: "/agents/venv",
+            text: "Installing Docker"
           }}
         />
       </div>

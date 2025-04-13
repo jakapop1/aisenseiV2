@@ -22,8 +22,9 @@ const AgentsSidebar = () => {
       path: '/agents/venv',
       items: [
         { path: '/agents/python', text: '2.1 Installing Python' },
-        { path: '/agents/caldera', text: '2.2 Installing Caldera' },
-        { path: '/agents/setup', text: '2.3 Installing CSLA' }
+        { path: '/agents/venv', text: '2.2 Installing Docker' },
+        { path: '/agents/caldera', text: '2.3 Installing Caldera' },
+        { path: '/agents/setup', text: '2.4 Installing CSLA' }
       ]
     },
     exercises: {

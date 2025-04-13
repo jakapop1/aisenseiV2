@@ -8,108 +8,49 @@ const VenvSetup = () => {
   return (
     <AgentsLayout>
       <div className="lpw-content">
-        <h1>Setting Up VirtualBox</h1>
+        <h1>Installing Docker</h1>
 
-        <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 mb-6">
-          <p className="mb-2"><strong>UNFINISHED:</strong> This page is WIP or TBD. The following pages may be completed, so don't ignore them.</p>
-        </div>
+        <section className="mb-12">
 
-        <section className="mb-8">
-          <p className="mb-4">
-            A virtual environment is an isolated Python environment that allows you to work on a specific project
-            without
-            affecting other projects or the system-wide Python installation. It helps maintain project dependencies
-            separately and avoids conflicts between different versions of libraries and packages.
-          </p>
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-3">What is Docker?</h2>
+            <p className="mb-4">
+              To run many of the included actions in CSLA—especially those involving red team simulation—you’ll need to
+              install Docker. Docker is a containerization platform that allows you to run applications in isolated,
+              lightweight environments. This guide uses Docker to deploy MITRE Caldera, which is required for several
+              core
+              actions like privilege detection, agent interaction, and adversary emulation. Installing Docker ensures
+              that
+              Caldera can run consistently across systems without complex manual setup, making it an essential component
+              of our CSLA environment.
+            </p>
+          </div>
 
-          <h2 className="text-xl font-semibold mb-4">Why Use a Virtual Environment?</h2>
-          <ol className="list-decimal space-y-2 ml-6 mb-6">
-            <li>
-              <strong>Isolation:</strong> By creating a virtual environment specifically for LPW, we can ensure
-              that the required packages and libraries are installed within that environment without interfering with
-              other
-              projects or the global Python setup.
-            </li>
-            <li>
-              <strong>Dependency Management:</strong> Virtual environments provide isolation from other Python projects
-              on your system.
-              For example, if LPW requires a specific version of a library, it can be installed in its virtual
-              environment
-              without affecting other projects that might need a different version.
-            </li>
-            <li>
-              <strong>Reproducibility:</strong> By using a virtual environment, you can easily reproduce the exact setup
-              and dependencies required for LPW. You can share the virtual environment configuration, and others can
-              recreate
-              the same environment with the specified dependencies.
-            </li>
-          </ol>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-4">Virtual Environment Setup Guide</h2>
-          <ol className="list-decimal space-y-4">
-            <li>
-              Open command prompt/terminal
-            </li>
-            <li>
-              Navigate to your desired installation directory:
-              <CodeBlock code={`cd Documents
-cd Desktop
-cd [desired directory]`}/>
-            </li>
-            <li>
-              Create a new virtual environment:
-              <CodeBlock code={`# Option 1
-python -m venv [desired_name]
-
-# Option 2
-pip install virtualenv
-virtualenv [desired_name]`}/>
-            </li>
-            <li>
-              Activate the virtual environment (example using lpw_env):
-              <CodeBlock code={`# For Windows:
-cd lpw_env
-Scripts\\activate
-
-# For MacOS/Linux:
-cd lpw_env
-source bin/activate`}/>
-            </li>
-          </ol>
-          <img
-              src="/images/lpw_venv.png"
-              alt="Virtual Environment Setup Example"
-              className="mr-6 mb-4 w-[500px] rounded-lg shadow-md"
-          />
-
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-4">Installing LPW</h2>
-          <ol className="list-decimal space-y-4">
-            <li>
-              Ensure your virtual environment is activated (you should see (lpw_env) at the start of your command line)
-            </li>
-          </ol>
-        </section>
-
-
-        <section className="mb-8">
-          <h2 className="text-xl font-semibold mb-4">Common Commands Reference</h2>
-
-          <p className="font-semibold mb-2">To activate virtual environment (when returning to project):</p>
-          <CodeBlock code={`# Windows:
-cd path\\to\\lpw_project\\lpw_env
-Scripts\\activate
-
-# MacOS/Linux:
-cd path/to/lpw_project/lpw_env
-source bin/activate`}/>
-
-          <p className="font-semibold mt-4 mb-2">To deactivate virtual environment:</p>
-          <CopyCodeButton code="deactivate"/>
+          <div className="space-y-6">
+            <div>
+              <h2 className="text-xl font-semibold mb-3">Installation Steps</h2>
+              <ol className="list-decimal list-inside space-y-2">
+                <li>Download the <a target='_blank' rel="noreferrer"
+                                    href="https://www.docker.com/get-started/"
+                                    className="text-blue-600 hover:underline">Docker Desktop installer</a>, making sure
+                  to select the correct version for your device.
+                </li>
+                <li>Run the installer and follow the instructions.
+                  <img
+                      src="/images/agents/docker1.png"
+                      alt="python Add to Path"
+                      className="mr-6 mb-4 w-[400px] rounded-lg shadow-md"
+                  />
+                </li>
+                <li>Verify Docker installation by running Docker Desktop. You will need it for the next tool, so keep it open.</li>
+                <img
+                    src="/images/agents/docker2.png"
+                    alt="python Add to Path"
+                    className="mr-6 mb-4 w-[700px] rounded-lg shadow-md"
+                />
+              </ol>
+            </div>
+          </div>
         </section>
 
 
