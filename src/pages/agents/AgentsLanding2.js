@@ -53,10 +53,14 @@ const AgentsLanding2 = () => {
         </section>
 
 
-        <div className="bg-red-50 border-l-4 border-red-500 p-4 mb-6">
+        <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 mb-6">
           <p className="mb-2"><strong>CAUTION:</strong> cyber-security-llm-agents uses LLMs to generate code and
             commands that interact directly with your system. Running LLM-generated source code and commands poses a
-            security risk to your host environment! Be careful and only run this in a virtual or test environment.</p>
+            security risk to your host environment! Be careful and only run this in a virtual or test environment, such
+            as <a target='_blank' rel="noreferrer"
+                  href="https://www.virtualbox.org/"
+                  className="text-blue-600 hover:underline">VirtualBox</a>.
+          </p>
         </div>
 
 

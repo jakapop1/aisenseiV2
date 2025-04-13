@@ -68,8 +68,8 @@ python -m pip install --upgrade pip`} />
             text: "What is cyber-security-llm-agents?"
           }}
           next={{
-            link: "/agents/venv",
-            text: "Setting Up a Virtual Environment"
+            link: "/agents/caldera",
+            text: "Installing Caldera"
           }}
         />
       </div>

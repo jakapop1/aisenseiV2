@@ -9,15 +9,19 @@ const CreatingAgents = () => {
     <AgentsLayout>
       <div className="lpw-content">
         <h1>Creating Custom Actions in CSLA</h1>
-        <div className="bg-red-50 border-l-4 border-red-500 p-4 mb-6">
+        <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 mb-6">
           <p className="mb-2"><strong>CAUTION:</strong> cyber-security-llm-agents uses LLMs to generate code and
             commands that interact directly with your system. Running LLM-generated source code and commands poses a
-            security risk to your host environment! Be careful and only run this in a virtual or test environment.</p>
+            security risk to your host environment! Be careful and only run this in a virtual or test environment, such
+            as <a target='_blank' rel="noreferrer"
+                  href="https://www.virtualbox.org/"
+                  className="text-blue-600 hover:underline">VirtualBox</a>.
+          </p>
         </div>
 
         <section className="mb-8">
           <p className="mb-6">
-            One of the most powerful features of cyber-security-llm-agents (CSLA) is its support for customizable,
+          One of the most powerful features of cyber-security-llm-agents (CSLA) is its support for customizable,
             natural language–driven actions. While CSLA comes with several ready-made actions out of the box, you can
             easily define your own to automate specific cybersecurity tasks using AI agents. Actions in CSLA are defined
             in a simple Python dictionary structure, which maps an action name to a list of steps. Each step includes a

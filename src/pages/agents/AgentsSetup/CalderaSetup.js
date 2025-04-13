@@ -9,7 +9,7 @@ const CalderaSetup = () => {
       <div className="lpw-content">
         <h1>Installing Ollama</h1>
 
-        <div className="bg-yellow-50 border-l-4 border-yellow-500 p-4 mb-6">
+        <div className="bg-red-50 border-l-4 border-red-500 p-4 mb-6">
           <p className="mb-2"><strong>UNFINISHED:</strong> This page is WIP or TBD. The following pages may be completed,
             so don't ignore them.</p>
         </div>
@@ -112,8 +112,8 @@ const CalderaSetup = () => {
 
         <NavButtons
             previous={{
-              text: "Setting Up a Virtual Environment",
-              link: "/agents/venv"
+              text: "Installing Python",
+              link: "/agents/python"
             }}
             next={{
               text: "Installing LLM Agents",
