@@ -15,18 +15,18 @@ const G3POExample = () => {
         </p>
 
 
-        <img src="/images/Jack/simpleCode.png" alt="Example Code" width="700" height="auto" />
+        <img src="/images/g3po/simpleCode.png" alt="Example Code" width="700" height="auto" />
       
 
     <h2>After Decompilation</h2>
-        <img src="/images/Jack/beforeAI.png" alt="Example Code" width="700" height="auto" />
+        <img src="/images/g3po/beforeAI.png" alt="Example Code" width="700" height="auto" />
 
 
         <p>
         After the decompilation process of its executable, Ghidra reconstructs a high-level representation of the program, displaying both assembly instructions (left) and decompiled C-like code (right). The assembly view shows low-level operations like MOV, CALL, and JMP, while the decompiled output attempts to restore function structures. However, due to compiler optimizations, variable names and some control structures are lost, requiring manual analysis. Reverse engineers use this output to understand program logic, identify vulnerabilities, and analyze potential threats by refining function names, defining data types, and reconstructing execution flow.        </p>
 
         <h2>With G3PO</h2>
-        <img src="/images/Jack/SecondPart.png" alt="Assisted Code" width="700" height="auto" />
+        <img src="/images/g3po/SecondPart.png" alt="Assisted Code" width="700" height="auto" />
         <p>
         From the image, we can see that a prompt was generated and processed by the Ollama LLM, providing an analysis of the decompiled function. The LLM explains the function’s purpose, breaking it down into steps such as parsing the import table, iterating through entries, and retrieving library names. This confirms that G3PO is successfully interacting with the LLM to generate automated insights, making reverse engineering more efficient by providing context and explanations directly within Ghidra.
 
