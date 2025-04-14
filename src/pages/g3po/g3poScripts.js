@@ -2,103 +2,124 @@ import React from 'react';
 import NavButtons from '../../components/shared/NavButtons';
 import G3POLayout from '../../components/layout/G3POLayout';
 
-const G3POScriptIntro = () => {
-  return (
-    <G3POLayout>
-      <h1>G3PO Script: Reverse Engineering with AI Assistance</h1>
+const G3POScriptIntro = () => (
+  <G3POLayout>
+    <h1>G3PO Script: AI-Assisted Reverse Engineering</h1>
 
-      <section>
-        <h2>What is G3PO?</h2>
-        <p>
-          G3PO is a custom Ghidra script originally developed by <strong>Tenable</strong>. It integrates large language models (LLMs) like OpenAI's GPT or Anthropic’s Claude to analyze decompiled functions directly inside Ghidra.
-        </p>
-        <p>
-          The script extracts decompiled or assembly code, sends it to an LLM, and receives a natural language explanation of what the function does. It can even rename variables and functions intelligently based on the analysis.
-        </p>
-        <img 
-          src="/images/g3po/scriptFlow.png" 
-          alt="How G3PO works inside Ghidra" 
-          width="600" 
-        />
-      </section>
-
-      <section>
-        <h2>Why Use G3PO?</h2>
-        <ul>
-          <li> Automates reverse engineering analysis inside Ghidra</li>
-          <li> Uses AI to interpret functions and suggest improvements</li>
-          <li> Adds readable comments to aid understanding</li>
-          <li> Optionally renames variables and functions</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>How This Version Is Different</h2>
-        <p>
-          While the original G3PO script uses cloud-based APIs like OpenAI and Claude, this version has been modified to support <strong>local LLMs via Ollama</strong>. This makes it ideal for offline or privacy-sensitive environments.
-        </p>
-        <h3>🔧 Key Modifications</h3>
-        <ul>
-          <li>
-            Replaced the OpenAI/Anthropic API request logic with <code>http://localhost:11434/api/generate</code> calls for Ollama.
-          </li>
-          <li>
-            Disabled G3PO’s default ASCII speech bubble for cleaner responses.
-          </li>
-          <li>
-            Added logging to save AI output to <code>G3PO_interaction_log.txt</code> on your Desktop.
-          </li>
-          <li>
-            Added improved handling for variable/function renaming (still experimental).
-          </li>
-        </ul>
-        <p>
-          These changes allow G3PO to run completely locally, assuming you have a model like <code>llama3</code> installed and running through Docker/Ollama.
-        </p>
-        <img 
-          src="/images/g3po/localOllamaFlow.png" 
-          alt="Local Ollama setup with G3PO" 
-          width="600" 
-        />
-      </section>
-
-      <section>
-        <h2>How to Use It</h2>
-        <ol>
-          <li>Start your local Ollama server with a compatible model (e.g. <code>ollama run llama3</code>).</li>
-          <li>Launch Ghidra and load your project.</li>
-          <li>Open the Script Manager (<code>Window &gt; Script Manager</code>).</li>
-          <li>Place the modified <code>g3po.py</code> in the <code>MyScripts</code> folder.</li>
-          <li>Run the script on any function in Ghidra (you can press <strong>Ctrl+G</strong> by default).</li>
-        </ol>
-      </section>
-
-      <section>
-        <h2>View the Source</h2>
-        <p>
-          The modified version of the G3PO script can be found here:
-        </p>
-        <a 
-          href="https://github.com/[your-repo-link]/g3po.py" 
-          target="_blank" 
+    <section>
+      <h2>What is G3PO?</h2>
+      <p>
+        G3PO is a Ghidra extension developed by <strong>Tenable</strong> that harnesses large language models to streamline reverse engineering. It decompiles functions, sends code to an LLM, and returns clear, natural language explanations along with suggestions for renaming and inline comments.
+      </p>
+      <p>
+        <a
+          href="https://github.com/tenable/ghidra_tools/blob/main/g3po/g3po.py"
+          target="_blank"
           rel="noopener noreferrer"
         >
-          <pre><code>https://github.com/[your-repo-link]/g3po.py</code></pre>
+          View the official G3PO script on GitHub.
         </a>
-      </section>
+      </p>
+    </section>
 
-      <NavButtons 
-        previous={{
-          link: "/g3po/docker/ollama/ghidra",
-          text: "Ghidra Desktop Setup"
+    <section>
+      <h2>Why Use G3PO?</h2>
+      <ul>
+        <li>Automated reverse engineering insights within Ghidra</li>
+        <li>AI-driven explanations of low-level code</li>
+        <li>Contextual inline commentary</li>
+        <li>Improved naming for functions</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Enhanced Features</h2>
+      <p>
+        This version replaces cloud-based APIs with local LLM support via <strong>Ollama</strong>, ensuring offline functionality and enhanced privacy.
+      </p>
+      <h3>Key Modifications</h3>
+      <ul>
+        <li>
+          Integrates local API calls via <code>http://localhost:11434/api/generate</code>
+        </li>
+        <li>Removes ASCII speech bubbles for a cleaner interface</li>
+        <li>
+          Offers optional logging of AI output to <code>G3PO_interaction_log.txt</code> to user's desktop
+        </li>
+        <li>
+          Includes the feature to rename functions.
+        </li>
+        <li>
+        Optimized for local LLMs such as <code>llama3</code> running in Docker with Ollama.
+        </li>
+      </ul>
+  
+    </section>
+
+    <section>
+      <h2>Download the Script</h2>
+      <p>
+        Download the custom G3PO script optimized for Ollama and save it in your Ghidra <code>MyScripts</code> folder.
+      </p>
+      <a
+        href="/downloads/g3po.py"
+        download
+        style={{
+          display: 'inline-block',
+          padding: '10px 15px',
+          backgroundColor: '#282c34',
+          color: '#fff',
+          borderRadius: '5px',
+          textDecoration: 'none',
+          marginTop: '10px'
         }}
-        next={{
-          link: "/g3po/docker/ollama/ghidra/script/install",
-          text: "Script Installation Guide"
-        }}
-      />
-    </G3POLayout>
-  );
-};
+      >
+        Download g3po.py
+      </a>
+      <p style={{ marginTop: '10px' }}>
+        Or <a
+          href="https://github.com/your-username/your-repo/blob/main/public/downloads/g3po.py"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          view the script on GitHub
+        </a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Instructions</h2>
+      <ol>
+        <li>
+          Start Ollama and load a compatible LLM <code>ollama run llama3</code> </li>
+        <li>
+          Launch Ghidra and open your project.
+        </li>
+        <li>
+          Navigate to <code>Window &gt; Script Manager</code>
+        </li>
+        <li>
+          Place the modified g3po.py in your scripts folder
+        </li>
+        <li>
+          Select a function and run the script using <strong>Ctrl+G</strong> or via the Script Manager.
+        </li>
+      </ol>
+    </section>
+
+    
+
+    <NavButtons
+      previous={{
+        link: "/g3po/docker/ollama/ghidra",
+        text: "Ghidra Desktop Setup"
+      }}
+      next={{
+        link: "/g3po/docker/ollama/ghidra/script/install",
+        text: "Script Installation Guide"
+      }}
+    />
+  </G3POLayout>
+);
 
 export default G3POScriptIntro;

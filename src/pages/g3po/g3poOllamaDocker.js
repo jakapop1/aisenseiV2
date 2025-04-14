@@ -27,6 +27,35 @@ const G3PODockerOllama = () => {
 <img src="/images/1.png" alt="Instruction 1" width="700" height="auto" />
 
 </section>
+
+<section>
+  <h2>Official Ollama + Docker Documentation</h2>
+  <p>
+    For additional information, configuration options, or troubleshooting, refer to the official Ollama Docker setup guide here:
+  </p>
+
+  <a 
+    href="https://github.com/ollama/ollama/blob/main/docs/docker.md" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <pre><code>https://github.com/ollama/ollama/blob/main/docs/docker.md</code></pre>
+  </a>
+
+  <p>
+
+  </p>
+  <p>
+    This reference covers topics such as:
+  </p>
+  <ul>
+    <li>Customizing ports and volumes</li>
+    <li>Environment variables</li>
+    <li>Using Ollama outside of Docker</li>
+  </ul>
+</section>
+
+
       <NavButtons 
           previous = {{
             link: "/g3po/docker",

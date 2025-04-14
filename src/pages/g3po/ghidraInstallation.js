@@ -139,7 +139,7 @@ int main() {
         </p>
         <ul>
           <li>
-            <strong>Windows (using GCC from MinGW or WSL):</strong>
+            <strong>Windows:</strong>
             <pre><code>gcc hello_loop.c -o hello_loop.exe</code></pre>
           </li>
           <li>
@@ -175,8 +175,27 @@ int main() {
         <img
           src="/images/g3po/import.png"
           alt="Uploading Executable to Ghidra"
-          width="500"
+          width="300"
         />
+
+
+        <p>
+
+        </p>
+
+        <p>
+          Follow the sequence of instructions to analyze and prepare the executable.
+        </p>
+
+        <img
+          src="/images/g3po/beforeAI.png"
+          alt="Uploading Executable to Ghidra"
+          width="700"
+        />
+
+        <p>
+          With the project set up with the executable ready, we are now ready to move onto the Tenable Script G3PO.
+        </p>
 
       </section>
 
