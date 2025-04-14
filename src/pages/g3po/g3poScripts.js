@@ -91,7 +91,7 @@ const G3POScriptIntro = () => (
       <h2>Instructions</h2>
       <ol>
         <li>
-          Start Ollama and load a compatible LLM <code>ollama run llama3</code> </li>
+          Start Ollama and load a compatible LLM <code>ollama run llama3 (recommended model)</code> </li>
         <li>
           Launch Ghidra and open your project.
         </li>
