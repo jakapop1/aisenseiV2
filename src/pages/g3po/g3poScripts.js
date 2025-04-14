@@ -78,7 +78,7 @@ const G3POScriptIntro = () => (
       </a>
       <p style={{ marginTop: '10px' }}>
         Or <a
-          href="https://github.com/your-username/your-repo/blob/main/public/downloads/g3po.py"
+          href="https://github.com/jakapop1/aisenseiV2/blob/main/public/downloads/g3po.py"
           target="_blank"
           rel="noopener noreferrer"
         >
