@@ -22,6 +22,7 @@ const Navigation = () => {
               { path: '/cti', text: 'CTI with OpenWebUI' },
               { path: '/g3po', text: 'Decompilation with G3PO' },
               { path: '/garak', text: 'LLM Scanning with Garak' },
+              { path: '/agents', text: 'Agentic Automation w/ CSLA' },
               { path: '/contact-page', text: 'Contact' }
             ].map((item) => (
               <Link 

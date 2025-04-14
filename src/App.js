@@ -44,6 +44,15 @@ import GarakLanding from './pages/garak/garakLanding';
 import GarakInitialSetup from './pages/garak/garakInitialSetup';
 import GarakUnderstandingOutput from './pages/garak/garakUnderstandingOutput';
 
+import AgentsLanding from './pages/agents/AgentsLanding';
+import AgentsLanding2 from './pages/agents/AgentsLanding2';
+import PythonSetup from "./pages/agents/AgentsSetup/PythonSetup";
+import VenvSetup from "./pages/agents/AgentsSetup/VenvSetup";
+import CalderaSetup from './pages/agents/AgentsSetup/CalderaSetup';
+import AgentsSetup from './pages/agents/AgentsSetup/AgentsSetup';
+import BasicAgents from './pages/agents/Exercises/BasicAgents';
+import CreatingAgents from './pages/agents/Exercises/CreatingAgents';
+
 function App() {
   return (
     <Router>
@@ -95,6 +104,16 @@ function App() {
             <Route path="/garak/first-scan" element={<GarakFirstScan />} />
             <Route path="/garak/initial-setup" element={<GarakInitialSetup />} />
             <Route path="/garak/understanding-output" element={<GarakUnderstandingOutput />} />
+
+            <Route path="/agents" element={<AgentsLanding />} />
+            <Route path="/agents/introduction" element={<AgentsLanding />} />
+            <Route path="/agents/introduction2" element={<AgentsLanding2 />} />
+            <Route path="/agents/python" element={<PythonSetup />} />
+            <Route path="/agents/venv" element={<VenvSetup />} />
+            <Route path="/agents/caldera" element={<CalderaSetup />} />
+            <Route path="/agents/setup" element={<AgentsSetup />} />
+            <Route path="/agents/basic" element={<BasicAgents />} />
+            <Route path="/agents/create" element={<CreatingAgents />} />
 
 
 

@@ -70,8 +70,19 @@ const Home = () => {
               "Install Garak to check for vulnerabilities in your LLM",
               "Run scans to test for XSS, prompt manipulation, and more",
             ]
-          }
-          
+          },
+            {
+                title: "CSLA for Agentic Automation",
+                link: "/agents",
+                items: [
+                    "Leverage LLM agents to automate cybersecurity workflows",
+                    "Orchestrate multi-agent collaboration using LangChain and CrewAI",
+                    "Integrate with tools like VirusTotal, Shodan, and Elastic SIEM",
+                    "Automate tasks like threat triage and log analysis",
+                    "Customize agents for modular, reproducible workflows"
+                ]
+            }
+
         ].map((course, index) => (
           <div 
             key={index} 
