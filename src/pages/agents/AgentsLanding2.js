@@ -2,12 +2,11 @@
 import React from 'react';
 import AgentsLayout from '../../components/layout/AgentsLayout';
 import NavButtons from '../../components/shared/NavButtons';
-import CodeBlock from "../../components/shared/CodeBlock";
 
 const AgentsLanding2 = () => {
   return (
     <AgentsLayout>
-      <div classname="lpw-content">
+      <div className="lpw-content">
         <h1>What is cyber-security-llm-agents (CSLA)?</h1>
         <section>
           <h2>cyber-security-llm-agents</h2>

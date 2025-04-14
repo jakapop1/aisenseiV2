@@ -1,8 +1,6 @@
 import React from 'react';
 import AgentsLayout from '../../../components/layout/AgentsLayout';
 import NavButtons from '../../../components/shared/NavButtons';
-import CopyCodeButton from '../../../components/shared/CopyCodeButton';
-import CodeBlock from '../../../components/shared/CodeBlock';
 
 const VenvSetup = () => {
   return (

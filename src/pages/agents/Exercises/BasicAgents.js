@@ -1,7 +1,6 @@
 import React from 'react';
 import AgentsLayout from '../../../components/layout/AgentsLayout';
 import NavButtons from '../../../components/shared/NavButtons';
-import CodeBlock from '../../../components/shared/CodeBlock';
 import CopyCodeButton from '../../../components/shared/CopyCodeButton';
 
 const BasicAgents = () => {

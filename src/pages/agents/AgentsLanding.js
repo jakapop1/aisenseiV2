@@ -6,7 +6,7 @@ import NavButtons from '../../components/shared/NavButtons';
 const AgentsLanding = () => {
   return (
       <AgentsLayout>
-        <div classname="lpw-content">
+        <div className="lpw-content">
           <h1>Guide to using cyber-security-llm-agents (CSLA)</h1>
           <section>
             <h2>Introduction</h2>
