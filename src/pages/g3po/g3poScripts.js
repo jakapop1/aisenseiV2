@@ -57,10 +57,7 @@ const G3POScriptIntro = () => (
     </section>
 
     <section>
-      <h2>Download the Script</h2>
-      <p>
-        Download the custom G3PO script optimized for Ollama and save it in your Ghidra <code>MyScripts</code> folder.
-      </p>
+      <h2>Download/View Script</h2>
       <a
         href="/downloads/g3po.py"
         download
