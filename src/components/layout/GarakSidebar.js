@@ -14,7 +14,9 @@ const GarakSidebar = () => {
         { path: '/garak', text: 'Module Introduction' },
         { path: '/garak/initial-setup', text: '1.2. Garak Setup' },
         { path: '/garak/first-scan', text: '1.2. Your First Scan with Garak' },
-        { path: '/garak/understanding-output', text: '1.3. Understanding Output' }
+        { path: '/garak/understanding-output', text: '1.3. Understanding Output' },
+        {path: '/garak/exploitation-analysis', text: '1.4. Probe Example: Exploitation Analysis' },
+        {path: '/garak/custom-probes', text: '1.4. Custom Probes' }
       ]
     },
   };

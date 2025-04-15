@@ -53,6 +53,8 @@ import AgentsSetup from './pages/agents/AgentsSetup/AgentsSetup';
 import AgentsOllamaSetup from './pages/agents/AgentsSetup/AgentsOllamaSetup';
 import BasicAgents from './pages/agents/Exercises/BasicAgents';
 import CreatingAgents from './pages/agents/Exercises/CreatingAgents';
+import GarakCustomProbes from './pages/garak/garakCustomProbes';
+import GarakExploitationAnalysis from './pages/garak/garakExploitationAnalysis';
 
 function App() {
   return (
@@ -105,6 +107,9 @@ function App() {
             <Route path="/garak/first-scan" element={<GarakFirstScan />} />
             <Route path="/garak/initial-setup" element={<GarakInitialSetup />} />
             <Route path="/garak/understanding-output" element={<GarakUnderstandingOutput />} />
+            <Route path="/garak/exploitation-analysis" element={<GarakExploitationAnalysis />} />
+
+            <Route path="/garak/custom-probes" element={<GarakCustomProbes />} />
 
             <Route path="/agents" element={<AgentsLanding />} />
             <Route path="/agents/introduction" element={<AgentsLanding />} />

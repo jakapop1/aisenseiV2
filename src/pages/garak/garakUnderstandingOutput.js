@@ -195,15 +195,14 @@ wc -l .local/share/garak/garak_runs/garak.abcd1234-5678-90ef-ghij-klmnopqrstuv.h
       </section>
 
       <NavButtons
-        prev={{
-          link: "/garak/garak-first-scan",
+        previous = {{
+          link: "/garak/first-scan",
           text: "Running Your First Scan"
         }}
-        next={{
-          link: "/garak/garak-advanced",
-          text: "Advanced Garak Usage"
+        next = {{
+          link: "/garak/exploitation-analysis",
+          text: "Probe Example: Exploitation Analysis"
         }}
-        position="both"
       />
     </GarakLayout>
   );
