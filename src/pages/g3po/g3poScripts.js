@@ -50,10 +50,10 @@ const G3POScriptIntro = () => (
           Includes the feature to rename functions.
         </li>
         <li>
-        Optimized for local LLMs such as <code>llama3</code> running in Docker with Ollama.
+          Optimized for local LLMs such as <code>llama3</code> running in Docker with Ollama.
         </li>
       </ul>
-  
+
     </section>
 
     <section>
@@ -91,49 +91,113 @@ const G3POScriptIntro = () => (
       <h2>Instructions</h2>
       <ol>
         <li>
-          Start Ollama and load a compatible LLM <code>ollama run llama3 (recommended model)</code> 
+          Start Ollama and load a compatible LLM <code>ollama run llama3 (recommended model)</code>
         </li>
-        <img
-          src="/images/g3po/beforeAI.png"
-          alt="Tbd"
-          width="700"
-        />
 
         <li>
           Launch Ghidra and open your project.
         </li>
-        <li>
-          Navigate to <code>Window &gt; Script Manager</code>
-        </li>
 
         <img
           src="/images/g3po/beforeAI.png"
-          alt="Uploading Executable to Ghidra"
+          alt="Project Page"
           width="700"
         />
 
+        <p>
+
+        </p>
         <li>
-          Place the modified g3po.py in your scripts folder
+          Navigate to Window &gt; Script Manager
         </li>
 
         <img
-          src="/images/g3po/beforeAI.png"
-          alt="Uploading Executable to Ghidra"
+          src="/images/g3po/scriptmanager.png"
+          alt="Finding Script Manager"
           width="700"
         />
+
+        <p>
+
+        </p>
+
         <li>
-          Select a function and run the script using <strong>Ctrl+G</strong> or via the Script Manager.
+          Create a new script by locating and clicking on the icon circled in the image below.
         </li>
 
         <img
-          src="/images/g3po/beforeAI.png"
-          alt="Uploading Executable to Ghidra"
+          src="/images/g3po/creatingScript.png"
+          alt="Creating a Script"
           width="700"
         />
+
+        <p> </p>
+
+        <li>
+          Select Jython
+        </li>
+
+        <img
+          src="/images/g3po/scriptType.png"
+          alt="Select Type"
+          width="300"
+        />
+        <p> </p>
+
+        <li>
+          Select a directory and enter your script name ending in .py
+        </li>
+
+        <img
+          src="/images/g3po/creatingFile.png"
+          alt="Name Script"
+          width="300"
+        />
+
+        <li>
+          Locate the created file and right click to edit the script with your preferred editor. Copy and paste the provided script to your editor and save.
+        </li>
+
+        <img
+          src="/images/g3po/importingScript.png"
+          alt="Open Editor"
+          width="700"
+        />
+
+        <p> </p>
+
+        <li>
+          Select a function to analyze and run the script using <strong>Ctrl+G</strong> or via the Script Manager.
+        </li>
+
+        <img
+          src="/images/g3po/runScript.png"
+          alt="Run Script"
+          width="300"
+        />
+
+        <li>
+          If everything is working properly, the output should be similar to the image provided below.
+        </li>
+
+        <img
+          src="/images/g3po/result.png"
+          alt="Result"
+          width="500"
+        />
+
+        <p> </p>
+        <li>
+          <strong>Note*</strong>AI queries are logged straight in the user's desktop as G3PO_interaction_log.
+        </li>
+
+
+
+
       </ol>
     </section>
 
-    
+
 
     <NavButtons
       previous={{
