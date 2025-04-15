@@ -76,10 +76,10 @@ const Home = () => {
             link: "/agents",
             items: [
               "Leverage LLM agents to automate cybersecurity workflows",
-              "Orchestrate multi-agent collaboration using LangChain and CrewAI",
-              "Integrate with tools like VirusTotal, Shodan, and Elastic SIEM",
-              "Automate tasks like threat triage and log analysis",
-              "Customize agents for modular, reproducible workflows"
+              "Orchestrate multi-agent collaboration using AutoGen and LangChain",
+              "Interact with red team environments using MITRE Caldera",
+              "Automate tasks like privilege detection, MITRE technique extraction, and adversary profiling",
+              "Customize actions for repeatable, modular workflows"
             ]
           }
         ].map((course, index) => (
