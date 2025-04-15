@@ -89,8 +89,8 @@ OPENAI_API_BASE="http://localhost:11434/v1"'/>
 
         <NavButtons
             previous={{
-              text: "Installing Caldera",
-              link: "/agents/caldera"
+              text: "Installing CSLA",
+              link: "/agents/setup"
             }}
             next={{
               text: "Using CSLA",

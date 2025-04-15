@@ -55,8 +55,8 @@ OPENAI_API_KEY = "<OPENAI API KEY>"'/>
               link: "/agents/caldera"
             }}
             next={{
-              text: "Using CSLA",
-              link: "/agents/basic"
+              text: "Configuring CSLA",
+              link: "/agents/ollama"
             }}
         />
       </div>

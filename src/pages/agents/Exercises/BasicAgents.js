@@ -131,8 +131,8 @@ const BasicAgents = () => {
 
         <NavButtons
             previous={{
-              text: "Installing CSLA",
-              link: "/agents/setup"
+              text: "Configuring CSLA",
+              link: "/agents/ollama"
             }}
             next={{
               text: "Creating New Actions",
