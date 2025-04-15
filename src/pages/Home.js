@@ -13,8 +13,8 @@ const Home = () => {
         </p>
       </section>
 
-      {/* Updated Grid Layout for Four Equal Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 my-8">
+      {/* Changed grid classes to display 3 columns on medium screens and above */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-8">
         {[
           {
             title: "LPW for Packet Analysis",
@@ -71,18 +71,17 @@ const Home = () => {
               "Run scans to test for XSS, prompt manipulation, and more",
             ]
           },
-            {
-                title: "CSLA for Agentic Automation",
-                link: "/agents",
-                items: [
-                    "Leverage LLM agents to automate cybersecurity workflows",
-                    "Orchestrate multi-agent collaboration using LangChain and CrewAI",
-                    "Integrate with tools like VirusTotal, Shodan, and Elastic SIEM",
-                    "Automate tasks like threat triage and log analysis",
-                    "Customize agents for modular, reproducible workflows"
-                ]
-            }
-
+          {
+            title: "CSLA for Agentic Automation",
+            link: "/agents",
+            items: [
+              "Leverage LLM agents to automate cybersecurity workflows",
+              "Orchestrate multi-agent collaboration using LangChain and CrewAI",
+              "Integrate with tools like VirusTotal, Shodan, and Elastic SIEM",
+              "Automate tasks like threat triage and log analysis",
+              "Customize agents for modular, reproducible workflows"
+            ]
+          }
         ].map((course, index) => (
           <div 
             key={index} 

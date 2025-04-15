@@ -91,19 +91,45 @@ const G3POScriptIntro = () => (
       <h2>Instructions</h2>
       <ol>
         <li>
-          Start Ollama and load a compatible LLM <code>ollama run llama3 (recommended model)</code> </li>
+          Start Ollama and load a compatible LLM <code>ollama run llama3 (recommended model)</code> 
+        </li>
+        <img
+          src="/images/g3po/beforeAI.png"
+          alt="Tbd"
+          width="700"
+        />
+
         <li>
           Launch Ghidra and open your project.
         </li>
         <li>
           Navigate to <code>Window &gt; Script Manager</code>
         </li>
+
+        <img
+          src="/images/g3po/beforeAI.png"
+          alt="Uploading Executable to Ghidra"
+          width="700"
+        />
+
         <li>
           Place the modified g3po.py in your scripts folder
         </li>
+
+        <img
+          src="/images/g3po/beforeAI.png"
+          alt="Uploading Executable to Ghidra"
+          width="700"
+        />
         <li>
           Select a function and run the script using <strong>Ctrl+G</strong> or via the Script Manager.
         </li>
+
+        <img
+          src="/images/g3po/beforeAI.png"
+          alt="Uploading Executable to Ghidra"
+          width="700"
+        />
       </ol>
     </section>
 

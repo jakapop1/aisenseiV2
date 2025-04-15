@@ -117,7 +117,7 @@ const GhidraInstallation = () => {
 
         <h3>6.1 Create a Simple C Program</h3>
         <p>
-          Below is a basic C program that prints "Hello, World!" and counts from 1 to 100. You can use any text editor to save this code in a file named <code>hello_loop.c</code>.
+          Below is a basic C program that prints "Hello, World!" and counts from 1 to 100. You can use any text editor to save this code in a file named <code>hello_loop.c</code>
         </p>
         <pre><code>{`
 #include <stdio.h>
@@ -148,25 +148,25 @@ int main() {
           </li>
         </ul>
         <p>
-          This will generate an executable binary file named 
+          This will generate an executable binary file named
         </p>
 
         <p> <strong>Windows</strong>
-          <code>hello_loop.exe</code> 
+          <code>hello_loop.exe</code>
         </p>
 
         <p>
-        <strong>macOS/Linux</strong>
-         <code>hello_loop</code> 
+          <strong>macOS/Linux</strong>
+          <code>hello_loop</code>
         </p>
 
 
         <h3>6.3 Import the Binary into Ghidra</h3>
         <p>
-        From the top menu, open your Ghidra project and go to <strong>File &gt; Import File</strong>
+          From the top menu, open your Ghidra project and go to <strong>File &gt; Import File</strong>
         </p>
         <p>
-         Select your compiled binary ie: <code>hello_loop.exe</code>
+          Select your compiled binary ie: <code>hello_loop.exe</code>
         </p>
         <p>
           In your Ghidra UI, follow the import prompts to upload the executable. Once imported, double-click the file in your project to open it in Ghidra’s CodeBrowser.
@@ -198,6 +198,8 @@ int main() {
         </p>
 
       </section>
+
+
 
 
 
