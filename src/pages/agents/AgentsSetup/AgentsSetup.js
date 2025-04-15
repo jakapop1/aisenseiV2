@@ -3,7 +3,7 @@ import AgentsLayout from '../../../components/layout/AgentsLayout';
 import NavButtons from '../../../components/shared/NavButtons';
 import CopyCodeButton from '../../../components/shared/CopyCodeButton';
 
-const AgentsSetup = () => {
+const AgentsOllamaSetup = () => {
   return (
     <AgentsLayout>
       <div className="lpw-content">
@@ -24,16 +24,21 @@ const AgentsSetup = () => {
             </li>
             <li>
               Navigate to the directory where you unzipped the repository and run the following command:
+              <CopyCodeButton code="pip install -r requirements.txt"/>
+              <p>This will download all required modules necessary to run CSLA.</p>
+            </li>
+            <li>
+              Next, copy the template configuration file to a new file named .env using this command:
               <CopyCodeButton code="cp .env_template .env"/>
-              <p>This will create a copy of the template configuration file.</p>
+              <p>This will allow you to customize the configuration settings for your installation.</p>
             </li>
             <li>
               Open the newly created .env file and fill in your LLM API information (e.g., OpenAI API key) and other
-              relevant fields.
+              relevant fields:
               <CopyCodeButton code='CALDERA_SERVER = "http://<caldera hostname>:8888"
 CALDERA_API_KEY = "<CALDERA API KEY>"'/>
               <CopyCodeButton code='OPENAI_MODEL_NAME = "gpt-3.5-turbo-0125"
-OPENAI_API_KEY = "<OPENAI API KEY>""'/>
+OPENAI_API_KEY = "<OPENAI API KEY>"'/>
             </li>
             <li>
               Verify the installation by running the following command in the terminal:
@@ -59,4 +64,4 @@ OPENAI_API_KEY = "<OPENAI API KEY>""'/>
   );
 };
 
-export default AgentsSetup;
+export default AgentsOllamaSetup;

@@ -50,6 +50,7 @@ import PythonSetup from "./pages/agents/AgentsSetup/PythonSetup";
 import VenvSetup from "./pages/agents/AgentsSetup/VenvSetup";
 import CalderaSetup from './pages/agents/AgentsSetup/CalderaSetup';
 import AgentsSetup from './pages/agents/AgentsSetup/AgentsSetup';
+import AgentsOllamaSetup from './pages/agents/AgentsSetup/AgentsOllamaSetup';
 import BasicAgents from './pages/agents/Exercises/BasicAgents';
 import CreatingAgents from './pages/agents/Exercises/CreatingAgents';
 
@@ -112,6 +113,7 @@ function App() {
             <Route path="/agents/venv" element={<VenvSetup />} />
             <Route path="/agents/caldera" element={<CalderaSetup />} />
             <Route path="/agents/setup" element={<AgentsSetup />} />
+            <Route path="/agents/ollama" element={<AgentsOllamaSetup />} />
             <Route path="/agents/basic" element={<BasicAgents />} />
             <Route path="/agents/create" element={<CreatingAgents />} />
 
