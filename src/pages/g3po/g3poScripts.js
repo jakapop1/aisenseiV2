@@ -94,6 +94,21 @@ const G3POScriptIntro = () => (
           Start Ollama and load a compatible LLM <code>ollama run llama3 (recommended model)</code>
         </li>
 
+        <img
+          src="/images/g3po/dockerTerminal.png"
+          alt="Result"
+          width="800"
+        />
+
+        <p>
+          
+        </p>
+        <img
+          src="/images/g3po/pulling3.2.png"
+          alt="Result"
+          width="800"
+        />
+
         <li>
           Launch Ghidra and open your project.
         </li>
@@ -205,8 +220,8 @@ const G3POScriptIntro = () => (
         text: "Ghidra Desktop Setup"
       }}
       next={{
-        link: "/g3po/docker/ollama/ghidra/script/install",
-        text: "Script Installation Guide"
+        link: "/g3po/g3po-introduction/g3po-example",
+        text: "Example"
       }}
     />
   </G3POLayout>
