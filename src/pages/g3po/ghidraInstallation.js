@@ -135,7 +135,12 @@ int main() {
 
         <h3>6.2 Compile the Program</h3>
         <p>
-          Use the following commands to compile <code>hello_loop.c</code> on your system:
+          Make sure a C compiler is installed. For Windows, you can use
+          <a href="https://sourceforge.net/projects/mingw/" target="_blank" rel="noopener noreferrer"> MinGW </a>
+          and add it to your system PATH.
+        </p>
+        <p>
+          Use the following commands to compile: hello_loop.c
         </p>
         <ul>
           <li>
@@ -148,8 +153,9 @@ int main() {
           </li>
         </ul>
         <p>
-          This will generate an executable binary file named
+          This will generate an executable binary file named <code>hello_loop</code> or <code>hello_loop.exe</code>
         </p>
+
 
         <p> <strong>Windows</strong>
           <code>hello_loop.exe</code>
@@ -198,11 +204,6 @@ int main() {
         </p>
 
       </section>
-
-
-
-
-
 
 
       <NavButtons
