@@ -1,6 +1,8 @@
 import React from 'react';
 import NavButtons from '../../components/shared/NavButtons';
 import G3POLayout from '../../components/layout/G3POLayout';
+import CopyCodeButton from '../../components/shared/CopyCodeButton';
+
 
 const G3POScriptIntro = () => (
   <G3POLayout>
@@ -88,7 +90,9 @@ const G3POScriptIntro = () => (
       <h2>Instructions</h2>
       <ol>
         <li>
-          Start Ollama and load a compatible LLM <code>ollama run llama3 (recommended model)</code>
+          Start Ollama and load a compatible LLM (recommended model)
+          <CopyCodeButton
+            code={`ollama run llama3.2`} />
         </li>
 
         <img
@@ -98,7 +102,7 @@ const G3POScriptIntro = () => (
         />
 
         <p>
-          
+
         </p>
         <img
           src="/images/g3po/pulling3.2.png"

@@ -11,13 +11,19 @@ const GarakSidebar = () => {
       title: '1. Scanning LLMs with Garak',
       path: '/garak',
       items: [
-        { path: '/garak', text: 'Module Introduction' },
+        { path: '/garak', text: '1.1. Module Introduction' },
         { path: '/garak/initial-setup', text: '1.2. Garak Setup' },
-        { path: '/garak/first-scan', text: '1.2. Your First Scan with Garak' },
-        { path: '/garak/understanding-output', text: '1.3. Understanding Output' },
-        {path: '/garak/exploitation-analysis', text: '1.4. Probe Example: Exploitation Analysis' },
-        {path: '/garak/custom-probes', text: '1.4. Custom Probes' }
+        { path: '/garak/first-scan', text: '1.3. Your First Scan with Garak' },
+        { path: '/garak/understanding-output', text: '1.4. Understanding Output' },
       ]
+    },
+    probes: {
+      title: '2. Creating Your Own Probes',
+        path: '/garak/exploitation-analysis',
+      items: [
+      {path: '/garak/exploitation-analysis', text: '2.1. Probe Example: Exploitation Analysis' },
+      {path: '/garak/custom-probes', text: '2.2. Custom Probes' }
+    ]
     },
   };
 
