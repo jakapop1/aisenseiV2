@@ -41,7 +41,7 @@ const OllamaSetup = () => {
             <li>
               Open a new terminal window and run:
               <CopyCodeButton code="ollama pull dolphin-mistral:latest"/>
-              <p>This will download a starting LLM model for LPW to use. If you decide to use a different model, simply replace "dolphin-mistral" in subsequent steps with your chosen model.</p>
+              <p>This will download a starting LLM model for Ollama to use. If you decide to use a different model, simply replace "dolphin-mistral" in subsequent steps with your chosen model.</p>
             </li>
           </ol>
 
