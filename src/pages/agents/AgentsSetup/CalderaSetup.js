@@ -33,7 +33,7 @@ const CalderaSetup = () => {
                 , or you may continue with the following simplified guide (Docker Deployment):</p>
               <ol className="list-decimal list-inside space-y-2">
                 <li>Clone the Caldera GitHub repository using the following command:
-                  <CopyCodeButton code="clone https://github.com/mitre/caldera.git --recursive --branch 5.2.0"/>
+                  <CopyCodeButton code="git clone https://github.com/mitre/caldera.git --recursive --branch 5.2.0"/>
                 </li>
                 <li>Navigate to the newly created Caldera directory, and run the following command to build the docker
                   image:
