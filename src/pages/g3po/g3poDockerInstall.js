@@ -31,6 +31,17 @@ const G3PODockerSetup = () => {
         </pre></a>
 
       </section>
+
+      <h2>G3PO Demo Walkthrough Video</h2>
+      <iframe
+        src="https://drive.google.com/file/d/1TG6G7_0Uee4mI_zA8lSgjSgrshpt-4sN/preview"
+        title="G3PO Demo Walkthrough Video"
+        width="100%"
+        height="480"
+        allow="autoplay"
+        style={{ borderRadius: '8px', maxWidth: '960px', margin: '0 auto', display: 'block' }}
+      ></iframe>
+
       <NavButtons
         previous={{
           link: "/g3po/g3po-introduction/g3po-example",
