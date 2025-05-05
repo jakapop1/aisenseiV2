@@ -69,8 +69,8 @@ const AgentsLanding2 = () => {
               link: "/agents/introduction"
             }}
             next={{
-              text: "Installing Python",
-              link: "/agents/python"
+              text: "Video Walkthrough",
+              link: "/agents/introduction3"
             }}
         />
       </div>

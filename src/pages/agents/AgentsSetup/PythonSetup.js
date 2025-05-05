@@ -63,8 +63,8 @@ python -m pip install --upgrade pip`} />
 
         <NavButtons 
           previous={{
-            link: "/agents/introduction2",
-            text: "What is CSLA?"
+            link: "/agents/introduction3",
+            text: "Video Walkthrough"
           }}
           next={{
             link: "/agents/venv",

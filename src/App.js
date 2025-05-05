@@ -46,6 +46,7 @@ import GarakUnderstandingOutput from './pages/garak/garakUnderstandingOutput';
 
 import AgentsLanding from './pages/agents/AgentsLanding';
 import AgentsLanding2 from './pages/agents/AgentsLanding2';
+import AgentsLanding3 from './pages/agents/AgentsLanding3';
 import PythonSetup from "./pages/agents/AgentsSetup/PythonSetup";
 import VenvSetup from "./pages/agents/AgentsSetup/VenvSetup";
 import CalderaSetup from './pages/agents/AgentsSetup/CalderaSetup';
@@ -114,6 +115,7 @@ function App() {
             <Route path="/agents" element={<AgentsLanding />} />
             <Route path="/agents/introduction" element={<AgentsLanding />} />
             <Route path="/agents/introduction2" element={<AgentsLanding2 />} />
+            <Route path="/agents/introduction3" element={<AgentsLanding3 />} />
             <Route path="/agents/python" element={<PythonSetup />} />
             <Route path="/agents/venv" element={<VenvSetup />} />
             <Route path="/agents/caldera" element={<CalderaSetup />} />

@@ -14,7 +14,8 @@ const AgentsSidebar = () => {
       path: '/agents/introduction',
       items: [
         { path: '/agents/introduction', text: '1.1 Module Introduction' },
-        { path: '/agents/introduction2', text: '1.2 What is CSLA?' }
+        { path: '/agents/introduction2', text: '1.2 What is CSLA?' },
+        { path: '/agents/introduction3', text: '1.3 Video Walkthrough' }
       ]
     },
     setup: {
