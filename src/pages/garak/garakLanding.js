@@ -49,6 +49,8 @@ const GarakLanding = () => {
             <strong>Red-Team Testing:</strong> Includes adaptive probes that can evolve based on model responses.
           </li>
         </ul>
+        <h2>Demo</h2>
+        <a href="https://drive.google.com/file/d/165WLxPyM60FlNTjWYSVDkzXQeOBlkIvJ/view?usp=sharing" className="text-blue-600 hover:underline">Link to Demo</a>
       </section>
 
       <NavButtons
